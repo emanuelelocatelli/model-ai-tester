@@ -1,0 +1,2967 @@
+a:6:{s:6:"_token";s:40:"CfuXFgAjO3tXZgj9YP1q7MRcWhqlr5GjSG8L9Gpx";s:9:"_previous";a:2:{s:3:"url";s:29:"https://model-ai-tester.local";s:5:"route";s:4:"home";}s:6:"_flash";a:2:{s:3:"old";a:0:{}s:3:"new";a:0:{}}s:21:"file_analysis_context";s:172238:"--- FILE CARICATO: DB_F&A_5YP_new.xlsx ---
+
+================================================================================
+ANALISI FILE EXCEL: iQAWccGuzHkVoHVJMP6SSIAIovXXwPgf2hpZJlPL.xlsx
+================================================================================
+
+--- INFORMAZIONI GENERALI ---
+File: iQAWccGuzHkVoHVJMP6SSIAIovXXwPgf2hpZJlPL.xlsx
+Fogli: 47 fogli concatenati: Bubble, grafici, P&L - HPC, Pivot Global, Foglio1, HPC - Database, 5y_Base case, Product Margin (M), Product Margin, PC_P&L_PCUM, PC_P&L, BEAUTY_P&L, P&L FY24_NEW BGT25, 5Y -->, Input, SIMULAZIONE, NS 2028, NS BRAND ITA, P&L PERIMETRO, P&L BRAND, P&L CATEGORY 2, P&L CATEGORY, P&L SUBCATEGORY, P&L BRAND_CATEGORY 2, P&L BRAND_CH POLONIA, P&L BRAND_CATEGORY, P&L BRAND_SUBCATEGORY, NS COUNTRY, NS BRAND, OP BRAND ITA, NS CONTRY_BRAND, 5Y-Istogrammi CAGR, 5Y-Istogrammi CAGR BT, 5Y-Istogrammi CAGR CH, NS CATEGORIA, COS% COUNTRY, COS% BRAND, COS% CATEGORIA, Altro -->, NS COUNTRY (fabio), BRAND EVO, PC PLAN 28, PC BRAND, PC country brand, CHART PRES 5Y, Deep Dive OMIA, CHART PRES BGT 25
+Numero di righe: 4195
+Numero di colonne: 190
+Colonne presenti: Unnamed: 0, Unnamed: 1, Unnamed: 2, Unnamed: 3, Unnamed: 4, Unnamed: 5, Unnamed: 6, Unnamed: 7, Unnamed: 8, Unnamed: 9, Unnamed: 10, Unnamed: 11, Unnamed: 12, Unnamed: 13, Unnamed: 14, Unnamed: 15, Company, Home Care, Unnamed: 16, Unnamed: 17, Unnamed: 18, Unnamed: 19, Unnamed: 20, Unnamed: 21, Unnamed: 22, Unnamed: 23, Unnamed: 24, Unnamed: 25, Unnamed: 26, Unnamed: 27, Unnamed: 28, Unnamed: 29, Unnamed: 30, Unnamed: 31, Unnamed: 32, Unnamed: 33, Unnamed: 34, Unnamed: 35, Unnamed: 36, Unnamed: 37, Unnamed: 38, Unnamed: 39, Unnamed: 40, Unnamed: 41, Unnamed: 42, Unnamed: 43, Unnamed: 44, Unnamed: 45, Unnamed: 46, Unnamed: 47, Unnamed: 48, Unnamed: 49, Unnamed: 50, Unnamed: 51, Unnamed: 52, Unnamed: 53, Unnamed: 54, Unnamed: 55, Unnamed: 56, Unnamed: 57, Unnamed: 58, Unnamed: 59, Unnamed: 60, Unnamed: 61, Unnamed: 62, Unnamed: 63, Unnamed: 64, Unnamed: 65, Unnamed: 66, Unnamed: 67, Unnamed: 68, Unnamed: 69, Unnamed: 70, Unnamed: 71, Unnamed: 72, Unnamed: 73, Unnamed: 74, Unnamed: 75, Unnamed: 76, Unnamed: 77, Unnamed: 78, Unnamed: 79, Unnamed: 80, Unnamed: 81, Unnamed: 82, Unnamed: 83, Unnamed: 84, Unnamed: 85, Unnamed: 86, Unnamed: 87, Unnamed: 88, Unnamed: 89, Unnamed: 90, Unnamed: 91, Unnamed: 92, Unnamed: 93, Unnamed: 94, Unnamed: 95, Unnamed: 96, Unnamed: 97, Unnamed: 98, Unnamed: 99, Unnamed: 100, Unnamed: 101, Unnamed: 102, Unnamed: 103, Unnamed: 104, Unnamed: 105, Unnamed: 106, Unnamed: 107, Unnamed: 108, Unnamed: 109, Unnamed: 110, Unnamed: 111, Unnamed: 112, 300.5, 0, 298, Modifiche 24/06, old, new, Unnamed: 113, Unnamed: 114, Unnamed: 115, Unnamed: 116, Unnamed: 117, Unnamed: 118, Unnamed: 119, Unnamed: 120, Unnamed: 121, Unnamed: 122, Unnamed: 123, Unnamed: 124, Unnamed: 125, Unnamed: 126, Unnamed: 127, Unnamed: 128, Unnamed: 129, Unnamed: 130, Unnamed: 131, Unnamed: 132, Unnamed: 133, Unnamed: 134, Unnamed: 135, Unnamed: 136, Unnamed: 137, Unnamed: 138, Unnamed: 139, Unnamed: 140, Unnamed: 141, Unnamed: 142, Unnamed: 143, Unnamed: 144, Unnamed: 145, Unnamed: 146, Unnamed: 147, Unnamed: 148, Unnamed: 149, Unnamed: 150, Unnamed: 151, Unnamed: 152, Unnamed: 153, Unnamed: 154, Unnamed: 155, Unnamed: 156, Unnamed: 157, Unnamed: 158, Unnamed: 159, Unnamed: 160, Unnamed: 161, Unnamed: 162, Unnamed: 163, Unnamed: 164, Unnamed: 165, Unnamed: 166, Unnamed: 167, Unnamed: 168, Unnamed: 169, Unnamed: 170, Unnamed: 171, Unnamed: 172, Unnamed: 173, Unnamed: 174, Unnamed: 175, Unnamed: 176,  Net Sales 2024, 278097798.9916569, OP 2024, 54101178.53598538, SI SELEZIONA DA FOGLIO SIMULAZIONE
+
+--- DETTAGLI TIPI DI DATI (df.info()) ---
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 4195 entries, 0 to 4194
+Columns: 190 entries, Unnamed: 0 to SI SELEZIONA DA FOGLIO SIMULAZIONE
+dtypes: float64(4), object(186)
+memory usage: 6.1+ MB
+
+
+--- PRIME 10 RIGHE (df.head(10)) ---
+  Unnamed: 0  Unnamed: 1 Unnamed: 2       Unnamed: 3        Unnamed: 4      Unnamed: 5    Unnamed: 6    Unnamed: 7    Unnamed: 8 Unnamed: 9 Unnamed: 10 Unnamed: 11 Unnamed: 12 Unnamed: 13 Unnamed: 14 Unnamed: 15 Company Home Care Unnamed: 16 Unnamed: 17 Unnamed: 18 Unnamed: 19 Unnamed: 20 Unnamed: 21 Unnamed: 22 Unnamed: 23 Unnamed: 24 Unnamed: 25 Unnamed: 26 Unnamed: 27 Unnamed: 28 Unnamed: 29 Unnamed: 30 Unnamed: 31 Unnamed: 32 Unnamed: 33 Unnamed: 34 Unnamed: 35 Unnamed: 36 Unnamed: 37 Unnamed: 38 Unnamed: 39 Unnamed: 40 Unnamed: 41 Unnamed: 42 Unnamed: 43 Unnamed: 44 Unnamed: 45 Unnamed: 46 Unnamed: 47 Unnamed: 48 Unnamed: 49 Unnamed: 50 Unnamed: 51 Unnamed: 52 Unnamed: 53 Unnamed: 54 Unnamed: 55 Unnamed: 56 Unnamed: 57 Unnamed: 58 Unnamed: 59 Unnamed: 60 Unnamed: 61 Unnamed: 62 Unnamed: 63 Unnamed: 64 Unnamed: 65 Unnamed: 66 Unnamed: 67 Unnamed: 68 Unnamed: 69 Unnamed: 70 Unnamed: 71 Unnamed: 72 Unnamed: 73 Unnamed: 74 Unnamed: 75 Unnamed: 76 Unnamed: 77 Unnamed: 78 Unnamed: 79 Unnamed: 80 Unnamed: 81 Unnamed: 82 Unnamed: 83 Unnamed: 84 Unnamed: 85 Unnamed: 86 Unnamed: 87 Unnamed: 88 Unnamed: 89 Unnamed: 90 Unnamed: 91 Unnamed: 92 Unnamed: 93 Unnamed: 94 Unnamed: 95 Unnamed: 96 Unnamed: 97 Unnamed: 98 Unnamed: 99 Unnamed: 100 Unnamed: 101 Unnamed: 102 Unnamed: 103 Unnamed: 104 Unnamed: 105 Unnamed: 106 Unnamed: 107 Unnamed: 108 Unnamed: 109 Unnamed: 110 Unnamed: 111 Unnamed: 112 300.5   0  298 Modifiche 24/06  old  new Unnamed: 113 Unnamed: 114 Unnamed: 115 Unnamed: 116 Unnamed: 117 Unnamed: 118 Unnamed: 119 Unnamed: 120 Unnamed: 121 Unnamed: 122 Unnamed: 123 Unnamed: 124 Unnamed: 125 Unnamed: 126 Unnamed: 127 Unnamed: 128 Unnamed: 129 Unnamed: 130 Unnamed: 131 Unnamed: 132 Unnamed: 133 Unnamed: 134 Unnamed: 135 Unnamed: 136 Unnamed: 137 Unnamed: 138 Unnamed: 139 Unnamed: 140 Unnamed: 141 Unnamed: 142 Unnamed: 143 Unnamed: 144 Unnamed: 145 Unnamed: 146 Unnamed: 147 Unnamed: 148 Unnamed: 149 Unnamed: 150 Unnamed: 151 Unnamed: 152 Unnamed: 153 Unnamed: 154 Unnamed: 155 Unnamed: 156 Unnamed: 157 Unnamed: 158 Unnamed: 159 Unnamed: 160 Unnamed: 161 Unnamed: 162 Unnamed: 163 Unnamed: 164 Unnamed: 165 Unnamed: 166 Unnamed: 167 Unnamed: 168 Unnamed: 169 Unnamed: 170 Unnamed: 171 Unnamed: 172 Unnamed: 173 Unnamed: 174 Unnamed: 175  Unnamed: 176  Net Sales 2024  278097798.9916569 OP 2024  54101178.53598538 SI SELEZIONA DA FOGLIO SIMULAZIONE
+0        NaN         NaN        NaN              NaN       relative MS    market value           NaN    dimensione           NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+1        NaN         NaN        NaN              NaN  Abitility to win  Attractiveness       NS 2023        NS B24         NS 28       CAGR         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+2        ITA  deodorants       mass            Italy             64.32           430.2  62958.375478  65129.071838  74786.241731   0.035032         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+3      SWISS  deodorants       mass     Bolton Swiss             81.18            81.9  11102.498512  11519.636459         13535   0.040417         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+4        AUS  deodorants       mass   Bolton Austria             50.63            78.9   4974.818557   5135.791351    7467.41621   0.084623         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+5         CZ  deodorants       mass   Bolton Czechia             36.57             114   3725.732397          4450         10000    0.21831         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+6        SLO  deodorants       mass  Bolton Adriatic              74.4            22.8    2910.22352   3131.879962   5504.153206   0.135933         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+7        CRO  deodorants       mass   Bolton Croatia             35.11            47.5   2298.110869   2514.507293   4768.412475   0.157179         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+8        SER  deodorants       mass    Bolton Serbia             12.78            33.8    1046.29397   1287.085907   3130.706256   0.245081         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+9        BEL  deodorants       mass   Bolton Belgium             13.64            87.5          1314   1598.286584   4077.849498   0.254201         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+
+--- STATISTICHE DESCRITTIVE (df.describe()) ---
+          Unnamed: 0     Unnamed: 1 Unnamed: 2  Unnamed: 3  Unnamed: 4  Unnamed: 5  Unnamed: 6  Unnamed: 7  Unnamed: 8  Unnamed: 9  Unnamed: 10  Unnamed: 11  Unnamed: 12  Unnamed: 13  Unnamed: 14  Unnamed: 15             Company  Home Care  Unnamed: 16  Unnamed: 17  Unnamed: 18  Unnamed: 19  Unnamed: 20  Unnamed: 21  Unnamed: 22  Unnamed: 23  Unnamed: 24  Unnamed: 25  Unnamed: 26  Unnamed: 27  Unnamed: 28  Unnamed: 29  Unnamed: 30  Unnamed: 31  Unnamed: 32  Unnamed: 33  Unnamed: 34  Unnamed: 35  Unnamed: 36  Unnamed: 37  Unnamed: 38  Unnamed: 39  Unnamed: 40 Unnamed: 41  Unnamed: 42  Unnamed: 43  Unnamed: 44 Unnamed: 45  Unnamed: 46  Unnamed: 47  Unnamed: 48  Unnamed: 49  Unnamed: 50  Unnamed: 51  Unnamed: 52  Unnamed: 53  Unnamed: 54  Unnamed: 55  Unnamed: 56 Unnamed: 57  Unnamed: 58  Unnamed: 59  Unnamed: 60  Unnamed: 61  Unnamed: 62  Unnamed: 63  Unnamed: 64  Unnamed: 65 Unnamed: 66  Unnamed: 67  Unnamed: 68   Unnamed: 69  Unnamed: 70  Unnamed: 71  Unnamed: 72  Unnamed: 73  Unnamed: 74  Unnamed: 75  Unnamed: 76  Unnamed: 77  Unnamed: 78  Unnamed: 79    Unnamed: 80  Unnamed: 81  Unnamed: 82  Unnamed: 83  Unnamed: 84  Unnamed: 85  Unnamed: 86  Unnamed: 87  Unnamed: 88 Unnamed: 89   Unnamed: 90  Unnamed: 91  Unnamed: 92  Unnamed: 93  Unnamed: 94  Unnamed: 95  Unnamed: 96  Unnamed: 97  Unnamed: 98  Unnamed: 99  Unnamed: 100  Unnamed: 101  Unnamed: 102  Unnamed: 103  Unnamed: 104  Unnamed: 105  Unnamed: 106  Unnamed: 107  Unnamed: 108  Unnamed: 109  Unnamed: 110  Unnamed: 111  Unnamed: 112  300.5    0    298 Modifiche 24/06                             old       new  Unnamed: 113  Unnamed: 114  Unnamed: 115  Unnamed: 116  Unnamed: 117  Unnamed: 118  Unnamed: 119  Unnamed: 120  Unnamed: 121  Unnamed: 122  Unnamed: 123  Unnamed: 124  Unnamed: 125  Unnamed: 126  Unnamed: 127  Unnamed: 128  Unnamed: 129  Unnamed: 130  Unnamed: 131  Unnamed: 132  Unnamed: 133  Unnamed: 134  Unnamed: 135  Unnamed: 136  Unnamed: 137  Unnamed: 138  Unnamed: 139  Unnamed: 140  Unnamed: 141  Unnamed: 142  Unnamed: 143  Unnamed: 144  Unnamed: 145  Unnamed: 146  Unnamed: 147  Unnamed: 148  Unnamed: 149  Unnamed: 150  Unnamed: 151  Unnamed: 152  Unnamed: 153  Unnamed: 154  Unnamed: 155  Unnamed: 156  Unnamed: 157  Unnamed: 158  Unnamed: 159  Unnamed: 160  Unnamed: 161  Unnamed: 162  Unnamed: 163  Unnamed: 164  Unnamed: 165  Unnamed: 166  Unnamed: 167  Unnamed: 168  Unnamed: 169  Unnamed: 170  Unnamed: 171  Unnamed: 172  Unnamed: 173  Unnamed: 174  Unnamed: 175  Unnamed: 176  Net Sales 2024  278097798.9916569 OP 2024  54101178.53598538 SI SELEZIONA DA FOGLIO SIMULAZIONE
+count            445           1410       1183      1284.0      1620.0      1619.0      1422.0      1482.0       898.0      1351.0       1094.0       1066.0        824.0        905.0        762.0        559.0                 167      196.0        910.0        419.0        813.0        498.0        744.0        478.0        645.0        472.0        672.0        453.0        596.0        312.0        609.0        320.0        527.0        321.0        487.0        243.0        476.0        303.0        605.0        274.0        581.0        257.0        316.0         281        376.0        221.0        320.0         192        256.0        185.0        257.0        192.0        215.0        206.0        252.0        187.0        274.0        187.0        127.0          62         26.0        196.0        204.0        210.0        241.0        223.0        171.0        211.0         216        175.0        164.0  1.640000e+02        161.0        182.0        155.0        146.0        124.0        147.0        124.0        166.0        139.0        164.0             25         17.0         18.0        222.0        203.0        192.0        195.0        208.0        125.0         184  1.720000e+02        158.0        159.0        162.0        158.0        158.0        155.0        124.0        123.0        124.0         123.0         140.0         139.0         139.0          12.0          11.0          11.0         197.0         195.0         104.0         182.0         166.0         122.0   27.0  0.0   28.0              18                               2        41          86.0         103.0          87.0          83.0          81.0         157.0         158.0         148.0         121.0         121.0         121.0         121.0         134.0         134.0         134.0          17.0          16.0          17.0         196.0         193.0         149.0         185.0         178.0         120.0         133.0         160.0         134.0         131.0         136.0         159.0         159.0         156.0         120.0         120.0         121.0         120.0         137.0         137.0         137.0          19.0          18.0          18.0         209.0         209.0         210.0         202.0         199.0         219.0         205.0         212.0         173.0         227.0         205.0         166.0         166.0         165.0         212.0         212.0         212.0         212.0         227.0         227.0         227.0  9.400000e+01               9       9.000000e+00       9       9.000000e+00                                 41
+unique           268            296        389       633.0       679.0       648.0       614.0       739.0       524.0       604.0        821.0        711.0        585.0        662.0        544.0        479.0                  89      116.0        570.0        335.0        539.0        398.0        498.0        390.0        386.0        363.0        406.0        322.0        367.0        233.0        354.0        227.0        292.0        231.0        297.0        204.0        309.0        241.0        378.0        244.0        394.0        214.0        219.0         231        303.0        208.0        261.0         181        182.0        136.0        189.0        128.0        162.0        148.0        179.0        124.0        189.0        124.0         91.0          47         26.0        173.0        181.0        203.0        223.0        202.0        145.0        207.0         215        168.0        163.0  1.640000e+02        120.0        132.0        120.0        123.0        106.0        128.0        103.0        125.0         96.0        117.0             21         17.0         18.0        185.0        172.0        166.0        172.0        182.0         99.0         184  1.720000e+02        153.0        157.0        162.0        118.0        120.0        119.0         98.0        100.0        102.0          99.0         101.0          96.0          94.0          12.0          11.0          11.0          79.0          93.0          87.0         112.0          79.0          40.0   27.0  NaN   28.0              18                               2        40          75.0         102.0          66.0          81.0          79.0          44.0          42.0          40.0          34.0          36.0          39.0          43.0          33.0          36.0          39.0          17.0          16.0          17.0         154.0         156.0         132.0         159.0         123.0          75.0         124.0         159.0         119.0         125.0         131.0          69.0          73.0          74.0          65.0          66.0          68.0          69.0          64.0          64.0          67.0          19.0          18.0          18.0         174.0         174.0         168.0         181.0         159.0         100.0         172.0         179.0         159.0         161.0         164.0         121.0         122.0         121.0          99.0         104.0         104.0         102.0         102.0          97.0          97.0           NaN               6                NaN       6                NaN                                 36
+top     FOGLIO NS 28  INTERNATIONAL       Mass         0.0         0.0         0.0         0.0         0.0         0.0         1.0          0.0          0.0          0.0          0.0          0.0          0.0  Totale complessivo        0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0        True          0.0          0.0          0.0    % growth          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0      TOTALE          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0      TOTALE          0.0          0.0  1.185005e+08          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0  21,4%*RC[-32]          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0  LE II 2024  2.482080e+07          0.0          0.0     120000.0          0.0          0.0          0.0          0.0          0.0          0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0  207.0  NaN  210.0     Subcategory  NR DEO, BT DEO, CH DEO, SC DEO  ITA MASS           0.0           0.0           0.0      400000.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0       10000.0        3000.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           0.0           NaN           Italy                NaN   Italy                NaN                        SUBCATEGORY
+freq              26            140        139        74.0       165.0       219.0       186.0       110.0       132.0       220.0        173.0        175.0        137.0         83.0        135.0         35.0                  10       15.0        171.0         16.0        130.0         39.0        111.0         33.0        145.0         71.0        134.0         51.0        120.0         36.0        133.0         55.0        131.0         62.0         89.0         16.0         89.0         35.0        116.0         19.0        105.0         36.0         82.0          28         31.0         10.0         27.0           8         43.0         36.0         39.0         24.0         25.0         20.0         28.0         38.0         49.0         45.0          6.0           2          1.0         23.0         22.0          6.0         18.0         21.0         26.0          3.0           2          7.0          2.0  1.000000e+00         42.0         41.0         36.0         24.0         19.0         20.0         22.0         39.0         44.0         48.0              4          1.0          1.0         25.0         30.0         27.0         22.0         27.0         27.0           1  1.000000e+00          6.0          2.0          1.0         40.0         38.0         35.0         24.0         19.0         20.0          22.0          39.0          44.0          46.0           1.0           1.0           1.0         119.0         103.0          17.0          71.0          83.0          82.0    1.0  NaN    1.0               1                               1         2          10.0           2.0          20.0           2.0           2.0         105.0         105.0          94.0          81.0          78.0          75.0          75.0          93.0          92.0          92.0           1.0           1.0           1.0          42.0          37.0          15.0          27.0          48.0          43.0           6.0           2.0          11.0           3.0           3.0          57.0          56.0          53.0          47.0          43.0          41.0          42.0          62.0          64.0          64.0           1.0           1.0           1.0          36.0          34.0          43.0          22.0          41.0         120.0          33.0          34.0          13.0          67.0          42.0          45.0          44.0          44.0         114.0         109.0         109.0         111.0         126.0         131.0         131.0           NaN               2                NaN       2                NaN                                  4
+mean             NaN            NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN                 NaN        NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN           NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN            NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN           NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN    NaN  NaN    NaN             NaN                             NaN       NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN  4.795576e+07             NaN       9.779023e+07     NaN       1.820257e+07                                NaN
+std              NaN            NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN                 NaN        NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN           NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN            NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN           NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN    NaN  NaN    NaN             NaN                             NaN       NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN  1.020746e+08             NaN       1.387712e+08     NaN       2.626085e+07                                NaN
+min              NaN            NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN                 NaN        NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN           NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN            NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN           NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN    NaN  NaN    NaN             NaN                             NaN       NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN -5.076477e+05             NaN       8.562987e+05     NaN      -1.308970e+06                                NaN
+25%              NaN            NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN                 NaN        NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN           NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN            NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN           NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN    NaN  NaN    NaN             NaN                             NaN       NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN  2.441768e+05             NaN       1.727926e+06     NaN       3.678149e+05                                NaN
+50%              NaN            NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN                 NaN        NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN           NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN            NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN           NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN    NaN  NaN    NaN             NaN                             NaN       NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN  4.001100e+06             NaN       8.036606e+06     NaN       1.700943e+06                                NaN
+75%              NaN            NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN                 NaN        NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN           NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN            NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN           NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN    NaN  NaN    NaN             NaN                             NaN       NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN  4.686342e+07             NaN       2.680710e+08     NaN       5.050790e+07                                NaN
+max              NaN            NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN                 NaN        NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN          NaN           NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN            NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN           NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN    NaN  NaN    NaN             NaN                             NaN       NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN           NaN  5.945576e+08             NaN       3.010071e+08     NaN       5.486097e+07                                NaN
+
+--- VALORI MANCANTI ---
+Colonne con valori mancanti:
+  - Unnamed: 0: 3750 (89.39%)
+  - Unnamed: 1: 2785 (66.39%)
+  - Unnamed: 2: 3012 (71.80%)
+  - Unnamed: 3: 2911 (69.39%)
+  - Unnamed: 4: 2575 (61.38%)
+  - Unnamed: 5: 2576 (61.41%)
+  - Unnamed: 6: 2773 (66.10%)
+  - Unnamed: 7: 2713 (64.67%)
+  - Unnamed: 8: 3297 (78.59%)
+  - Unnamed: 9: 2844 (67.79%)
+  - Unnamed: 10: 3101 (73.92%)
+  - Unnamed: 11: 3129 (74.59%)
+  - Unnamed: 12: 3371 (80.36%)
+  - Unnamed: 13: 3290 (78.43%)
+  - Unnamed: 14: 3433 (81.84%)
+  - Unnamed: 15: 3636 (86.67%)
+  - Company: 4028 (96.02%)
+  - Home Care: 3999 (95.33%)
+  - Unnamed: 16: 3285 (78.31%)
+  - Unnamed: 17: 3776 (90.01%)
+  - Unnamed: 18: 3382 (80.62%)
+  - Unnamed: 19: 3697 (88.13%)
+  - Unnamed: 20: 3451 (82.26%)
+  - Unnamed: 21: 3717 (88.61%)
+  - Unnamed: 22: 3550 (84.62%)
+  - Unnamed: 23: 3723 (88.75%)
+  - Unnamed: 24: 3523 (83.98%)
+  - Unnamed: 25: 3742 (89.20%)
+  - Unnamed: 26: 3599 (85.79%)
+  - Unnamed: 27: 3883 (92.56%)
+  - Unnamed: 28: 3586 (85.48%)
+  - Unnamed: 29: 3875 (92.37%)
+  - Unnamed: 30: 3668 (87.44%)
+  - Unnamed: 31: 3874 (92.35%)
+  - Unnamed: 32: 3708 (88.39%)
+  - Unnamed: 33: 3952 (94.21%)
+  - Unnamed: 34: 3719 (88.65%)
+  - Unnamed: 35: 3892 (92.78%)
+  - Unnamed: 36: 3590 (85.58%)
+  - Unnamed: 37: 3921 (93.47%)
+  - Unnamed: 38: 3614 (86.15%)
+  - Unnamed: 39: 3938 (93.87%)
+  - Unnamed: 40: 3879 (92.47%)
+  - Unnamed: 41: 3914 (93.30%)
+  - Unnamed: 42: 3819 (91.04%)
+  - Unnamed: 43: 3974 (94.73%)
+  - Unnamed: 44: 3875 (92.37%)
+  - Unnamed: 45: 4003 (95.42%)
+  - Unnamed: 46: 3939 (93.90%)
+  - Unnamed: 47: 4010 (95.59%)
+  - Unnamed: 48: 3938 (93.87%)
+  - Unnamed: 49: 4003 (95.42%)
+  - Unnamed: 50: 3980 (94.87%)
+  - Unnamed: 51: 3989 (95.09%)
+  - Unnamed: 52: 3943 (93.99%)
+  - Unnamed: 53: 4008 (95.54%)
+  - Unnamed: 54: 3921 (93.47%)
+  - Unnamed: 55: 4008 (95.54%)
+  - Unnamed: 56: 4068 (96.97%)
+  - Unnamed: 57: 4133 (98.52%)
+  - Unnamed: 58: 4169 (99.38%)
+  - Unnamed: 59: 3999 (95.33%)
+  - Unnamed: 60: 3991 (95.14%)
+  - Unnamed: 61: 3985 (94.99%)
+  - Unnamed: 62: 3954 (94.26%)
+  - Unnamed: 63: 3972 (94.68%)
+  - Unnamed: 64: 4024 (95.92%)
+  - Unnamed: 65: 3984 (94.97%)
+  - Unnamed: 66: 3979 (94.85%)
+  - Unnamed: 67: 4020 (95.83%)
+  - Unnamed: 68: 4031 (96.09%)
+  - Unnamed: 69: 4031 (96.09%)
+  - Unnamed: 70: 4034 (96.16%)
+  - Unnamed: 71: 4013 (95.66%)
+  - Unnamed: 72: 4040 (96.31%)
+  - Unnamed: 73: 4049 (96.52%)
+  - Unnamed: 74: 4071 (97.04%)
+  - Unnamed: 75: 4048 (96.50%)
+  - Unnamed: 76: 4071 (97.04%)
+  - Unnamed: 77: 4029 (96.04%)
+  - Unnamed: 78: 4056 (96.69%)
+  - Unnamed: 79: 4031 (96.09%)
+  - Unnamed: 80: 4170 (99.40%)
+  - Unnamed: 81: 4178 (99.59%)
+  - Unnamed: 82: 4177 (99.57%)
+  - Unnamed: 83: 3973 (94.71%)
+  - Unnamed: 84: 3992 (95.16%)
+  - Unnamed: 85: 4003 (95.42%)
+  - Unnamed: 86: 4000 (95.35%)
+  - Unnamed: 87: 3987 (95.04%)
+  - Unnamed: 88: 4070 (97.02%)
+  - Unnamed: 89: 4011 (95.61%)
+  - Unnamed: 90: 4023 (95.90%)
+  - Unnamed: 91: 4037 (96.23%)
+  - Unnamed: 92: 4036 (96.21%)
+  - Unnamed: 93: 4033 (96.14%)
+  - Unnamed: 94: 4037 (96.23%)
+  - Unnamed: 95: 4037 (96.23%)
+  - Unnamed: 96: 4040 (96.31%)
+  - Unnamed: 97: 4071 (97.04%)
+  - Unnamed: 98: 4072 (97.07%)
+  - Unnamed: 99: 4071 (97.04%)
+  - Unnamed: 100: 4072 (97.07%)
+  - Unnamed: 101: 4055 (96.66%)
+  - Unnamed: 102: 4056 (96.69%)
+  - Unnamed: 103: 4056 (96.69%)
+  - Unnamed: 104: 4183 (99.71%)
+  - Unnamed: 105: 4184 (99.74%)
+  - Unnamed: 106: 4184 (99.74%)
+  - Unnamed: 107: 3998 (95.30%)
+  - Unnamed: 108: 4000 (95.35%)
+  - Unnamed: 109: 4091 (97.52%)
+  - Unnamed: 110: 4013 (95.66%)
+  - Unnamed: 111: 4029 (96.04%)
+  - Unnamed: 112: 4073 (97.09%)
+  - 300.5: 4168 (99.36%)
+  - 0: 4195 (100.00%)
+  - 298: 4167 (99.33%)
+  - Modifiche 24/06: 4177 (99.57%)
+  - old: 4193 (99.95%)
+  - new: 4154 (99.02%)
+  - Unnamed: 113: 4109 (97.95%)
+  - Unnamed: 114: 4092 (97.54%)
+  - Unnamed: 115: 4108 (97.93%)
+  - Unnamed: 116: 4112 (98.02%)
+  - Unnamed: 117: 4114 (98.07%)
+  - Unnamed: 118: 4038 (96.26%)
+  - Unnamed: 119: 4037 (96.23%)
+  - Unnamed: 120: 4047 (96.47%)
+  - Unnamed: 121: 4074 (97.12%)
+  - Unnamed: 122: 4074 (97.12%)
+  - Unnamed: 123: 4074 (97.12%)
+  - Unnamed: 124: 4074 (97.12%)
+  - Unnamed: 125: 4061 (96.81%)
+  - Unnamed: 126: 4061 (96.81%)
+  - Unnamed: 127: 4061 (96.81%)
+  - Unnamed: 128: 4178 (99.59%)
+  - Unnamed: 129: 4179 (99.62%)
+  - Unnamed: 130: 4178 (99.59%)
+  - Unnamed: 131: 3999 (95.33%)
+  - Unnamed: 132: 4002 (95.40%)
+  - Unnamed: 133: 4046 (96.45%)
+  - Unnamed: 134: 4010 (95.59%)
+  - Unnamed: 135: 4017 (95.76%)
+  - Unnamed: 136: 4075 (97.14%)
+  - Unnamed: 137: 4062 (96.83%)
+  - Unnamed: 138: 4035 (96.19%)
+  - Unnamed: 139: 4061 (96.81%)
+  - Unnamed: 140: 4064 (96.88%)
+  - Unnamed: 141: 4059 (96.76%)
+  - Unnamed: 142: 4036 (96.21%)
+  - Unnamed: 143: 4036 (96.21%)
+  - Unnamed: 144: 4039 (96.28%)
+  - Unnamed: 145: 4075 (97.14%)
+  - Unnamed: 146: 4075 (97.14%)
+  - Unnamed: 147: 4074 (97.12%)
+  - Unnamed: 148: 4075 (97.14%)
+  - Unnamed: 149: 4058 (96.73%)
+  - Unnamed: 150: 4058 (96.73%)
+  - Unnamed: 151: 4058 (96.73%)
+  - Unnamed: 152: 4176 (99.55%)
+  - Unnamed: 153: 4177 (99.57%)
+  - Unnamed: 154: 4177 (99.57%)
+  - Unnamed: 155: 3986 (95.02%)
+  - Unnamed: 156: 3986 (95.02%)
+  - Unnamed: 157: 3985 (94.99%)
+  - Unnamed: 158: 3993 (95.18%)
+  - Unnamed: 159: 3996 (95.26%)
+  - Unnamed: 160: 3976 (94.78%)
+  - Unnamed: 161: 3990 (95.11%)
+  - Unnamed: 162: 3983 (94.95%)
+  - Unnamed: 163: 4022 (95.88%)
+  - Unnamed: 164: 3968 (94.59%)
+  - Unnamed: 165: 3990 (95.11%)
+  - Unnamed: 166: 4029 (96.04%)
+  - Unnamed: 167: 4029 (96.04%)
+  - Unnamed: 168: 4030 (96.07%)
+  - Unnamed: 169: 3983 (94.95%)
+  - Unnamed: 170: 3983 (94.95%)
+  - Unnamed: 171: 3983 (94.95%)
+  - Unnamed: 172: 3983 (94.95%)
+  - Unnamed: 173: 3968 (94.59%)
+  - Unnamed: 174: 3968 (94.59%)
+  - Unnamed: 175: 3968 (94.59%)
+  - Unnamed: 176: 4101 (97.76%)
+  -  Net Sales 2024: 4186 (99.79%)
+  - 278097798.9916569: 4186 (99.79%)
+  - OP 2024: 4186 (99.79%)
+  - 54101178.53598538: 4186 (99.79%)
+  - SI SELEZIONA DA FOGLIO SIMULAZIONE: 4154 (99.02%)
+
+--- ULTIMI 5 RECORD (df.tail(5)) ---
+     Unnamed: 0         Unnamed: 1 Unnamed: 2 Unnamed: 3 Unnamed: 4 Unnamed: 5 Unnamed: 6 Unnamed: 7 Unnamed: 8 Unnamed: 9 Unnamed: 10 Unnamed: 11 Unnamed: 12 Unnamed: 13 Unnamed: 14 Unnamed: 15 Company Home Care Unnamed: 16 Unnamed: 17 Unnamed: 18 Unnamed: 19 Unnamed: 20 Unnamed: 21 Unnamed: 22 Unnamed: 23 Unnamed: 24 Unnamed: 25 Unnamed: 26 Unnamed: 27 Unnamed: 28 Unnamed: 29 Unnamed: 30 Unnamed: 31 Unnamed: 32 Unnamed: 33 Unnamed: 34 Unnamed: 35 Unnamed: 36 Unnamed: 37 Unnamed: 38 Unnamed: 39 Unnamed: 40 Unnamed: 41 Unnamed: 42 Unnamed: 43 Unnamed: 44 Unnamed: 45 Unnamed: 46 Unnamed: 47 Unnamed: 48 Unnamed: 49 Unnamed: 50 Unnamed: 51 Unnamed: 52 Unnamed: 53 Unnamed: 54 Unnamed: 55 Unnamed: 56 Unnamed: 57 Unnamed: 58 Unnamed: 59 Unnamed: 60 Unnamed: 61 Unnamed: 62 Unnamed: 63 Unnamed: 64 Unnamed: 65 Unnamed: 66 Unnamed: 67 Unnamed: 68 Unnamed: 69 Unnamed: 70 Unnamed: 71 Unnamed: 72 Unnamed: 73 Unnamed: 74 Unnamed: 75 Unnamed: 76 Unnamed: 77 Unnamed: 78 Unnamed: 79 Unnamed: 80 Unnamed: 81 Unnamed: 82 Unnamed: 83 Unnamed: 84 Unnamed: 85 Unnamed: 86 Unnamed: 87 Unnamed: 88 Unnamed: 89 Unnamed: 90 Unnamed: 91 Unnamed: 92 Unnamed: 93 Unnamed: 94 Unnamed: 95 Unnamed: 96 Unnamed: 97 Unnamed: 98 Unnamed: 99 Unnamed: 100 Unnamed: 101 Unnamed: 102 Unnamed: 103 Unnamed: 104 Unnamed: 105 Unnamed: 106 Unnamed: 107 Unnamed: 108 Unnamed: 109 Unnamed: 110 Unnamed: 111 Unnamed: 112 300.5   0  298 Modifiche 24/06  old  new Unnamed: 113 Unnamed: 114 Unnamed: 115 Unnamed: 116 Unnamed: 117 Unnamed: 118 Unnamed: 119 Unnamed: 120 Unnamed: 121 Unnamed: 122 Unnamed: 123 Unnamed: 124 Unnamed: 125 Unnamed: 126 Unnamed: 127 Unnamed: 128 Unnamed: 129 Unnamed: 130 Unnamed: 131 Unnamed: 132 Unnamed: 133 Unnamed: 134 Unnamed: 135 Unnamed: 136 Unnamed: 137 Unnamed: 138 Unnamed: 139 Unnamed: 140 Unnamed: 141 Unnamed: 142 Unnamed: 143 Unnamed: 144 Unnamed: 145 Unnamed: 146 Unnamed: 147 Unnamed: 148 Unnamed: 149 Unnamed: 150 Unnamed: 151 Unnamed: 152 Unnamed: 153 Unnamed: 154 Unnamed: 155 Unnamed: 156 Unnamed: 157 Unnamed: 158 Unnamed: 159 Unnamed: 160 Unnamed: 161 Unnamed: 162 Unnamed: 163 Unnamed: 164 Unnamed: 165 Unnamed: 166 Unnamed: 167 Unnamed: 168 Unnamed: 169 Unnamed: 170 Unnamed: 171 Unnamed: 172 Unnamed: 173 Unnamed: 174 Unnamed: 175  Unnamed: 176  Net Sales 2024  278097798.9916569 OP 2024  54101178.53598538 SI SELEZIONA DA FOGLIO SIMULAZIONE
+4190        NaN          Net sales        NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+4191        NaN      Cost of sales        NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+4192        NaN  General overheads        NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+4193        NaN        Advertising        NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+4194        NaN          Marketing        NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+
+--- CORRELAZIONI TRA VARIABILI NUMERICHE ---
+Matrice di correlazione:
+                    0  Unnamed: 176  278097798.9916569  54101178.53598538
+0                 NaN           NaN                NaN                NaN
+Unnamed: 176      NaN           1.0                NaN                NaN
+278097798.9916569 NaN           NaN           1.000000           0.997871
+54101178.53598538 NaN           NaN           0.997871           1.000000
+
+Coppie con alta correlazione (|r| > 0.7):
+  - 278097798.9916569 <-> 54101178.53598538: 0.998
+
+
+--- ANALISI OUTLIER ---
+Outlier rilevati (metodo IQR - Interquartile Range):
+
+Colonna 'Unnamed: 176':
+  - Numero outlier: 12 (0.29%)
+  - Range normale: [-69684693.21, 116792293.38]
+  - Valori outlier: [193712683.36602914, 308452467.6449814, 118031222.4571649, 140549803.85802194, 295098185.2701766, 138280364.37175533, 170135906.60410914, 367910810.2260906, 462159692.9625874, 594557564.3457581] ... (e altri 2)
+
+
+
+--- ANALISI DUPLICATI ---
+Righe duplicate: 1565 (37.31%)
+
+Esempi di righe duplicate:
+   Unnamed: 0 Unnamed: 1 Unnamed: 2 Unnamed: 3   Unnamed: 4    Unnamed: 5 Unnamed: 6  Unnamed: 7 Unnamed: 8 Unnamed: 9 Unnamed: 10 Unnamed: 11 Unnamed: 12 Unnamed: 13 Unnamed: 14 Unnamed: 15 Company Home Care Unnamed: 16 Unnamed: 17 Unnamed: 18 Unnamed: 19 Unnamed: 20 Unnamed: 21 Unnamed: 22 Unnamed: 23 Unnamed: 24 Unnamed: 25 Unnamed: 26 Unnamed: 27 Unnamed: 28 Unnamed: 29 Unnamed: 30 Unnamed: 31 Unnamed: 32 Unnamed: 33 Unnamed: 34 Unnamed: 35 Unnamed: 36 Unnamed: 37 Unnamed: 38 Unnamed: 39 Unnamed: 40 Unnamed: 41 Unnamed: 42 Unnamed: 43 Unnamed: 44 Unnamed: 45 Unnamed: 46 Unnamed: 47 Unnamed: 48 Unnamed: 49 Unnamed: 50 Unnamed: 51 Unnamed: 52 Unnamed: 53 Unnamed: 54 Unnamed: 55 Unnamed: 56 Unnamed: 57 Unnamed: 58 Unnamed: 59 Unnamed: 60 Unnamed: 61 Unnamed: 62 Unnamed: 63 Unnamed: 64 Unnamed: 65 Unnamed: 66 Unnamed: 67 Unnamed: 68 Unnamed: 69 Unnamed: 70 Unnamed: 71 Unnamed: 72 Unnamed: 73 Unnamed: 74 Unnamed: 75 Unnamed: 76 Unnamed: 77 Unnamed: 78 Unnamed: 79 Unnamed: 80 Unnamed: 81 Unnamed: 82 Unnamed: 83 Unnamed: 84 Unnamed: 85 Unnamed: 86 Unnamed: 87 Unnamed: 88 Unnamed: 89 Unnamed: 90 Unnamed: 91 Unnamed: 92 Unnamed: 93 Unnamed: 94 Unnamed: 95 Unnamed: 96 Unnamed: 97 Unnamed: 98 Unnamed: 99 Unnamed: 100 Unnamed: 101 Unnamed: 102 Unnamed: 103 Unnamed: 104 Unnamed: 105 Unnamed: 106 Unnamed: 107 Unnamed: 108 Unnamed: 109 Unnamed: 110 Unnamed: 111 Unnamed: 112 300.5   0  298 Modifiche 24/06  old  new Unnamed: 113 Unnamed: 114 Unnamed: 115 Unnamed: 116 Unnamed: 117 Unnamed: 118 Unnamed: 119 Unnamed: 120 Unnamed: 121 Unnamed: 122 Unnamed: 123 Unnamed: 124 Unnamed: 125 Unnamed: 126 Unnamed: 127 Unnamed: 128 Unnamed: 129 Unnamed: 130 Unnamed: 131 Unnamed: 132 Unnamed: 133 Unnamed: 134 Unnamed: 135 Unnamed: 136 Unnamed: 137 Unnamed: 138 Unnamed: 139 Unnamed: 140 Unnamed: 141 Unnamed: 142 Unnamed: 143 Unnamed: 144 Unnamed: 145 Unnamed: 146 Unnamed: 147 Unnamed: 148 Unnamed: 149 Unnamed: 150 Unnamed: 151 Unnamed: 152 Unnamed: 153 Unnamed: 154 Unnamed: 155 Unnamed: 156 Unnamed: 157 Unnamed: 158 Unnamed: 159 Unnamed: 160 Unnamed: 161 Unnamed: 162 Unnamed: 163 Unnamed: 164 Unnamed: 165 Unnamed: 166 Unnamed: 167 Unnamed: 168 Unnamed: 169 Unnamed: 170 Unnamed: 171 Unnamed: 172 Unnamed: 173 Unnamed: 174 Unnamed: 175  Unnamed: 176  Net Sales 2024  278097798.9916569 OP 2024  54101178.53598538 SI SELEZIONA DA FOGLIO SIMULAZIONE
+16        NaN        NaN        NaN        NaN          NaN           NaN        NaN         NaN        NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+17        NaN        NaN        NaN        NaN  relative MS  market value        NaN  dimensione        NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+28        NaN        NaN        NaN        NaN          NaN           NaN        NaN         NaN        NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+31        NaN        NaN        NaN        NaN          NaN           NaN        NaN         NaN        NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+32        NaN        NaN        NaN        NaN          NaN           NaN        NaN         NaN        NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN     NaN       NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN   NaN NaN  NaN             NaN  NaN  NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN           NaN             NaN                NaN     NaN                NaN                                NaN
+
+--- DISTRIBUZIONE VALORI CATEGORICI ---
+Distribuzione valori per colonne categoriche:
+
+Colonna 'Unnamed: 0':
+  - Valori unici: 268
+  - Top 10 valori più frequenti:
+    • FOGLIO NS 28: 26 (0.62%)
+    • BOROTALCODEODORANTIDEODORANTIDEODORANTS: 20 (0.48%)
+    • BOROTALCOBATH & SHOWERDETERGENZADETERGENTS: 13 (0.31%)
+    • CHILLYINTIMOINTIMOINTIMATE: 11 (0.26%)
+    • BOROTALCOBODY CAREBODY CAREBODY CARE: 9 (0.21%)
+    • NEUTRO ROBERTSBATH & SHOWERDETERGENZADETERGENTS: 8 (0.19%)
+    • NEUTRO ROBERTSDEODORANTIDEODORANTIDEODORANTS: 8 (0.19%)
+    • COLLISTARSOLARISOLARISOLARI: 6 (0.14%)
+    • NEUTRO ROBERTSINTIMOINTIMOINTIMATE: 6 (0.14%)
+    • COLLISTARHAIR CAREHAIR CAREHAIR CARE: 6 (0.14%)
+
+Colonna 'Unnamed: 1':
+  - Valori unici: 296
+  - Top 10 valori più frequenti:
+    • INTERNATIONAL: 140 (3.34%)
+    • % growth: 87 (2.07%)
+    • DOMESTIC: 74 (1.76%)
+    • % on net sales: 69 (1.64%)
+    • FRANCIA: 21 (0.50%)
+    • €/pcs: 18 (0.43%)
+    • Net sales: 18 (0.43%)
+    • Operating Profit: 17 (0.41%)
+    • BOROTALCO: 16 (0.38%)
+    • TOTAL: 15 (0.36%)
+
+Colonna 'Unnamed: 2':
+  - Valori unici: 389
+  - Top 10 valori più frequenti:
+    • Mass: 139 (3.31%)
+    • Pharma: 43 (1.03%)
+    • Beauty: 40 (0.95%)
+    • % growth: 33 (0.79%)
+    • mass: 24 (0.57%)
+    • OTHERS: 23 (0.55%)
+    • Amounts in millions €: 19 (0.45%)
+    • Bolton Croatia: 17 (0.41%)
+    • Bolton Adriatic: 17 (0.41%)
+    • % on net sales: 17 (0.41%)
+
+Colonna 'Unnamed: 3':
+  - Valori unici: 633
+  - Top 10 valori più frequenti:
+    • 0: 74 (1.76%)
+    • Italy: 73 (1.74%)
+    • ACT 2023: 60 (1.43%)
+    • ACT 2024: 33 (0.79%)
+    • BGT 2025: 30 (0.72%)
+    • Bolton Adriatic: 18 (0.43%)
+    • Bolton Swiss: 17 (0.41%)
+    • BGT 2024: 17 (0.41%)
+    • PLAN 28: 16 (0.38%)
+    • FY 2023: 16 (0.38%)
+
+Colonna 'Unnamed: 4':
+  - Valori unici: 679
+  - Top 10 valori più frequenti:
+    • 0: 165 (3.93%)
+    • TOTAL: 158 (3.77%)
+    • DOMESTIC: 118 (2.81%)
+    • BOROTALCO: 54 (1.29%)
+    • INTERNATIONAL: 54 (1.29%)
+    • COLLISTAR: 40 (0.95%)
+    • NEUTRO ROBERTS: 30 (0.72%)
+    • ACT 2023: 26 (0.62%)
+    • CHILLY: 22 (0.52%)
+    • FRANCIA: 18 (0.43%)
+
+Colonna 'Unnamed: 5':
+  - Valori unici: 648
+  - Top 10 valori più frequenti:
+    • 0: 219 (5.22%)
+    • NEUTRO ROBERTS: 56 (1.33%)
+    • BOROTALCO: 51 (1.22%)
+    • OMIA: 48 (1.14%)
+    • CHILLY: 44 (1.05%)
+    • DEODORANTI: 36 (0.86%)
+    • BATH & SHOWER: 30 (0.72%)
+    • ACT 2024: 30 (0.72%)
+    • OTHERS: 25 (0.60%)
+    • BODY CARE: 22 (0.52%)
+
+Colonna 'Unnamed: 6':
+  - Valori unici: 614
+  - Top 10 valori più frequenti:
+    • 0: 186 (4.43%)
+    • DETERGENTS: 68 (1.62%)
+    • OTHERS: 62 (1.48%)
+    • GREEN: 46 (1.10%)
+    • DEODORANTI: 36 (0.86%)
+    • INTIMATE: 34 (0.81%)
+    • DEODORANTS: 29 (0.69%)
+    • DETERGENZA: 26 (0.62%)
+    • BODY CARE: 26 (0.62%)
+    • FACE CARE: 25 (0.60%)
+
+Colonna 'Unnamed: 7':
+  - Valori unici: 739
+  - Top 10 valori più frequenti:
+    • 0: 110 (2.62%)
+    • OTHERS: 53 (1.26%)
+    • DETERGENTS: 47 (1.12%)
+    • DEODORANTS: 36 (0.86%)
+    • INTIMATE: 29 (0.69%)
+    • FACE CARE: 29 (0.69%)
+    • BODY CARE: 28 (0.67%)
+    • BGT 2025: 28 (0.67%)
+    • DEODORANTI: 24 (0.57%)
+    • BATH & SHOWER: 24 (0.57%)
+
+Colonna 'Unnamed: 8':
+  - Valori unici: 524
+  - Top 10 valori più frequenti:
+    • 0: 132 (3.15%)
+    • 0.900151260941752: 20 (0.48%)
+    • 1: 17 (0.41%)
+    • 174.30001762999999: 11 (0.26%)
+    • DEODORANTI: 10 (0.24%)
+    • OTHERS: 10 (0.24%)
+    • SAPONI LIQUIDI: 8 (0.19%)
+    • BGT 2021: 7 (0.17%)
+    • HAIR CARE: 6 (0.14%)
+    • %: 6 (0.14%)
+
+Colonna 'Unnamed: 9':
+  - Valori unici: 604
+  - Top 10 valori più frequenti:
+    • 1.0: 220 (5.24%)
+    • 0: 183 (4.36%)
+    • 2.0: 40 (0.95%)
+    • 3.0: 27 (0.64%)
+    • LE I 2025: 18 (0.43%)
+    • % on net sales: 15 (0.36%)
+    • 4.0: 15 (0.36%)
+    • -1: 14 (0.33%)
+    • 5.0: 10 (0.24%)
+    • % growth: 9 (0.21%)
+
+Colonna 'Unnamed: 10':
+  - Valori unici: 821
+  - Top 10 valori più frequenti:
+    • 0: 173 (4.12%)
+    • ACT 2023: 7 (0.17%)
+    • xx: 6 (0.14%)
+    • %: 6 (0.14%)
+    • BDG 2025: 6 (0.14%)
+    • BGT 2025: 5 (0.12%)
+    • PMI: 5 (0.12%)
+    • LE II 2024: 5 (0.12%)
+    • 32228121.999999993: 4 (0.10%)
+    • 1.4593500655970941: 4 (0.10%)
+
+Colonna 'Unnamed: 11':
+  - Valori unici: 711
+  - Top 10 valori più frequenti:
+    • 0: 175 (4.17%)
+    • % growth: 26 (0.62%)
+    • OLD 5Y - BASE: 9 (0.21%)
+    • 0.9956723222064365: 9 (0.21%)
+    • 1.6458687658835902: 9 (0.21%)
+    • 5Y24 - 2026: 9 (0.21%)
+    • % on net sales: 5 (0.12%)
+    • -0.3183342735604263: 5 (0.12%)
+    • 9.116665086250642e-05: 5 (0.12%)
+    • -3.0915639438355846e-05: 5 (0.12%)
+
+Colonna 'Unnamed: 12':
+  - Valori unici: 585
+  - Top 10 valori più frequenti:
+    • 0: 137 (3.27%)
+    • BGT 2024: 7 (0.17%)
+    • xx: 6 (0.14%)
+    • %: 6 (0.14%)
+    • % growth: 6 (0.14%)
+    • LE I 2025: 5 (0.12%)
+    • COS Uni: 5 (0.12%)
+    • 34559697.55437207: 4 (0.10%)
+    • BDG 2025: 4 (0.10%)
+    • BGT 2025: 3 (0.07%)
+
+Colonna 'Unnamed: 13':
+  - Valori unici: 662
+  - Top 10 valori più frequenti:
+    • 0: 83 (1.98%)
+    • € growth: 18 (0.43%)
+    • 5Y24 - 2027: 9 (0.21%)
+    • 1.0307863050002104: 9 (0.21%)
+    • -221.05365599971265: 5 (0.12%)
+    • -350252.97767719266: 5 (0.12%)
+    • 104.82286531571299: 5 (0.12%)
+    • -1221761.2101464327: 4 (0.10%)
+    • -198079.39995200047: 4 (0.10%)
+    • -3.725290298461914e-09: 4 (0.10%)
+
+Colonna 'Unnamed: 14':
+  - Valori unici: 544
+  - Top 10 valori più frequenti:
+    • 0: 135 (3.22%)
+    • % growth: 12 (0.29%)
+    • xx: 6 (0.14%)
+    • %: 6 (0.14%)
+    •  : 6 (0.14%)
+    • € growth: 6 (0.14%)
+    • ADV: 5 (0.12%)
+    • 4600000: 5 (0.12%)
+    • 0.07234599504035888: 4 (0.10%)
+    • vs LY: 4 (0.10%)
+
+Colonna 'Unnamed: 15':
+  - Valori unici: 479
+  - Top 10 valori più frequenti:
+    • 0: 35 (0.83%)
+    • 5Y24 - 2028: 9 (0.21%)
+    • 15000: 2 (0.05%)
+    • 35904.07387411897: 2 (0.05%)
+    • Somma di 2023 - op (bdg): 2 (0.05%)
+    • 15400: 2 (0.05%)
+    • 1089356.645369078: 2 (0.05%)
+    • 452503.0075937607: 2 (0.05%)
+    • 1026336.3356223028: 2 (0.05%)
+    • 881782.0900422116: 2 (0.05%)
+
+Colonna 'Company':
+  - Valori unici: 89
+  - Top 10 valori più frequenti:
+    • Totale complessivo: 10 (0.24%)
+    • Company: 7 (0.17%)
+    • Category 2: 7 (0.17%)
+    • Brand: 4 (0.10%)
+    • CITROSIL: 4 (0.10%)
+    • OTHERS: 4 (0.10%)
+    • CHILLY: 3 (0.07%)
+    • ACQUA ALLE ROSE: 3 (0.07%)
+    • BOROTALCO: 3 (0.07%)
+    • INTERNATIONAL: 3 (0.07%)
+
+Colonna 'Home Care':
+  - Valori unici: 116
+  - Top 10 valori più frequenti:
+    • 0: 15 (0.36%)
+    • HHC: 6 (0.14%)
+    • LAUNDRY: 6 (0.14%)
+    • Somma di 2022 - ifrs: 4 (0.10%)
+    • OTHERS: 4 (0.10%)
+    • DRAIN: 4 (0.10%)
+    • Wc Net: 4 (0.10%)
+    • TOILET: 4 (0.10%)
+    • Home Care: 4 (0.10%)
+    • WINNI'S: 3 (0.07%)
+
+Colonna 'Unnamed: 16':
+  - Valori unici: 570
+  - Top 10 valori più frequenti:
+    • 0: 171 (4.08%)
+    • 5Y24 - 2026: 18 (0.43%)
+    • OLD 5Y - BASE: 15 (0.36%)
+    • 0.16563577463314072: 10 (0.24%)
+    • PLAN 2028: 6 (0.14%)
+    • € growth: 5 (0.12%)
+    • 13000000: 5 (0.12%)
+    • 2800000: 5 (0.12%)
+    • OP: 5 (0.12%)
+    • 7918708.524732647: 4 (0.10%)
+
+Colonna 'Unnamed: 17':
+  - Valori unici: 335
+  - Top 10 valori più frequenti:
+    • 0: 16 (0.38%)
+    • % on net sales: 15 (0.36%)
+    • CUM 26-28: 9 (0.21%)
+    • % growth: 8 (0.19%)
+    • MASS: 3 (0.07%)
+    • FRANCIA: 3 (0.07%)
+    • Amounts in millions €: 3 (0.07%)
+    • Vol Pieces: 3 (0.07%)
+    • Net sales: 3 (0.07%)
+    • NS/piece  : 3 (0.07%)
+
+Colonna 'Unnamed: 18':
+  - Valori unici: 539
+  - Top 10 valori più frequenti:
+    • 0: 130 (3.10%)
+    • 5Y24 - 2027: 18 (0.43%)
+    • 0.16563577463314072: 9 (0.21%)
+    • € growth: 7 (0.17%)
+    • BASE NEW - Year 2028: 5 (0.12%)
+    • Vol: 5 (0.12%)
+    • 211999572.98076484: 5 (0.12%)
+    • 4200000: 5 (0.12%)
+    • 6215889.871345999: 4 (0.10%)
+    • 0.0027355718337476187: 4 (0.10%)
+
+Colonna 'Unnamed: 19':
+  - Valori unici: 398
+  - Top 10 valori più frequenti:
+    • 0: 39 (0.93%)
+    • NEW 5Y - BASE: 9 (0.21%)
+    • 5Y25 - 2026: 9 (0.21%)
+    • % growth: 8 (0.19%)
+    • 1.0307863050002104: 8 (0.19%)
+    • % on net sales: 5 (0.12%)
+    • 5Y24 - 2026: 5 (0.12%)
+    • OLD 5Y - BASE: 4 (0.10%)
+    • 33479501.41721886: 4 (0.10%)
+    • 1420000: 4 (0.10%)
+
+Colonna 'Unnamed: 20':
+  - Valori unici: 498
+  - Top 10 valori più frequenti:
+    • 0: 111 (2.65%)
+    • 5Y24 - 2028: 18 (0.43%)
+    • New: 7 (0.17%)
+    • % growth: 6 (0.14%)
+    • xx: 6 (0.14%)
+    • 5460000: 5 (0.12%)
+    • NS: 5 (0.12%)
+    • 220000427.61713812: 5 (0.12%)
+    • 8072416.21002217: 4 (0.10%)
+    • 22000000: 4 (0.10%)
+
+Colonna 'Unnamed: 21':
+  - Valori unici: 390
+  - Top 10 valori più frequenti:
+    • 0: 33 (0.79%)
+    • 5Y25 - 2027: 9 (0.21%)
+    • 1.0307863050002104: 8 (0.19%)
+    • 5Y24 - 2027: 5 (0.12%)
+    • 35536647.960431665: 4 (0.10%)
+    • 0.7602468442584892: 2 (0.05%)
+    • 1779496.5089297951: 2 (0.05%)
+    • 0.16992351608419012: 2 (0.05%)
+    • 187171.594935: 2 (0.05%)
+    • 0.017872951906811388: 2 (0.05%)
+
+Colonna 'Unnamed: 22':
+  - Valori unici: 386
+  - Top 10 valori più frequenti:
+    • 0: 145 (3.46%)
+    • CUM 26-28: 15 (0.36%)
+    • %: 6 (0.14%)
+    • 12460000: 5 (0.12%)
+    • COS: 5 (0.12%)
+    • 52500000: 4 (0.10%)
+    • 22529193.010157455: 4 (0.10%)
+    • 11733440.120535161: 4 (0.10%)
+    • 41999502.53081806: 4 (0.10%)
+    • 19298463.171574295: 4 (0.10%)
+
+Colonna 'Unnamed: 23':
+  - Valori unici: 363
+  - Top 10 valori più frequenti:
+    • 0: 71 (1.69%)
+    • 5Y25 - 2028: 9 (0.21%)
+    • 5Y24 - 2028: 5 (0.12%)
+    • 37394561.48330568: 4 (0.10%)
+    • Growth: 2 (0.05%)
+    • 100000: 2 (0.05%)
+    • 2130000: 2 (0.05%)
+    • 0.12698412698412698: 2 (0.05%)
+    • 143437.5568121337: 2 (0.05%)
+    • 0.01806439876099275: 2 (0.05%)
+
+Colonna 'Unnamed: 24':
+  - Valori unici: 406
+  - Top 10 valori più frequenti:
+    • 0: 134 (3.19%)
+    • 5Y25 - 2026: 18 (0.43%)
+    • NEW 5Y - BASE: 14 (0.33%)
+    • -1: 6 (0.14%)
+    • 1500000: 6 (0.14%)
+    • 10500000: 5 (0.12%)
+    • PMI: 5 (0.12%)
+    • 1800000: 5 (0.12%)
+    • 2800000: 5 (0.12%)
+    • 2850000: 4 (0.10%)
+
+Colonna 'Unnamed: 25':
+  - Valori unici: 322
+  - Top 10 valori più frequenti:
+    • 0: 51 (1.22%)
+    • % on net sales: 15 (0.36%)
+    • CUM 26-28: 14 (0.33%)
+    • % growth: 8 (0.19%)
+    • 106410710.8609562: 4 (0.10%)
+    • Marketing: 3 (0.07%)
+    • Operating Profit: 3 (0.07%)
+    • MASS: 3 (0.07%)
+    • INTERNATIONAL: 3 (0.07%)
+    • Amounts in millions €: 3 (0.07%)
+
+Colonna 'Unnamed: 26':
+  - Valori unici: 367
+  - Top 10 valori più frequenti:
+    • 0: 120 (2.86%)
+    • 5Y25 - 2027: 18 (0.43%)
+    • 2200000: 5 (0.12%)
+    • 3080000: 5 (0.12%)
+    • 14000000: 5 (0.12%)
+    • 4200000: 5 (0.12%)
+    • COS Uni: 5 (0.12%)
+    • 2600000: 5 (0.12%)
+    • 14586399.957339836: 4 (0.10%)
+    • 0.7540485286978662: 4 (0.10%)
+
+Colonna 'Unnamed: 27':
+  - Valori unici: 233
+  - Top 10 valori più frequenti:
+    • 0: 36 (0.86%)
+    • PLAN 2026: 9 (0.21%)
+    • % growth: 8 (0.19%)
+    • DELTA: 6 (0.14%)
+    • % on net sales: 5 (0.12%)
+    • 5Y25 - 2026: 5 (0.12%)
+    • 565000: 4 (0.10%)
+    • NEW 5Y - BASE: 4 (0.10%)
+    • 33978714.907999985: 3 (0.07%)
+    • -51000: 2 (0.05%)
+
+Colonna 'Unnamed: 28':
+  - Valori unici: 354
+  - Top 10 valori più frequenti:
+    • 0: 133 (3.17%)
+    • 5Y25 - 2028: 18 (0.43%)
+    • 4000000: 8 (0.19%)
+    • ADV: 5 (0.12%)
+    • 2800000: 5 (0.12%)
+    • 18000000: 5 (0.12%)
+    • 3600000: 5 (0.12%)
+    • 3800000: 5 (0.12%)
+    • 5460000: 5 (0.12%)
+    • 14878617.705704916: 4 (0.10%)
+
+Colonna 'Unnamed: 29':
+  - Valori unici: 227
+  - Top 10 valori più frequenti:
+    • 0: 55 (1.31%)
+    • PLAN 2027: 9 (0.21%)
+    • 5Y25 - 2027: 5 (0.12%)
+    • 305000: 4 (0.10%)
+    • 35399292.01799999: 4 (0.10%)
+    • 0.23366796296129214: 2 (0.05%)
+    • 0.0696441318443461: 2 (0.05%)
+    • 0.7438655869914212: 2 (0.05%)
+    • 0.11032655317329355: 2 (0.05%)
+    • ACT 2024: 2 (0.05%)
+
+Colonna 'Unnamed: 30':
+  - Valori unici: 292
+  - Top 10 valori più frequenti:
+    • 0: 131 (3.12%)
+    • CUM 26-28: 15 (0.36%)
+    • 42500000: 5 (0.12%)
+    • 6500000: 5 (0.12%)
+    • 12460000: 5 (0.12%)
+    • 8200000: 5 (0.12%)
+    • OP: 5 (0.12%)
+    • 656999822.9160203: 4 (0.10%)
+    • 34302271.27841182: 4 (0.10%)
+    • 9530000: 4 (0.10%)
+
+Colonna 'Unnamed: 31':
+  - Valori unici: 231
+  - Top 10 valori più frequenti:
+    • 0: 62 (1.48%)
+    • PLAN 2028: 9 (0.21%)
+    • 5Y25 - 2028: 5 (0.12%)
+    • DELTA: 4 (0.10%)
+    • 38529899.850490116: 4 (0.10%)
+    • 1300000: 3 (0.07%)
+    • Growth: 2 (0.05%)
+    • 13204.979062938815: 2 (0.05%)
+    • 3586.146541085851: 2 (0.05%)
+    • -10271.063287888668: 2 (0.05%)
+
+Colonna 'Unnamed: 32':
+  - Valori unici: 297
+  - Top 10 valori più frequenti:
+    • 0: 89 (2.12%)
+    • PLAN 2026: 15 (0.36%)
+    • DELTA: 13 (0.31%)
+    • -2500000: 5 (0.12%)
+    • 1500000: 5 (0.12%)
+    • Vol: 5 (0.12%)
+    • 840438.3503146945: 4 (0.10%)
+    • -340751.17900714325: 4 (0.10%)
+    • -800000: 4 (0.10%)
+    • -1317957.487271647: 4 (0.10%)
+
+Colonna 'Unnamed: 33':
+  - Valori unici: 204
+  - Top 10 valori più frequenti:
+    • 0: 16 (0.38%)
+    • CUM 26-28: 14 (0.33%)
+    • 107907906.77649009: 4 (0.10%)
+    • -32945.31715390121: 2 (0.05%)
+    • 36869.28710357504: 2 (0.05%)
+    • 5393.212306783651: 2 (0.05%)
+    • 165000: 2 (0.05%)
+    • 2194.7112009784905: 2 (0.05%)
+    • 1165000: 2 (0.05%)
+    • -418000: 2 (0.05%)
+
+Colonna 'Unnamed: 34':
+  - Valori unici: 309
+  - Top 10 valori più frequenti:
+    • 0: 89 (2.12%)
+    • PLAN 2027: 15 (0.36%)
+    • 2200000: 5 (0.12%)
+    • NS: 5 (0.12%)
+    • -3500000: 4 (0.10%)
+    • -1462226.4876239914: 4 (0.10%)
+    • -834839.4431047426: 4 (0.10%)
+    • -1100000: 4 (0.10%)
+    • 586838.5173841305: 4 (0.10%)
+    • 802784.8495500218: 4 (0.10%)
+
+Colonna 'Unnamed: 35':
+  - Valori unici: 241
+  - Top 10 valori più frequenti:
+    • 0: 35 (0.83%)
+    • % growth: 8 (0.19%)
+    • % on net sales: 5 (0.12%)
+    • PLAN 2026: 5 (0.12%)
+    • DELTA: 4 (0.10%)
+    • DELTA 2028: 4 (0.10%)
+    • ITA: 4 (0.10%)
+    • 499213.4907811247: 3 (0.07%)
+    • 144434.342: 2 (0.05%)
+    • -1000000: 2 (0.05%)
+
+Colonna 'Unnamed: 36':
+  - Valori unici: 378
+  - Top 10 valori più frequenti:
+    • 0: 116 (2.77%)
+    • PLAN 2028: 15 (0.36%)
+    • DELTA: 9 (0.21%)
+    • % growth: 7 (0.17%)
+    • 2800000: 5 (0.12%)
+    • % on net sales: 5 (0.12%)
+    • -1109320.059163399: 5 (0.12%)
+    • COS: 5 (0.12%)
+    • -1000000: 5 (0.12%)
+    • -376932.60994954966: 4 (0.10%)
+
+Colonna 'Unnamed: 37':
+  - Valori unici: 244
+  - Top 10 valori più frequenti:
+    • 0: 19 (0.45%)
+    • PLAN 2027: 5 (0.12%)
+    • INTL: 4 (0.10%)
+    • -137355.9424316734: 3 (0.07%)
+    • 295000: 2 (0.05%)
+    • 300000: 2 (0.05%)
+    • -201557.63866899998: 2 (0.05%)
+    • 28573000: 1 (0.02%)
+    • 9311000: 1 (0.02%)
+    • 5063093.55: 1 (0.02%)
+
+Colonna 'Unnamed: 38':
+  - Valori unici: 394
+  - Top 10 valori più frequenti:
+    • 0: 105 (2.50%)
+    • 2028 vs 2023: 9 (0.21%)
+    • 5460000: 5 (0.12%)
+    • 15922000: 5 (0.12%)
+    • 3281000: 5 (0.12%)
+    • ADV: 5 (0.12%)
+    • 2325725.4800030002: 5 (0.12%)
+    • -600000: 5 (0.12%)
+    • 2079000: 4 (0.10%)
+    • 3933181.442999999: 4 (0.10%)
+
+Colonna 'Unnamed: 39':
+  - Valori unici: 214
+  - Top 10 valori più frequenti:
+    • 0.0: 36 (0.86%)
+    • PLAN 2028: 5 (0.12%)
+    • 1135338.3671844378: 3 (0.07%)
+    • 10000: 2 (0.05%)
+    • DELTA: 2 (0.05%)
+    • BDG 2024: 1 (0.02%)
+    • 6215889.871346: 1 (0.02%)
+    • 11389042.632807665: 1 (0.02%)
+    • 36022342.122725: 1 (0.02%)
+    • 12957985.45732598: 1 (0.02%)
+
+Colonna 'Unnamed: 40':
+  - Valori unici: 219
+  - Top 10 valori più frequenti:
+    • 0: 82 (1.95%)
+    • OP: 5 (0.12%)
+    • 191485.1076786425: 3 (0.07%)
+    • EVO 20-22: 2 (0.05%)
+    • -1.0936817361366684: 2 (0.05%)
+    • -0.3228831971041326: 2 (0.05%)
+    • -1.2268999344619107: 2 (0.05%)
+    • -0.2121285741327703: 2 (0.05%)
+    • -0.13926467507911733: 2 (0.05%)
+    • 0.213559414561934: 2 (0.05%)
+
+Colonna 'Unnamed: 41':
+  - Valori unici: 231
+  - Top 10 valori più frequenti:
+    • True: 28 (0.67%)
+    • 0: 13 (0.31%)
+    • CHECK: 4 (0.10%)
+    • 1497195.9155338854: 3 (0.07%)
+    • CUM 26-28: 3 (0.07%)
+    • 2977132.6602647156: 2 (0.05%)
+    • 1299366.076334782: 2 (0.05%)
+    • -4102296.7040012777: 2 (0.05%)
+    • 2028 vs 2023: 2 (0.05%)
+    • 285480.33878: 1 (0.02%)
+
+Colonna 'Unnamed: 42':
+  - Valori unici: 303
+  - Top 10 valori più frequenti:
+    • 0: 31 (0.74%)
+    • CUM 26-28: 8 (0.19%)
+    • 6500000: 4 (0.10%)
+    • 2720806.9898425452: 3 (0.07%)
+    • -10000000: 3 (0.07%)
+    • 1299366.076334782: 3 (0.07%)
+    • -4102296.7040012777: 3 (0.07%)
+    • -1600000: 3 (0.07%)
+    • -3017776.9191941377: 3 (0.07%)
+    • -2900000: 3 (0.07%)
+
+Colonna 'Unnamed: 43':
+  - Valori unici: 208
+  - Top 10 valori più frequenti:
+    • 0: 10 (0.24%)
+    • BGT 2025: 2 (0.05%)
+    • 224712112.7048334: 2 (0.05%)
+    • 172389996.83504617: 2 (0.05%)
+    • 174590499.20663103: 2 (0.05%)
+    • 10534084.343449999: 1 (0.02%)
+    • BGT NOV 24: 1 (0.02%)
+    • 205000289.97184065: 1 (0.02%)
+    • 36944341.162045784: 1 (0.02%)
+    • 12619800.000000004: 1 (0.02%)
+
+Colonna 'Unnamed: 44':
+  - Valori unici: 261
+  - Top 10 valori più frequenti:
+    • 0: 27 (0.64%)
+    • CUM 26-28: 5 (0.12%)
+    • 31335665.88217589: 4 (0.10%)
+    • 37827406.08995334: 4 (0.10%)
+    • 204729364.9979691: 4 (0.10%)
+    • 58099990.73258427: 4 (0.10%)
+    • 46338119.47813408: 3 (0.07%)
+    • 1497195.9155338854: 3 (0.07%)
+    • 63178596.25789909: 3 (0.07%)
+    • 125197312.214953: 3 (0.07%)
+
+Colonna 'Unnamed: 45':
+  - Valori unici: 181
+  - Top 10 valori più frequenti:
+    • % growth: 8 (0.19%)
+    • % on net sales: 5 (0.12%)
+    • 79000.0: 1 (0.02%)
+    • 135000.0: 1 (0.02%)
+    • 73000.0: 1 (0.02%)
+    • LE I: 1 (0.02%)
+    • 2025 - ifrs (LE): 1 (0.02%)
+    • 9081434.45442334: 1 (0.02%)
+    • 10057012.315000001: 1 (0.02%)
+    • 12931896.664448304: 1 (0.02%)
+
+Colonna 'Unnamed: 46':
+  - Valori unici: 182
+  - Top 10 valori più frequenti:
+    • 0: 43 (1.03%)
+    • 2500000: 3 (0.07%)
+    • 827450.6621563429: 3 (0.07%)
+    • 4615365.312315823: 3 (0.07%)
+    • 1280532.600015998: 3 (0.07%)
+    • Cost of Sales: 3 (0.07%)
+    • 5Y25 - 2026: 3 (0.07%)
+    • NEW 5Y - BASE: 3 (0.07%)
+    • 757221.6253969901: 3 (0.07%)
+    • 80000: 2 (0.05%)
+
+Colonna 'Unnamed: 47':
+  - Valori unici: 136
+  - Top 10 valori più frequenti:
+    • 0: 36 (0.86%)
+    • 300000: 4 (0.10%)
+    • 80000: 3 (0.07%)
+    • 3500000: 3 (0.07%)
+    • 2800000: 2 (0.05%)
+    • 900000: 2 (0.05%)
+    • 1: 2 (0.05%)
+    • 250000: 2 (0.05%)
+    • 120000: 2 (0.05%)
+    • 60000: 2 (0.05%)
+
+Colonna 'Unnamed: 48':
+  - Valori unici: 189
+  - Top 10 valori più frequenti:
+    • 0: 39 (0.93%)
+    • 3000000: 5 (0.12%)
+    • 300000: 3 (0.07%)
+    • 5Y25 - 2027: 3 (0.07%)
+    • 100000: 3 (0.07%)
+    • 1198792.131539617: 3 (0.07%)
+    • 1102894.5469313522: 3 (0.07%)
+    • 1491502.26958517: 3 (0.07%)
+    • 1926561.2967240685: 3 (0.07%)
+    • 6172281.87767036: 3 (0.07%)
+
+Colonna 'Unnamed: 49':
+  - Valori unici: 128
+  - Top 10 valori più frequenti:
+    • 0: 24 (0.57%)
+    • % growth: 14 (0.33%)
+    • % on net sales: 10 (0.24%)
+    • 35000: 3 (0.07%)
+    • 300000: 3 (0.07%)
+    • 20000: 3 (0.07%)
+    • PMI: 2 (0.05%)
+    • Net sales: 2 (0.05%)
+    • Advertising: 2 (0.05%)
+    • Marketing: 2 (0.05%)
+
+Colonna 'Unnamed: 50':
+  - Valori unici: 162
+  - Top 10 valori più frequenti:
+    • 0: 25 (0.60%)
+    • 50000: 5 (0.12%)
+    • 1729478.512969817: 3 (0.07%)
+    • 1389786.107744278: 3 (0.07%)
+    • 5Y25 - 2028: 3 (0.07%)
+    • 2504529.6857412886: 3 (0.07%)
+    • 1752080.8076348251: 3 (0.07%)
+    • 20000: 3 (0.07%)
+    • 35000: 3 (0.07%)
+    • 7630568.25536171: 3 (0.07%)
+
+Colonna 'Unnamed: 51':
+  - Valori unici: 148
+  - Top 10 valori più frequenti:
+    • 0: 20 (0.48%)
+    • % growth: 7 (0.17%)
+    • 70000: 5 (0.12%)
+    • % on net sales: 5 (0.12%)
+    • 50000: 3 (0.07%)
+    • 35000: 3 (0.07%)
+    • 0.05181347150259067: 2 (0.05%)
+    • 1.2808175996283637: 2 (0.05%)
+    • 0.7701961044563161: 2 (0.05%)
+    • 23618000: 2 (0.05%)
+
+Colonna 'Unnamed: 52':
+  - Valori unici: 179
+  - Top 10 valori più frequenti:
+    • 0: 28 (0.67%)
+    • 100000: 4 (0.10%)
+    • 3950000: 3 (0.07%)
+    • NEW 5Y - BASE: 3 (0.07%)
+    • 0.5048144169313268: 3 (0.07%)
+    • 5Y25 - 2026: 3 (0.07%)
+    • Cost of Sales %: 3 (0.07%)
+    • 0.4596948123090794: 3 (0.07%)
+    • 0.4395586011729355: 3 (0.07%)
+    • 35000: 3 (0.07%)
+
+Colonna 'Unnamed: 53':
+  - Valori unici: 124
+  - Top 10 valori più frequenti:
+    • 0: 38 (0.91%)
+    • 150000: 4 (0.10%)
+    • 20000: 4 (0.10%)
+    • 500000: 3 (0.07%)
+    • 0.7392301735605483: 2 (0.05%)
+    • 1.159747937165819: 2 (0.05%)
+    • 0.6374058964632194: 2 (0.05%)
+    • 7729364.642781167: 2 (0.05%)
+    • 0.16339104429290446: 2 (0.05%)
+    • 1981326.1341198492: 2 (0.05%)
+
+Colonna 'Unnamed: 54':
+  - Valori unici: 189
+  - Top 10 valori più frequenti:
+    • 0: 49 (1.17%)
+    • 0.4610738967460065: 3 (0.07%)
+    • 0.4408772769764543: 3 (0.07%)
+    • 5Y25 - 2027: 3 (0.07%)
+    • 20000: 3 (0.07%)
+    • 0.4842539836315487: 3 (0.07%)
+    • 0.5013157031506147: 3 (0.07%)
+    • 0.45870507064858773: 3 (0.07%)
+    • 0.23724293182174452: 2 (0.05%)
+    • 44641484.71516225: 2 (0.05%)
+
+Colonna 'Unnamed: 55':
+  - Valori unici: 124
+  - Top 10 valori più frequenti:
+    • 0: 45 (1.07%)
+    • 20000: 3 (0.07%)
+    • 57850215.851430155: 2 (0.05%)
+    • INT MM: 2 (0.05%)
+    • 6376610.307193575: 2 (0.05%)
+    • 27520742.79946796: 2 (0.05%)
+    • 0.47572411605422904: 2 (0.05%)
+    • 0.7868653166593957: 2 (0.05%)
+    • 15755000: 2 (0.05%)
+    • 0.11022621460168562: 2 (0.05%)
+
+Colonna 'Unnamed: 56':
+  - Valori unici: 91
+  - Top 10 valori più frequenti:
+    • 0: 6 (0.14%)
+    • 0.4963521813372421: 3 (0.07%)
+    • 0.4804106980471714: 3 (0.07%)
+    • 0.4587050706485877: 3 (0.07%)
+    • 5Y25 - 2028: 3 (0.07%)
+    • 0.4239204586312061: 3 (0.07%)
+    • 0.46107389674600663: 3 (0.07%)
+    • 4.2475528846658985: 2 (0.05%)
+    • 14.399575172545637: 2 (0.05%)
+    • 492206.63864785375: 2 (0.05%)
+
+Colonna 'Unnamed: 57':
+  - Valori unici: 47
+  - Top 10 valori più frequenti:
+    • TOTALE: 2 (0.05%)
+    • 211060556.11829266: 2 (0.05%)
+    • 348705550.61936873: 2 (0.05%)
+    • 1.6521587786584362: 2 (0.05%)
+    • 179427914.50863445: 2 (0.05%)
+    • 0.5145542254487652: 2 (0.05%)
+    • 0.8501252806709695: 2 (0.05%)
+    • 52534034.9718723: 2 (0.05%)
+    • 0.15065442714795235: 2 (0.05%)
+    • 35450000: 2 (0.05%)
+
+Colonna 'Unnamed: 58':
+  - Valori unici: 26
+  - Top 10 valori più frequenti:
+    • 0: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 2019 - cos: 1 (0.02%)
+    • 1464000: 1 (0.02%)
+    • 2264027.508626006: 1 (0.02%)
+    • 2863663.0346555267: 1 (0.02%)
+    • 1199871.730940038: 1 (0.02%)
+    • 264870.464985635: 1 (0.02%)
+    • 44536.30011558: 1 (0.02%)
+    • 78657.150275847: 1 (0.02%)
+
+Colonna 'Unnamed: 59':
+  - Valori unici: 173
+  - Top 10 valori più frequenti:
+    • 0: 23 (0.55%)
+    • 60686.517089: 2 (0.05%)
+    • ACT: 1 (0.02%)
+    • 3656897.3224559366: 1 (0.02%)
+    • 2020 - cos: 1 (0.02%)
+    • 4585170.259541746: 1 (0.02%)
+    • 10486345.088832265: 1 (0.02%)
+    • 7906127.797669748: 1 (0.02%)
+    • 612413.6459783481: 1 (0.02%)
+    • 208722.02021728893: 1 (0.02%)
+
+Colonna 'Unnamed: 60':
+  - Valori unici: 181
+  - Top 10 valori più frequenti:
+    • 0: 22 (0.52%)
+    • 90874.54354200602: 2 (0.05%)
+    • 46093.28945: 2 (0.05%)
+    • ACT: 1 (0.02%)
+    • 2021 - cos: 1 (0.02%)
+    • 2347011.4110525623: 1 (0.02%)
+    • 5365128.501116818: 1 (0.02%)
+    • 8649190.644050146: 1 (0.02%)
+    • 11427858.320744883: 1 (0.02%)
+    • 196109.102396155: 1 (0.02%)
+
+Colonna 'Unnamed: 61':
+  - Valori unici: 203
+  - Top 10 valori più frequenti:
+    • 0: 6 (0.14%)
+    • 1474000: 2 (0.05%)
+    • ITA PH: 2 (0.05%)
+    • 10.639901280288813: 1 (0.02%)
+    • 8124255.317887027: 1 (0.02%)
+    • 0.2491636568485396: 1 (0.02%)
+    • 2.651076711504219: 1 (0.02%)
+    • 8651285.715365985: 1 (0.02%)
+    • 0.26532720857949993: 1 (0.02%)
+    • 4499963.413187992: 1 (0.02%)
+
+Colonna 'Unnamed: 62':
+  - Valori unici: 223
+  - Top 10 valori più frequenti:
+    • 0: 18 (0.43%)
+    • FRANCIA MM: 2 (0.05%)
+    • 11185972.701139625: 1 (0.02%)
+    • 1.1618404250068322: 1 (0.02%)
+    • 7476746.997829314: 1 (0.02%)
+    • 0.5752974468803581: 1 (0.02%)
+    • 12996315.277206885: 1 (0.02%)
+    • 1981326.1341198492: 1 (0.02%)
+    • 0.15245291391127808: 1 (0.02%)
+    • 500000: 1 (0.02%)
+
+Colonna 'Unnamed: 63':
+  - Valori unici: 202
+  - Top 10 valori più frequenti:
+    • 0: 21 (0.50%)
+    • FRANCIA PH: 2 (0.05%)
+    • 44225000: 1 (0.02%)
+    • 3.988651090128134: 1 (0.02%)
+    • 15834255.728288308: 1 (0.02%)
+    • 0.3580385693225169: 1 (0.02%)
+    • 1.4280909298361744: 1 (0.02%)
+    • 10590876.714700688: 1 (0.02%)
+    • 0.2394771444816436: 1 (0.02%)
+    • 11087708.350689378: 1 (0.02%)
+
+Colonna 'Unnamed: 64':
+  - Valori unici: 145
+  - Top 10 valori più frequenti:
+    • 0: 26 (0.62%)
+    • INT MM: 2 (0.05%)
+    • 24,1%*RC[-16]: 1 (0.02%)
+    • 27,2%*RC[-16]: 1 (0.02%)
+    • 44000: 1 (0.02%)
+    • 36707810.52869788: 1 (0.02%)
+    • 56073243.45709922: 1 (0.02%)
+    • 1.52755619715487: 1 (0.02%)
+    • 29,5%*RC[-16]: 1 (0.02%)
+    • 0.46070451580135896: 1 (0.02%)
+
+Colonna 'Unnamed: 65':
+  - Valori unici: 207
+  - Top 10 valori più frequenti:
+    • 0: 3 (0.07%)
+    • 194797.95726507666: 2 (0.05%)
+    • INT PH: 2 (0.05%)
+    • 14.34980072966223: 1 (0.02%)
+    • 1969692.8040077244: 1 (0.02%)
+    • 487337.2118422865: 1 (0.02%)
+    • 6993191.878086: 1 (0.02%)
+    • 1567221.8158581879: 1 (0.02%)
+    • 0.22410679460537386: 1 (0.02%)
+    • 1245000: 1 (0.02%)
+
+Colonna 'Unnamed: 66':
+  - Valori unici: 215
+  - Top 10 valori più frequenti:
+    • TOTALE: 2 (0.05%)
+    • 217296086.1603631: 1 (0.02%)
+    • 341893904.65272164: 1 (0.02%)
+    • 1.5734011168540152: 1 (0.02%)
+    • 167665705.69015172: 1 (0.02%)
+    • 0.49040273432326315: 1 (0.02%)
+    • 0.7716002098924852: 1 (0.02%)
+    • 53189291.29184227: 1 (0.02%)
+    • 0.15557250529479089: 1 (0.02%)
+    • 35699963.413187996: 1 (0.02%)
+
+Colonna 'Unnamed: 67':
+  - Valori unici: 168
+  - Top 10 valori più frequenti:
+    • 0: 7 (0.17%)
+    • 212926.8291452683: 2 (0.05%)
+    • 0.275: 1 (0.02%)
+    • 0.12: 1 (0.02%)
+    • 117500018.32491556: 1 (0.02%)
+    • BGT NOV 24: 1 (0.02%)
+    • 2025 - cos (BDG): 1 (0.02%)
+    • 0.155: 1 (0.02%)
+    • 5036221.434090908: 1 (0.02%)
+    • 4637968.573589011: 1 (0.02%)
+
+Colonna 'Unnamed: 68':
+  - Valori unici: 163
+  - Top 10 valori più frequenti:
+    • 0: 2 (0.05%)
+    • 0.5636363636363636: 1 (0.02%)
+    • 0.4363636363636363: 1 (0.02%)
+    • 118499744.96452443: 1 (0.02%)
+    • BGT FEB 25: 1 (0.02%)
+    • 2025 - cos (new BDG): 1 (0.02%)
+    • 4607507.608815656: 1 (0.02%)
+    • 4695622.148523039: 1 (0.02%)
+    • 7742373.86167615: 1 (0.02%)
+    • 17715405.07991065: 1 (0.02%)
+
+Colonna 'Unnamed: 69':
+  - Valori unici: 164
+  - Top 10 valori più frequenti:
+    • 118500490.58653964: 1 (0.02%)
+    • LE I: 1 (0.02%)
+    • 2025 - cos (LE): 1 (0.02%)
+    • 4074825.436023708: 1 (0.02%)
+    • 5745688.696684375: 1 (0.02%)
+    • 7671432.180502506: 1 (0.02%)
+    • 17243530.02201614: 1 (0.02%)
+    • 10228934.467603005: 1 (0.02%)
+    • 297975.931959179: 1 (0.02%)
+    • 332945.79229631: 1 (0.02%)
+
+Colonna 'Unnamed: 70':
+  - Valori unici: 120
+  - Top 10 valori più frequenti:
+    • 0: 42 (1.00%)
+    • NEW 2025: 1 (0.02%)
+    • 5Y 2023: 1 (0.02%)
+    • 116198341.35860679: 1 (0.02%)
+    • 4975793.449860055: 1 (0.02%)
+    • 2760505.798817933: 1 (0.02%)
+    • 6601211.782324694: 1 (0.02%)
+    • 5Y23 - 2025 - cos: 1 (0.02%)
+    • 16711371.433039661: 1 (0.02%)
+    • 10717354.018796422: 1 (0.02%)
+
+Colonna 'Unnamed: 71':
+  - Valori unici: 132
+  - Top 10 valori più frequenti:
+    • 0: 41 (0.98%)
+    • % growth: 7 (0.17%)
+    • % on net sales: 5 (0.12%)
+    • Volumes: 1 (0.02%)
+    • PMI: 1 (0.02%)
+    • Net sales: 1 (0.02%)
+    • Cos Uni: 1 (0.02%)
+    • Cost of sales: 1 (0.02%)
+    • Advertising: 1 (0.02%)
+    • Marketing: 1 (0.02%)
+
+Colonna 'Unnamed: 72':
+  - Valori unici: 120
+  - Top 10 valori più frequenti:
+    • 0: 36 (0.86%)
+    • NEW 2027: 1 (0.02%)
+    • 5Y 2023: 1 (0.02%)
+    • 116476203.42901143: 1 (0.02%)
+    • 5110480.666618334: 1 (0.02%)
+    • 2388744.0358403935: 1 (0.02%)
+    • 6366766.773988156: 1 (0.02%)
+    • 5Y23 - 2027 - cos: 1 (0.02%)
+    • 16827424.899262726: 1 (0.02%)
+    • 10251766.077866562: 1 (0.02%)
+
+Colonna 'Unnamed: 73':
+  - Valori unici: 123
+  - Top 10 valori più frequenti:
+    • 0: 24 (0.57%)
+    • 210647605.46037737: 1 (0.02%)
+    • ACT 2021: 1 (0.02%)
+    • 295441703.2455689: 1 (0.02%)
+    • 0.04560538369936329: 1 (0.02%)
+    • 1.4025400507158445: 1 (0.02%)
+    • 145900219.87007958: 1 (0.02%)
+    • 0.4938375939053142: 1 (0.02%)
+    • 0.049587082301147944: 1 (0.02%)
+    • 0.6926270040013499: 1 (0.02%)
+
+Colonna 'Unnamed: 74':
+  - Valori unici: 106
+  - Top 10 valori più frequenti:
+    • 0: 19 (0.45%)
+    • 2026: 1 (0.02%)
+    • 116420102.24846801: 1 (0.02%)
+    • 5Y 2024: 1 (0.02%)
+    • 4983517.462339564: 1 (0.02%)
+    • 5Y24 - 2026 - cos: 1 (0.02%)
+    • 3791523.9263466992: 1 (0.02%)
+    • 7739307.588903511: 1 (0.02%)
+    • 18459579.806522876: 1 (0.02%)
+    • 964499.0778808894: 1 (0.02%)
+
+Colonna 'Unnamed: 75':
+  - Valori unici: 128
+  - Top 10 valori più frequenti:
+    • 0: 20 (0.48%)
+    • LE 2022: 1 (0.02%)
+    • -0.03332032062754875: 1 (0.02%)
+    • 203628759.7070122: 1 (0.02%)
+    • 0.048630697091190056: 1 (0.02%)
+    • 1.521441468631313: 1 (0.02%)
+    • 166780658.07277554: 1 (0.02%)
+    • 309809239.22420937: 1 (0.02%)
+    • 0.14311450812952486: 1 (0.02%)
+    • 0.8190427438282543: 1 (0.02%)
+
+Colonna 'Unnamed: 76':
+  - Valori unici: 103
+  - Top 10 valori più frequenti:
+    • 0: 22 (0.52%)
+    • 121504579.18385434: 1 (0.02%)
+    • 2028: 1 (0.02%)
+    • 5Y24 - 2028 - cos: 1 (0.02%)
+    • 5342977.771308338: 1 (0.02%)
+    • 3527675.235008375: 1 (0.02%)
+    • 5Y 2024: 1 (0.02%)
+    • 8860285.233528068: 1 (0.02%)
+    • 18815267.70419719: 1 (0.02%)
+    • 1459607.231957232: 1 (0.02%)
+
+Colonna 'Unnamed: 77':
+  - Valori unici: 125
+  - Top 10 valori più frequenti:
+    • 0: 39 (0.93%)
+    • 21,4%*RC[-32]: 4 (0.10%)
+    • 204740323.69522843: 1 (0.02%)
+    • 326622764.307508: 1 (0.02%)
+    • 0.005458776991106751: 1 (0.02%)
+    • 1.5953025687001983: 1 (0.02%)
+    • 174656244.59633538: 1 (0.02%)
+    • 0.5347338387960627: 1 (0.02%)
+    • 0.0472212222602173: 1 (0.02%)
+    • 0.8530622666022767: 1 (0.02%)
+
+Colonna 'Unnamed: 78':
+  - Valori unici: 96
+  - Top 10 valori più frequenti:
+    • 0: 44 (1.05%)
+    • 126178703.34949602: 1 (0.02%)
+    • 5Y25 - 2027 - cos: 1 (0.02%)
+    • 5Y 2025: 1 (0.02%)
+    • 4714996.885394123: 1 (0.02%)
+    • 8859931.719465867: 1 (0.02%)
+    • 19714523.32818479: 1 (0.02%)
+    • 5124743.101006247: 1 (0.02%)
+    • 384742.86645919655: 1 (0.02%)
+    • 422530.1288068121: 1 (0.02%)
+
+Colonna 'Unnamed: 79':
+  - Valori unici: 117
+  - Top 10 valori più frequenti:
+    • 0: 48 (1.14%)
+    • 211060556.11829266: 1 (0.02%)
+    • 0.030869504887920174: 1 (0.02%)
+    • 348705550.61936873: 1 (0.02%)
+    • EST 2024: 1 (0.02%)
+    • 1.6521585787823307: 1 (0.02%)
+    • 179427914.50863445: 1 (0.02%)
+    • 0.5145542254487652: 1 (0.02%)
+    • 0.02732035103197905: 1 (0.02%)
+    • 0.8501269118907063: 1 (0.02%)
+
+Colonna 'Unnamed: 80':
+  - Valori unici: 21
+  - Top 10 valori più frequenti:
+    • 21,4%*RC[-32]: 4 (0.10%)
+    • 0: 2 (0.05%)
+    • GO ABS: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 2017 - go: 1 (0.02%)
+    • 2657000: 1 (0.02%)
+    • 2088771.288: 1 (0.02%)
+    • 3219426.4529999997: 1 (0.02%)
+    • 1166119.571: 1 (0.02%)
+    • 262652.07300000003: 1 (0.02%)
+
+Colonna 'Unnamed: 81':
+  - Valori unici: 17
+  - Top 10 valori più frequenti:
+    • 0: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 2018 - go: 1 (0.02%)
+    • 2094000: 1 (0.02%)
+    • 2500083.3949999996: 1 (0.02%)
+    • 3359237.789999999: 1 (0.02%)
+    • 1160722.992: 1 (0.02%)
+    • 273131.882: 1 (0.02%)
+    • 46680.270000000004: 1 (0.02%)
+    • 62932.272: 1 (0.02%)
+
+Colonna 'Unnamed: 82':
+  - Valori unici: 18
+  - Top 10 valori più frequenti:
+    • 0: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 2019 - go: 1 (0.02%)
+    • 1581000: 1 (0.02%)
+    • 3067154.915: 1 (0.02%)
+    • 2938062.6550000003: 1 (0.02%)
+    • 1042383.644: 1 (0.02%)
+    • 272786.25: 1 (0.02%)
+    • 53997.146: 1 (0.02%)
+    • 66498.253: 1 (0.02%)
+
+Colonna 'Unnamed: 83':
+  - Valori unici: 185
+  - Top 10 valori più frequenti:
+    • 0: 25 (0.60%)
+    • % growth: 8 (0.19%)
+    • % on net sales: 5 (0.12%)
+    • 16939.422959264615: 2 (0.05%)
+    • 13920.455000000002: 2 (0.05%)
+    • ACT: 1 (0.02%)
+    • 2020 - go: 1 (0.02%)
+    • 1106195.3426121864: 1 (0.02%)
+    • 513212.6999693522: 1 (0.02%)
+    • 42750.539977138484: 1 (0.02%)
+
+Colonna 'Unnamed: 84':
+  - Valori unici: 172
+  - Top 10 valori più frequenti:
+    • 0: 30 (0.72%)
+    • 7794.67369886911: 2 (0.05%)
+    • 17521.56586388652: 2 (0.05%)
+    • 21694773.798352122: 1 (0.02%)
+    • 1067766.4031966594: 1 (0.02%)
+    • 547657.5157530248: 1 (0.02%)
+    • 3066914.888039927: 1 (0.02%)
+    • 1230324.3879511764: 1 (0.02%)
+    • 1480749.3712331797: 1 (0.02%)
+    • 44615.46962122247: 1 (0.02%)
+
+Colonna 'Unnamed: 85':
+  - Valori unici: 166
+  - Top 10 valori più frequenti:
+    • 0: 27 (0.64%)
+    • 22695423.13057094: 1 (0.02%)
+    • 2022 - go: 1 (0.02%)
+    • 1185617.1122512887: 1 (0.02%)
+    • 644709.5214057701: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 1446103.5763214452: 1 (0.02%)
+    • 3638345.8004893214: 1 (0.02%)
+    • 1457477.5498687844: 1 (0.02%)
+    • 38200.529875994696: 1 (0.02%)
+
+Colonna 'Unnamed: 86':
+  - Valori unici: 172
+  - Top 10 valori più frequenti:
+    • 0: 22 (0.52%)
+    • 1000: 3 (0.07%)
+    • 2023 - go: 1 (0.02%)
+    • 24354272.85511299: 1 (0.02%)
+    • 1042026.337708: 1 (0.02%)
+    • 808015.905131: 1 (0.02%)
+    • 4709443.888777: 1 (0.02%)
+    • 1630523.153984: 1 (0.02%)
+    • 1621486.05462: 1 (0.02%)
+    • 36079.44177: 1 (0.02%)
+
+Colonna 'Unnamed: 87':
+  - Valori unici: 182
+  - Top 10 valori più frequenti:
+    • 0: 27 (0.64%)
+    • 23570000.000000037: 1 (0.02%)
+    • 2024 - go (BDG): 1 (0.02%)
+    • 1185472.006581554: 1 (0.02%)
+    • 763065.081384823: 1 (0.02%)
+    • BGT: 1 (0.02%)
+    • 1398123.345711192: 1 (0.02%)
+    • 4422116.863791372: 1 (0.02%)
+    • 42966.13743365: 1 (0.02%)
+    • 1590727.382922035: 1 (0.02%)
+
+Colonna 'Unnamed: 88':
+  - Valori unici: 99
+  - Top 10 valori più frequenti:
+    • 0: 27 (0.64%)
+    • LE I: 1 (0.02%)
+    • 24069999.999999993: 1 (0.02%)
+    • 2024 - go (LE): 1 (0.02%)
+    • 1233597.384539107: 1 (0.02%)
+    • 1427925.281831851: 1 (0.02%)
+    • 823883.39543659: 1 (0.02%)
+    • 4530953.904963403: 1 (0.02%)
+    • 1544963.698945807: 1 (0.02%)
+    • 25075.422541988: 1 (0.02%)
+
+Colonna 'Unnamed: 89':
+  - Valori unici: 184
+  - Top 10 valori più frequenti:
+    • LE II 2024: 1 (0.02%)
+    • 24380000.000000007: 1 (0.02%)
+    • LE II: 1 (0.02%)
+    • 2024 - go (LEII): 1 (0.02%)
+    • 1250988.723932267: 1 (0.02%)
+    • 956852.735493436: 1 (0.02%)
+    • 1407913.804258995: 1 (0.02%)
+    • 4448691.613027904: 1 (0.02%)
+    • 1629998.465023943: 1 (0.02%)
+    • 35204.869439125: 1 (0.02%)
+
+Colonna 'Unnamed: 90':
+  - Valori unici: 172
+  - Top 10 valori più frequenti:
+    • 24820804.345703002: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 2024 - go: 1 (0.02%)
+    • 1304120.474259: 1 (0.02%)
+    • 938656.287093: 1 (0.02%)
+    • 1483567.943317: 1 (0.02%)
+    • 4620167.535126: 1 (0.02%)
+    • 1590717.432359: 1 (0.02%)
+    • 48602.367793: 1 (0.02%)
+    • 50168.915829: 1 (0.02%)
+
+Colonna 'Unnamed: 91':
+  - Valori unici: 153
+  - Top 10 valori più frequenti:
+    • 0: 6 (0.14%)
+    • 24699999.999999993: 1 (0.02%)
+    • BGT NOV 24: 1 (0.02%)
+    • 2025 - go (BDG): 1 (0.02%)
+    • 1275448.5952894: 1 (0.02%)
+    • 972652.190923973: 1 (0.02%)
+    • 1565744.50962182: 1 (0.02%)
+    • 4473156.517711283: 1 (0.02%)
+    • BGT 2025: 1 (0.02%)
+    • 1527983.416312923: 1 (0.02%)
+
+Colonna 'Unnamed: 92':
+  - Valori unici: 157
+  - Top 10 valori più frequenti:
+    • 0: 2 (0.05%)
+    • 274199.49294954544: 2 (0.05%)
+    • BGT FEB 25: 1 (0.02%)
+    • 24699999.99999996: 1 (0.02%)
+    • BGT 2025 - feb25: 1 (0.02%)
+    • 973231.19978546: 1 (0.02%)
+    • 1550574.370149202: 1 (0.02%)
+    • 4509685.222994029: 1 (0.02%)
+    • 1556401.416179734: 1 (0.02%)
+    • 72277.582676293: 1 (0.02%)
+
+Colonna 'Unnamed: 93':
+  - Valori unici: 162
+  - Top 10 valori più frequenti:
+    • 120000.0: 1 (0.02%)
+    • 24700000.00000002: 1 (0.02%)
+    • LE I: 1 (0.02%)
+    • 2025 - go (LE): 1 (0.02%)
+    • 1088890.443019903: 1 (0.02%)
+    • 1205865.070115986: 1 (0.02%)
+    • 1550572.0774299: 1 (0.02%)
+    • 4443427.102412471: 1 (0.02%)
+    • 1648163.40314878: 1 (0.02%)
+    • 57677.292635963: 1 (0.02%)
+
+Colonna 'Unnamed: 94':
+  - Valori unici: 118
+  - Top 10 valori più frequenti:
+    • 0: 40 (0.95%)
+    • 569779.9073378425: 2 (0.05%)
+    • 5Y23 - 2025 - GO: 1 (0.02%)
+    • 1283828.2870890948: 1 (0.02%)
+    • 603695.1937458281: 1 (0.02%)
+    • 23807952.967493: 1 (0.02%)
+    • 1354384.16565807: 1 (0.02%)
+    • 3938854.5558874384: 1 (0.02%)
+    • 1619634.522734383: 1 (0.02%)
+    • 83570.61778758801: 1 (0.02%)
+
+Colonna 'Unnamed: 95':
+  - Valori unici: 120
+  - Top 10 valori più frequenti:
+    • 0: 38 (0.91%)
+    • 8046.995201665642: 2 (0.05%)
+    • 5Y23 - 2026 - GO: 1 (0.02%)
+    • 24202730.121938314: 1 (0.02%)
+    • 534605.5808570827: 1 (0.02%)
+    • 1332647.006646936: 1 (0.02%)
+    • 4060352.7758181454: 1 (0.02%)
+    • 5Y 2023: 1 (0.02%)
+    • 1578952.305502: 1 (0.02%)
+    • 165534.38065024218: 1 (0.02%)
+
+Colonna 'Unnamed: 96':
+  - Valori unici: 119
+  - Top 10 valori più frequenti:
+    • 0: 35 (0.83%)
+    • 659971.9067506216: 2 (0.05%)
+    • 31627.36997630257: 2 (0.05%)
+    • 5Y23 - 2027 - GO: 1 (0.02%)
+    • 1415585.5967766063: 1 (0.02%)
+    • 527537.9182630923: 1 (0.02%)
+    • 24531388.154730912: 1 (0.02%)
+    • 1315028.9724603647: 1 (0.02%)
+    • 4127292.168578466: 1 (0.02%)
+    • 1558078.0338017298: 1 (0.02%)
+
+Colonna 'Unnamed: 97':
+  - Valori unici: 98
+  - Top 10 valori più frequenti:
+    • 0: 24 (0.57%)
+    • 3815: 2 (0.05%)
+    • 3439.9999999999995: 2 (0.05%)
+    • 7630: 2 (0.05%)
+    • 23938241.99263283: 1 (0.02%)
+    • 5Y24 - 2025 - GO: 1 (0.02%)
+    • 1511261.9229842992: 1 (0.02%)
+    • 5Y 2024: 1 (0.02%)
+    • 1166636.5785639624: 1 (0.02%)
+    • 788619.9838649279: 1 (0.02%)
+
+Colonna 'Unnamed: 98':
+  - Valori unici: 100
+  - Top 10 valori più frequenti:
+    • 0: 19 (0.45%)
+    • 3570: 3 (0.07%)
+    • 8200: 2 (0.05%)
+    • 7140: 2 (0.05%)
+    • 3279.9999999999995: 2 (0.05%)
+    • 1169282.342844489: 1 (0.02%)
+    • 1556086.8450941772: 1 (0.02%)
+    • 780811.8652127997: 1 (0.02%)
+    • 5Y24 - 2026 - GO: 1 (0.02%)
+    • 63203.37656525338: 1 (0.02%)
+
+Colonna 'Unnamed: 99':
+  - Valori unici: 102
+  - Top 10 valori più frequenti:
+    • 0: 20 (0.48%)
+    • 3430: 3 (0.07%)
+    • 6860: 2 (0.05%)
+    • 5Y 2024: 1 (0.02%)
+    • 24778546.584250584: 1 (0.02%)
+    • 1000: 1 (0.02%)
+    • 1167490.7376295936: 1 (0.02%)
+    • 726514.2781853281: 1 (0.02%)
+    • 1636271.1510296036: 1 (0.02%)
+    • 4538648.028580657: 1 (0.02%)
+
+Colonna 'Unnamed: 100':
+  - Valori unici: 99
+  - Top 10 valori più frequenti:
+    • 0: 22 (0.52%)
+    • 3360: 3 (0.07%)
+    • 6720: 2 (0.05%)
+    • 5Y 2024: 1 (0.02%)
+    • 5Y24 - 2028 - GO: 1 (0.02%)
+    • 713304.9276728675: 1 (0.02%)
+    • 1202209.4999506872: 1 (0.02%)
+    • 1721373.9555692219: 1 (0.02%)
+    • 4610207.938041042: 1 (0.02%)
+    • 241903.70464346767: 1 (0.02%)
+
+Colonna 'Unnamed: 101':
+  - Valori unici: 101
+  - Top 10 valori più frequenti:
+    • 0: 39 (0.93%)
+    • 3137.1982060240675: 2 (0.05%)
+    • 5Y 2025: 1 (0.02%)
+    • 1287106.2208484677: 1 (0.02%)
+    • 5Y25 - 2026 - GO: 1 (0.02%)
+    • 961610.6241492957: 1 (0.02%)
+    • 1669142.0864815472: 1 (0.02%)
+    • 71414.57384912622: 1 (0.02%)
+    • 4838828.466885097: 1 (0.02%)
+    • 5923.571155368798: 1 (0.02%)
+
+Colonna 'Unnamed: 102':
+  - Valori unici: 96
+  - Top 10 valori più frequenti:
+    • 0: 44 (1.05%)
+    • 25471363.565667: 1 (0.02%)
+    • 5Y25 - 2027 - GO: 1 (0.02%)
+    • 5Y 2025: 1 (0.02%)
+    • 939755.9404059376: 1 (0.02%)
+    • 1688797.3927023131: 1 (0.02%)
+    • 4874573.781909217: 1 (0.02%)
+    • 1264971.6316537831: 1 (0.02%)
+    • 69791.52301447047: 1 (0.02%)
+    • 78150.7598453344: 1 (0.02%)
+
+Colonna 'Unnamed: 103':
+  - Valori unici: 94
+  - Top 10 valori più frequenti:
+    • 0: 46 (1.10%)
+    • 25876569.650992952: 1 (0.02%)
+    • 5Y25 - 2028 - GO: 1 (0.02%)
+    • 1301851.0144827692: 1 (0.02%)
+    • 888256.3293740537: 1 (0.02%)
+    • 5Y 2025: 1 (0.02%)
+    • 1666987.2503815095: 1 (0.02%)
+    • 4925501.678208687: 1 (0.02%)
+    • 76945.8502616028: 1 (0.02%)
+    • 68715.49412991728: 1 (0.02%)
+
+Colonna 'Unnamed: 104':
+  - Valori unici: 12
+  - Top 10 valori più frequenti:
+    • 0: 1 (0.02%)
+    • ADV: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 2017 - adv: 1 (0.02%)
+    • 4077000: 1 (0.02%)
+    • 882768.88: 1 (0.02%)
+    • 2488270.3263454996: 1 (0.02%)
+    • 1070474.262321844: 1 (0.02%)
+    • 472000: 1 (0.02%)
+    • 1754000: 1 (0.02%)
+
+Colonna 'Unnamed: 105':
+  - Valori unici: 11
+  - Top 10 valori più frequenti:
+    • 0: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 2018 - adv: 1 (0.02%)
+    • 2686000: 1 (0.02%)
+    • 1890443.07: 1 (0.02%)
+    • 2641249.6919595003: 1 (0.02%)
+    • 1088697.35: 1 (0.02%)
+    • 459000: 1 (0.02%)
+    • 1467000: 1 (0.02%)
+    • 119000: 1 (0.02%)
+
+Colonna 'Unnamed: 106':
+  - Valori unici: 11
+  - Top 10 valori più frequenti:
+    • 0: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 2019 - adv: 1 (0.02%)
+    • 1525000: 1 (0.02%)
+    • 1681896.898278318: 1 (0.02%)
+    • 2609562.242495967: 1 (0.02%)
+    • 324771.79460678: 1 (0.02%)
+    • 396000: 1 (0.02%)
+    • 677000: 1 (0.02%)
+    • 102000: 1 (0.02%)
+
+Colonna 'Unnamed: 107':
+  - Valori unici: 79
+  - Top 10 valori più frequenti:
+    • 0: 119 (2.84%)
+    • ACT: 1 (0.02%)
+    • 6993325.370896: 1 (0.02%)
+    • 2020 - adv: 1 (0.02%)
+    • 1696301.1503980001: 1 (0.02%)
+    • 75910.15000000001: 1 (0.02%)
+    • 2356571.143074: 1 (0.02%)
+    • 1545060.25: 1 (0.02%)
+    • 8333.33: 1 (0.02%)
+    • 1173149.347424: 1 (0.02%)
+
+Colonna 'Unnamed: 108':
+  - Valori unici: 93
+  - Top 10 valori più frequenti:
+    • 0: 103 (2.46%)
+    • 8310705.277000001: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 2021 - adv: 1 (0.02%)
+    • 1147615.3790000002: 1 (0.02%)
+    • 634352.2920000004: 1 (0.02%)
+    • 2299130.329: 1 (0.02%)
+    • 59399.518000000004: 1 (0.02%)
+    • 1797422.588: 1 (0.02%)
+    • 57447.752: 1 (0.02%)
+
+Colonna 'Unnamed: 109':
+  - Valori unici: 87
+  - Top 10 valori più frequenti:
+    • 0: 17 (0.41%)
+    • 15000: 2 (0.05%)
+    • 9000.0: 1 (0.02%)
+    • 75000.0: 1 (0.02%)
+    • 4891000: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 5000.0: 1 (0.02%)
+    • 2022 - adv: 1 (0.02%)
+    • 288000: 1 (0.02%)
+    • 114000: 1 (0.02%)
+
+Colonna 'Unnamed: 110':
+  - Valori unici: 112
+  - Top 10 valori più frequenti:
+    • 0: 71 (1.69%)
+    • 7786567.1300563: 1 (0.02%)
+    • 2023 - adv: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 251523.7599982: 1 (0.02%)
+    • 659767.6100043: 1 (0.02%)
+    • 2598294.5800007: 1 (0.02%)
+    • 37832.8100002: 1 (0.02%)
+    • 3482079.570002: 1 (0.02%)
+    • 301332.6300013: 1 (0.02%)
+
+Colonna 'Unnamed: 111':
+  - Valori unici: 79
+  - Top 10 valori più frequenti:
+    • 0: 83 (1.98%)
+    • 200000: 3 (0.07%)
+    • 100000: 3 (0.07%)
+    • 3000000: 2 (0.05%)
+    • 11000000: 1 (0.02%)
+    • BGT: 1 (0.02%)
+    • BDG 2024: 1 (0.02%)
+    • 2024 - adv (BDG): 1 (0.02%)
+    • 1000000: 1 (0.02%)
+    • 3300000: 1 (0.02%)
+
+Colonna 'Unnamed: 112':
+  - Valori unici: 40
+  - Top 10 valori più frequenti:
+    • 0: 82 (1.95%)
+    • 1000000: 2 (0.05%)
+    • 6000.0: 1 (0.02%)
+    • 5000.0: 1 (0.02%)
+    • 75000.0: 1 (0.02%)
+    • 11000000: 1 (0.02%)
+    • LE I: 1 (0.02%)
+    • 9000.0: 1 (0.02%)
+    • 2024 - adv (LE): 1 (0.02%)
+    • 200000: 1 (0.02%)
+
+Colonna '300.5':
+  - Valori unici: 27
+  - Top 10 valori più frequenti:
+    • 207: 1 (0.02%)
+    • 10.2: 1 (0.02%)
+    • 83.3: 1 (0.02%)
+    • 5Y24 - 2026: 1 (0.02%)
+    • 43506247.18883936: 1 (0.02%)
+    • 0.25264631552639627: 1 (0.02%)
+    • 79400764.59307529: 1 (0.02%)
+    • 0.2693149717460177: 1 (0.02%)
+    • 1.8250428323186638: 1 (0.02%)
+    • 34379133.19822025: 1 (0.02%)
+
+Colonna '298':
+  - Valori unici: 28
+  - Top 10 valori più frequenti:
+    • 210: 1 (0.02%)
+    • 11: 1 (0.02%)
+    • 77: 1 (0.02%)
+    • 5Y25 - 2026: 1 (0.02%)
+    • 42937271.408056825: 1 (0.02%)
+    • 0.16202159632897795: 1 (0.02%)
+    • 78312796.71506405: 1 (0.02%)
+    • 0.2025321893730938: 1 (0.02%)
+    • 1.823888527307986: 1 (0.02%)
+    • 34698494.385274366: 1 (0.02%)
+
+Colonna 'Modifiche 24/06':
+  - Valori unici: 18
+  - Top 10 valori più frequenti:
+    • Subcategory: 1 (0.02%)
+    • Category: 1 (0.02%)
+    • Δ vs PLAN 24: 1 (0.02%)
+    • -6235530.042070448: 1 (0.02%)
+    • 6811645.9666470885: 1 (0.02%)
+    • 11762208.818482727: 1 (0.02%)
+    • -655256.319969967: 1 (0.02%)
+    • -249963.41318799555: 1 (0.02%)
+    • -650738.8787165284: 1 (0.02%)
+    • -3394604.2399611473: 1 (0.02%)
+
+Colonna 'old':
+  - Valori unici: 2
+  - Top 10 valori più frequenti:
+    • NR DEO, BT DEO, CH DEO, SC DEO: 1 (0.02%)
+    • Saponi liquidi, Saponi solidi, Soaps: 1 (0.02%)
+
+Colonna 'new':
+  - Valori unici: 40
+  - Top 10 valori più frequenti:
+    • ITA MASS: 2 (0.05%)
+    • DEODORANTI: 1 (0.02%)
+    • SAPONI: 1 (0.02%)
+    • PLAN 2024 5Y: 1 (0.02%)
+    • 154762745.77440923: 1 (0.02%)
+    • 189000053.212288: 1 (0.02%)
+    • 1.2212244766436553: 1 (0.02%)
+    • 108427558.36582471: 1 (0.02%)
+    • 0.573690623483778: 1 (0.02%)
+    • 0.700605031419349: 1 (0.02%)
+
+Colonna 'Unnamed: 113':
+  - Valori unici: 75
+  - Top 10 valori più frequenti:
+    • 0: 10 (0.24%)
+    • 250000: 2 (0.05%)
+    • 35000: 2 (0.05%)
+    • LE II: 1 (0.02%)
+    • 2024 - adv (LEII): 1 (0.02%)
+    • 200000: 1 (0.02%)
+    • 270000: 1 (0.02%)
+    • 4400000: 1 (0.02%)
+    • 3230000: 1 (0.02%)
+    • 12000000: 1 (0.02%)
+
+Colonna 'Unnamed: 114':
+  - Valori unici: 102
+  - Top 10 valori più frequenti:
+    • 0: 2 (0.05%)
+    • 11945077.8200021: 1 (0.02%)
+    • 2024 - adv: 1 (0.02%)
+    • 276462.7700032: 1 (0.02%)
+    • 198683.55: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 4728.9999998: 1 (0.02%)
+    • 3203286.0400011: 1 (0.02%)
+    • 3877364.0300009: 1 (0.02%)
+    • 151173.2899976: 1 (0.02%)
+
+Colonna 'Unnamed: 115':
+  - Valori unici: 66
+  - Top 10 valori più frequenti:
+    • 0: 20 (0.48%)
+    • 2000000: 2 (0.05%)
+    • 400000: 2 (0.05%)
+    • BGT 2025: 1 (0.02%)
+    • 14000000: 1 (0.02%)
+    • 2025 - adv (BDG): 1 (0.02%)
+    • 4500000: 1 (0.02%)
+    • 3500000: 1 (0.02%)
+    • 3000000: 1 (0.02%)
+    • BGT NOV 24: 1 (0.02%)
+
+Colonna 'Unnamed: 116':
+  - Valori unici: 81
+  - Top 10 valori più frequenti:
+    • 400000: 2 (0.05%)
+    • 0: 2 (0.05%)
+    • BGT 2025 - feb25: 1 (0.02%)
+    • BGT FEB 25: 1 (0.02%)
+    • 14000000: 1 (0.02%)
+    • 2000000: 1 (0.02%)
+    • 4500000: 1 (0.02%)
+    • 3500000: 1 (0.02%)
+    • 2025 - adv (new BDG): 1 (0.02%)
+    • 200000: 1 (0.02%)
+
+Colonna 'Unnamed: 117':
+  - Valori unici: 79
+  - Top 10 valori più frequenti:
+    • 0: 2 (0.05%)
+    • 400: 2 (0.05%)
+    • 14000000: 1 (0.02%)
+    • 180000: 1 (0.02%)
+    • 2400000: 1 (0.02%)
+    • LE I: 1 (0.02%)
+    • 2025 - adv (LE): 1 (0.02%)
+    • 3450000: 1 (0.02%)
+    • 3000000: 1 (0.02%)
+    • 200000: 1 (0.02%)
+
+Colonna 'Unnamed: 118':
+  - Valori unici: 44
+  - Top 10 valori più frequenti:
+    • 0: 105 (2.50%)
+    • 100000: 3 (0.07%)
+    • 700000: 3 (0.07%)
+    • 300000: 3 (0.07%)
+    • 1500000: 2 (0.05%)
+    • 200000: 2 (0.05%)
+    • 400000: 2 (0.05%)
+    • 1300000: 1 (0.02%)
+    • 5Y23 - 2025 - adv: 1 (0.02%)
+    • NEW 2025: 1 (0.02%)
+
+Colonna 'Unnamed: 119':
+  - Valori unici: 42
+  - Top 10 valori più frequenti:
+    • 0: 105 (2.50%)
+    • 300000: 3 (0.07%)
+    • 100000: 3 (0.07%)
+    • 400000: 3 (0.07%)
+    • 200000: 3 (0.07%)
+    • 700000: 2 (0.05%)
+    • 800000: 2 (0.05%)
+    • 150000: 2 (0.05%)
+    • 750000: 2 (0.05%)
+    • 13788000: 1 (0.02%)
+
+Colonna 'Unnamed: 120':
+  - Valori unici: 40
+  - Top 10 valori più frequenti:
+    • 0: 94 (2.24%)
+    • 300000: 4 (0.10%)
+    • 100000: 3 (0.07%)
+    • 2000000: 3 (0.07%)
+    • 700000: 2 (0.05%)
+    • 800000: 2 (0.05%)
+    • 900000: 2 (0.05%)
+    • 200000: 2 (0.05%)
+    • 400000: 2 (0.05%)
+    • 500000: 2 (0.05%)
+
+Colonna 'Unnamed: 121':
+  - Valori unici: 34
+  - Top 10 valori più frequenti:
+    • 0: 81 (1.93%)
+    • 1000000: 3 (0.07%)
+    • 200000: 3 (0.07%)
+    • 20000: 2 (0.05%)
+    • 1600000: 2 (0.05%)
+    • 100000: 2 (0.05%)
+    • 13000000: 1 (0.02%)
+    • 2025: 1 (0.02%)
+    • 5Y 2024: 1 (0.02%)
+    • 3600000: 1 (0.02%)
+
+Colonna 'Unnamed: 122':
+  - Valori unici: 36
+  - Top 10 valori più frequenti:
+    • 0: 78 (1.86%)
+    • 400000: 4 (0.10%)
+    • 1000000: 3 (0.07%)
+    • 1600000: 2 (0.05%)
+    • 700000: 2 (0.05%)
+    • 50000: 2 (0.05%)
+    • 13800000: 1 (0.02%)
+    • 2026: 1 (0.02%)
+    • 5Y24 - 2026 - adv: 1 (0.02%)
+    • 5Y 2024: 1 (0.02%)
+
+Colonna 'Unnamed: 123':
+  - Valori unici: 39
+  - Top 10 valori più frequenti:
+    • 0: 75 (1.79%)
+    • 1000000: 3 (0.07%)
+    • 1600000: 3 (0.07%)
+    • 700000: 2 (0.05%)
+    • 4000000: 2 (0.05%)
+    • 400000: 2 (0.05%)
+    • 2000000: 2 (0.05%)
+    • 3600000: 1 (0.02%)
+    • 5Y24 - 2027 - adv: 1 (0.02%)
+    • 16500000: 1 (0.02%)
+
+Colonna 'Unnamed: 124':
+  - Valori unici: 43
+  - Top 10 valori più frequenti:
+    • 0: 75 (1.79%)
+    • 100000: 3 (0.07%)
+    • 1000000: 2 (0.05%)
+    • 600000: 2 (0.05%)
+    • 5Y 2024: 1 (0.02%)
+    • 2028: 1 (0.02%)
+    • 19500000: 1 (0.02%)
+    • 4000000: 1 (0.02%)
+    • 1600000: 1 (0.02%)
+    • 4600000: 1 (0.02%)
+
+Colonna 'Unnamed: 125':
+  - Valori unici: 33
+  - Top 10 valori più frequenti:
+    • 0: 93 (2.22%)
+    • 100000: 4 (0.10%)
+    • 500000: 4 (0.10%)
+    • 200000: 2 (0.05%)
+    • 600000: 2 (0.05%)
+    • 140000: 2 (0.05%)
+    • 16000000: 1 (0.02%)
+    • 5Y 2025: 1 (0.02%)
+    • 5Y25 - 2026 - adv: 1 (0.02%)
+    • 3200000: 1 (0.02%)
+
+Colonna 'Unnamed: 126':
+  - Valori unici: 36
+  - Top 10 valori più frequenti:
+    • 0: 92 (2.19%)
+    • 130000: 3 (0.07%)
+    • 400000: 2 (0.05%)
+    • 500000: 2 (0.05%)
+    • 1800000: 2 (0.05%)
+    • 150000: 2 (0.05%)
+    • 1500000: 2 (0.05%)
+    • 17000000: 1 (0.02%)
+    • 5Y25 - 2027 - adv: 1 (0.02%)
+    • 5Y 2025: 1 (0.02%)
+
+Colonna 'Unnamed: 127':
+  - Valori unici: 39
+  - Top 10 valori più frequenti:
+    • 0: 92 (2.19%)
+    • 500000: 2 (0.05%)
+    • 600000: 2 (0.05%)
+    • 140000: 2 (0.05%)
+    • 200000: 2 (0.05%)
+    • 5Y25 - 2028 - adv: 1 (0.02%)
+    • 19000000: 1 (0.02%)
+    • 5400000: 1 (0.02%)
+    • 1500000: 1 (0.02%)
+    • 5Y 2025: 1 (0.02%)
+
+Colonna 'Unnamed: 128':
+  - Valori unici: 17
+  - Top 10 valori più frequenti:
+    • 0: 1 (0.02%)
+    • MARKETING: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 2017 - mktg: 1 (0.02%)
+    • 1858000: 1 (0.02%)
+    • 643014.65: 1 (0.02%)
+    • 1591296.3530000001: 1 (0.02%)
+    • 1105363.0169999998: 1 (0.02%)
+    • 191283.68600000202: 1 (0.02%)
+    • 16250.66: 1 (0.02%)
+
+Colonna 'Unnamed: 129':
+  - Valori unici: 16
+  - Top 10 valori più frequenti:
+    • 0: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 2018 - mktg: 1 (0.02%)
+    • 1205000: 1 (0.02%)
+    • 618493.3304071659: 1 (0.02%)
+    • 1589263.751566376: 1 (0.02%)
+    • 1432282.927837354: 1 (0.02%)
+    • 101492.89587795499: 1 (0.02%)
+    • 10043.050175546: 1 (0.02%)
+    • 13539.593000692: 1 (0.02%)
+
+Colonna 'Unnamed: 130':
+  - Valori unici: 17
+  - Top 10 valori più frequenti:
+    • 0: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 2019 - mktg: 1 (0.02%)
+    • 939000: 1 (0.02%)
+    • 895829.726236855: 1 (0.02%)
+    • 2026814.9309759: 1 (0.02%)
+    • 1286383.964190602: 1 (0.02%)
+    • 97887.830013675: 1 (0.02%)
+    • 7956.715636838: 1 (0.02%)
+    • 11050.992940051: 1 (0.02%)
+
+Colonna 'Unnamed: 131':
+  - Valori unici: 154
+  - Top 10 valori più frequenti:
+    • 0: 42 (1.00%)
+    • 14256.181625: 2 (0.05%)
+    • ACT: 1 (0.02%)
+    • 2020 - mktg: 1 (0.02%)
+    • 152189.643: 1 (0.02%)
+    • 766567.4619999999: 1 (0.02%)
+    • 424100.76900000003: 1 (0.02%)
+    • 758973.3940000001: 1 (0.02%)
+    • 212450.339: 1 (0.02%)
+    • 5863168.334600001: 1 (0.02%)
+
+Colonna 'Unnamed: 132':
+  - Valori unici: 156
+  - Top 10 valori più frequenti:
+    • 0: 37 (0.88%)
+    • 2828.481483: 2 (0.05%)
+    • 2021 - mktg : 1 (0.02%)
+    • 5862213.550000001: 1 (0.02%)
+    • 104617.922: 1 (0.02%)
+    • 414681.53500000003: 1 (0.02%)
+    • 1005880.406: 1 (0.02%)
+    • 212952.36099999998: 1 (0.02%)
+    • 3031.535: 1 (0.02%)
+    • 128.423: 1 (0.02%)
+
+Colonna 'Unnamed: 133':
+  - Valori unici: 132
+  - Top 10 valori più frequenti:
+    • 0: 15 (0.36%)
+    • 2000: 2 (0.05%)
+    • 29000: 2 (0.05%)
+    • 10000: 2 (0.05%)
+    • 663000: 1 (0.02%)
+    • 2022 - mktg : 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 5125000: 1 (0.02%)
+    • 170000: 1 (0.02%)
+    • 827000: 1 (0.02%)
+
+Colonna 'Unnamed: 134':
+  - Valori unici: 159
+  - Top 10 valori più frequenti:
+    • 0: 27 (0.64%)
+    • ACT: 1 (0.02%)
+    • 5291530.713948802: 1 (0.02%)
+    • 568990.2701488: 1 (0.02%)
+    • 61411.2783217: 1 (0.02%)
+    • 768268.5838691: 1 (0.02%)
+    • 2023 - mktg: 1 (0.02%)
+    • 842194.3438613: 1 (0.02%)
+    • 213079.0681543: 1 (0.02%)
+    • 5.3850807: 1 (0.02%)
+
+Colonna 'Unnamed: 135':
+  - Valori unici: 123
+  - Top 10 valori più frequenti:
+    • 0: 48 (1.14%)
+    • 5000: 5 (0.12%)
+    • 20000.000000001: 2 (0.05%)
+    • 17000: 2 (0.05%)
+    • 210000: 2 (0.05%)
+    • 270000: 2 (0.05%)
+    • BGT: 1 (0.02%)
+    • 620999.999999999: 1 (0.02%)
+    • 2024 - mktg (BDG): 1 (0.02%)
+    • 35000: 1 (0.02%)
+
+Colonna 'Unnamed: 136':
+  - Valori unici: 75
+  - Top 10 valori più frequenti:
+    • 0: 43 (1.03%)
+    • 3000: 2 (0.05%)
+    • 5000: 2 (0.05%)
+    • 210000: 2 (0.05%)
+    • LE I: 1 (0.02%)
+    • 2024 - mktg (LE): 1 (0.02%)
+    • 34999.999999999: 1 (0.02%)
+    • 783000.000000002: 1 (0.02%)
+    • 395000.000000001: 1 (0.02%)
+    • 550000.000000003: 1 (0.02%)
+
+Colonna 'Unnamed: 137':
+  - Valori unici: 124
+  - Top 10 valori più frequenti:
+    • 0: 6 (0.14%)
+    • 10000: 2 (0.05%)
+    • 210000: 2 (0.05%)
+    • 220000: 2 (0.05%)
+    • 15000: 2 (0.05%)
+    • 2024 - mktg (LEII): 1 (0.02%)
+    • 484999.999999998: 1 (0.02%)
+    • 35000: 1 (0.02%)
+    • 824999.999999997: 1 (0.02%)
+    • 589999.999999998: 1 (0.02%)
+
+Colonna 'Unnamed: 138':
+  - Valori unici: 159
+  - Top 10 valori più frequenti:
+    • 0: 2 (0.05%)
+    • ACT: 1 (0.02%)
+    • 5526924.390130501: 1 (0.02%)
+    • 637604.768028: 1 (0.02%)
+    • 32488.4190369: 1 (0.02%)
+    • 526463.1987352: 1 (0.02%)
+    • 2024 - mktg: 1 (0.02%)
+    • 317496.7237907: 1 (0.02%)
+    • 3149.3745273: 1 (0.02%)
+    • 7.736275: 1 (0.02%)
+
+Colonna 'Unnamed: 139':
+  - Valori unici: 119
+  - Top 10 valori più frequenti:
+    • 0: 11 (0.26%)
+    • 300000: 3 (0.07%)
+    • 18000: 2 (0.05%)
+    • 10000: 2 (0.05%)
+    • 350000: 2 (0.05%)
+    • BGT NOV 24: 1 (0.02%)
+    • 2025 - mktg (BDG): 1 (0.02%)
+    • 35999.999999999: 1 (0.02%)
+    • 539999.999999997: 1 (0.02%)
+    • 226000.000000002: 1 (0.02%)
+
+Colonna 'Unnamed: 140':
+  - Valori unici: 125
+  - Top 10 valori più frequenti:
+    • 10000: 3 (0.07%)
+    • 5000: 2 (0.05%)
+    • 2999.999999999: 2 (0.05%)
+    • 267000: 2 (0.05%)
+    • 300000: 2 (0.05%)
+    • 520000.000000001: 1 (0.02%)
+    • 34999.999999999: 1 (0.02%)
+    • 900000.000000001: 1 (0.02%)
+    • 350000.000000004: 1 (0.02%)
+    • 214999.999999997: 1 (0.02%)
+
+Colonna 'Unnamed: 141':
+  - Valori unici: 131
+  - Top 10 valori più frequenti:
+    • 3000: 3 (0.07%)
+    • 5000: 2 (0.05%)
+    • 10000: 2 (0.05%)
+    • 300000: 2 (0.05%)
+    • 2025 - mktg (LE): 1 (0.02%)
+    • 5199999.999999995: 1 (0.02%)
+    • LE I: 1 (0.02%)
+    • 899999.999999993: 1 (0.02%)
+    • 214999.999999999: 1 (0.02%)
+    • 17000: 1 (0.02%)
+
+Colonna 'Unnamed: 142':
+  - Valori unici: 69
+  - Top 10 valori più frequenti:
+    • 0: 57 (1.36%)
+    • 50000: 7 (0.17%)
+    • 15000: 4 (0.10%)
+    • 20000: 4 (0.10%)
+    • 100000: 3 (0.07%)
+    • 400000: 3 (0.07%)
+    • 10000: 3 (0.07%)
+    • 5000: 3 (0.07%)
+    • 200000: 3 (0.07%)
+    • 600000: 3 (0.07%)
+
+Colonna 'Unnamed: 143':
+  - Valori unici: 73
+  - Top 10 valori più frequenti:
+    • 0: 56 (1.33%)
+    • 50000: 7 (0.17%)
+    • 200000: 4 (0.10%)
+    • 5000: 4 (0.10%)
+    • 20000: 4 (0.10%)
+    • 10000: 3 (0.07%)
+    • 100000: 3 (0.07%)
+    • 15000: 3 (0.07%)
+    • 25000: 3 (0.07%)
+    • 90000: 2 (0.05%)
+
+Colonna 'Unnamed: 144':
+  - Valori unici: 74
+  - Top 10 valori più frequenti:
+    • 0: 53 (1.26%)
+    • 50000: 6 (0.14%)
+    • 20000: 5 (0.12%)
+    • 5000: 4 (0.10%)
+    • 40000: 3 (0.07%)
+    • 10000: 3 (0.07%)
+    • 600000: 3 (0.07%)
+    • 200000: 3 (0.07%)
+    • 60000: 3 (0.07%)
+    • 250000: 2 (0.05%)
+
+Colonna 'Unnamed: 145':
+  - Valori unici: 65
+  - Top 10 valori più frequenti:
+    • 0: 47 (1.12%)
+    • 10000: 4 (0.10%)
+    • 1000: 2 (0.05%)
+    • 350000: 2 (0.05%)
+    • 60000: 2 (0.05%)
+    • 200000: 2 (0.05%)
+    • 15000: 2 (0.05%)
+    • 250000: 2 (0.05%)
+    • 2025: 1 (0.02%)
+    • 196000.00000000015: 1 (0.02%)
+
+Colonna 'Unnamed: 146':
+  - Valori unici: 66
+  - Top 10 valori più frequenti:
+    • 0: 43 (1.03%)
+    • 20000: 6 (0.14%)
+    • 1000: 2 (0.05%)
+    • 160000: 2 (0.05%)
+    • 5000: 2 (0.05%)
+    • 10000: 2 (0.05%)
+    • 70000: 2 (0.05%)
+    • 400000: 2 (0.05%)
+    • 275000: 2 (0.05%)
+    • 2026: 1 (0.02%)
+
+Colonna 'Unnamed: 147':
+  - Valori unici: 68
+  - Top 10 valori più frequenti:
+    • 0: 41 (0.98%)
+    • 20000: 5 (0.12%)
+    • 50000: 3 (0.07%)
+    • 80000: 3 (0.07%)
+    • 400000: 2 (0.05%)
+    • 25000: 2 (0.05%)
+    • 350000: 2 (0.05%)
+    • 1000: 2 (0.05%)
+    • 300000: 2 (0.05%)
+    • 5Y 2024: 1 (0.02%)
+
+Colonna 'Unnamed: 148':
+  - Valori unici: 69
+  - Top 10 valori più frequenti:
+    • 0: 42 (1.00%)
+    • 20000: 5 (0.12%)
+    • 50000: 3 (0.07%)
+    • 400000: 3 (0.07%)
+    • 90000: 2 (0.05%)
+    • 30000: 2 (0.05%)
+    • 588563.28: 1 (0.02%)
+    • 5Y 2024: 1 (0.02%)
+    • 5099599.476605093: 1 (0.02%)
+    • 2028: 1 (0.02%)
+
+Colonna 'Unnamed: 149':
+  - Valori unici: 64
+  - Top 10 valori più frequenti:
+    • 0: 62 (1.48%)
+    • 20000: 4 (0.10%)
+    • 10000: 4 (0.10%)
+    • 5000: 3 (0.07%)
+    • 40000: 2 (0.05%)
+    • 70000: 2 (0.05%)
+    • 320000: 2 (0.05%)
+    • 150000: 2 (0.05%)
+    • 2999.9999999999995: 1 (0.02%)
+    • 770000: 1 (0.02%)
+
+Colonna 'Unnamed: 150':
+  - Valori unici: 64
+  - Top 10 valori più frequenti:
+    • 0: 64 (1.53%)
+    • 20000: 5 (0.12%)
+    • 10000: 3 (0.07%)
+    • 50000: 2 (0.05%)
+    • 350000: 2 (0.05%)
+    • 200000: 2 (0.05%)
+    • 160000: 2 (0.05%)
+    • 34470: 1 (0.02%)
+    • 3125.9999999999995: 1 (0.02%)
+    • 802340.0000000001: 1 (0.02%)
+
+Colonna 'Unnamed: 151':
+  - Valori unici: 67
+  - Top 10 valori più frequenti:
+    • 0: 64 (1.53%)
+    • 20000: 6 (0.14%)
+    • 330000: 2 (0.05%)
+    • 10000: 2 (0.05%)
+    • 5Y25 - 2028 - mktg: 1 (0.02%)
+    • 5349648.148605096: 1 (0.02%)
+    • 5Y 2025: 1 (0.02%)
+    • 839247.64: 1 (0.02%)
+    • 3269.7959999999994: 1 (0.02%)
+    • 5000: 1 (0.02%)
+
+Colonna 'Unnamed: 152':
+  - Valori unici: 19
+  - Top 10 valori più frequenti:
+    • 0: 1 (0.02%)
+    • OP: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 2017 - op: 1 (0.02%)
+    • 4147000: 1 (0.02%)
+    • 3268912.2370965225: 1 (0.02%)
+    • 3347292.589819718: 1 (0.02%)
+    • 195759.93037303537: 1 (0.02%)
+    • 334803.86615749594: 1 (0.02%)
+    • 102859.03910667298: 1 (0.02%)
+
+Colonna 'Unnamed: 153':
+  - Valori unici: 18
+  - Top 10 valori più frequenti:
+    • 0: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 2018 - op: 1 (0.02%)
+    • 2298000: 1 (0.02%)
+    • 2628377.680712277: 1 (0.02%)
+    • 2480760.766854022: 1 (0.02%)
+    • -412369.89236332173: 1 (0.02%)
+    • 402429.97122422303: 1 (0.02%)
+    • 84735.66898928098: 1 (0.02%)
+    • 87440.51630348401: 1 (0.02%)
+
+Colonna 'Unnamed: 154':
+  - Valori unici: 18
+  - Top 10 valori più frequenti:
+    • 0: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 2019 - op: 1 (0.02%)
+    • 878000: 1 (0.02%)
+    • 3901604.401858821: 1 (0.02%)
+    • 875322.6368726082: 1 (0.02%)
+    • 160434.4362625801: 1 (0.02%)
+    • 414857.44500068994: 1 (0.02%)
+    • 101433.468247582: 1 (0.02%)
+    • 99854.49378410201: 1 (0.02%)
+
+Colonna 'Unnamed: 155':
+  - Valori unici: 174
+  - Top 10 valori più frequenti:
+    • 0: 36 (0.86%)
+    • 38015230.63073298: 1 (0.02%)
+    • 2020 - op: 1 (0.02%)
+    • 938758.562474877: 1 (0.02%)
+    • 1061923.4161776302: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 2273042.883423561: 1 (0.02%)
+    • 6969563.650769952: 1 (0.02%)
+    • 1609540.8393047613: 1 (0.02%)
+    • -339626.6235794866: 1 (0.02%)
+
+Colonna 'Unnamed: 156':
+  - Valori unici: 174
+  - Top 10 valori più frequenti:
+    • 0: 34 (0.81%)
+    • 4787.994743130888: 2 (0.05%)
+    • 29859.07959410747: 2 (0.05%)
+    • 1764239.5765241128: 1 (0.02%)
+    • 2021 - op: 1 (0.02%)
+    • 39765396.432814695: 1 (0.02%)
+    • 2168679.7734710043: 1 (0.02%)
+    • 6662176.414247192: 1 (0.02%)
+    • 1467683.9656106774: 1 (0.02%)
+    • 41991.64365334358: 1 (0.02%)
+
+Colonna 'Unnamed: 157':
+  - Valori unici: 168
+  - Top 10 valori più frequenti:
+    • 0: 43 (1.03%)
+    • 33476576.62833406: 1 (0.02%)
+    • 2022 - op: 1 (0.02%)
+    • ACT: 1 (0.02%)
+    • 1380384.0285942298: 1 (0.02%)
+    • 2555573.2631025556: 1 (0.02%)
+    • 6870654.199510679: 1 (0.02%)
+    • 2665382.8877487113: 1 (0.02%)
+    • 479522.4501312156: 1 (0.02%)
+    • 16799.470124005304: 1 (0.02%)
+
+Colonna 'Unnamed: 158':
+  - Valori unici: 181
+  - Top 10 valori più frequenti:
+    • 0: 22 (0.52%)
+    • ACT: 1 (0.02%)
+    • 2023 - op: 1 (0.02%)
+    • 2038390.6096259903: 1 (0.02%)
+    • 38368120.89777517: 1 (0.02%)
+    • 1677712.8199881737: 1 (0.02%)
+    • 1818835.2544284132: 1 (0.02%)
+    • 1069569.3349352507: 1 (0.02%)
+    • 10915508.111513196: 1 (0.02%)
+    • 19988.89835695703: 1 (0.02%)
+
+Colonna 'Unnamed: 159':
+  - Valori unici: 159
+  - Top 10 valori più frequenti:
+    • 0: 41 (0.98%)
+    • BGT: 1 (0.02%)
+    • 40629584.32580832: 1 (0.02%)
+    • 2026959.886374104: 1 (0.02%)
+    • 1813777.48524582: 1 (0.02%)
+    • 1680387.0569903972: 1 (0.02%)
+    • 2024 - op (BDG): 1 (0.02%)
+    • 10656066.919038614: 1 (0.02%)
+    • 1451250.4766740117: 1 (0.02%)
+    • -122164.75067949899: 1 (0.02%)
+
+Colonna 'Unnamed: 160':
+  - Valori unici: 100
+  - Top 10 valori più frequenti:
+    • 0: 120 (2.86%)
+    • 41629830.597581394: 1 (0.02%)
+    • 2024 - op (LE): 1 (0.02%)
+    • LE I: 1 (0.02%)
+    • 2151079.410933894: 1 (0.02%)
+    • 1799949.2195020816: 1 (0.02%)
+    • 10650173.564446626: 1 (0.02%)
+    • 1785017.816396784: 1 (0.02%)
+    • 1440095.3146202166: 1 (0.02%)
+    • -171206.538763751: 1 (0.02%)
+
+Colonna 'Unnamed: 161':
+  - Valori unici: 172
+  - Top 10 valori più frequenti:
+    • 0: 33 (0.79%)
+    • 2507743.6773280306: 2 (0.05%)
+    • LE II: 1 (0.02%)
+    • LE II 2024: 1 (0.02%)
+    • 3308835.8112157425: 1 (0.02%)
+    • 2213984.458214196: 1 (0.02%)
+    • 1623085.185514534: 1 (0.02%)
+    • 9659317.006787144: 1 (0.02%)
+    • 1625485.1358807394: 1 (0.02%)
+    • -105393.328910191: 1 (0.02%)
+
+Colonna 'Unnamed: 162':
+  - Valori unici: 179
+  - Top 10 valori più frequenti:
+    • 0: 34 (0.81%)
+    • ACT: 1 (0.02%)
+    • 42898566.26342398: 1 (0.02%)
+    • 2024 - op: 1 (0.02%)
+    • 3755702.6112369415: 1 (0.02%)
+    • 1015363.3710810359: 1 (0.02%)
+    • 2189821.249969811: 1 (0.02%)
+    • 10352057.51286437: 1 (0.02%)
+    • 1441704.6350311956: 1 (0.02%)
+    • -16703.503169459964: 1 (0.02%)
+
+Colonna 'Unnamed: 163':
+  - Valori unici: 159
+  - Top 10 valori più frequenti:
+    • 0: 13 (0.31%)
+    • 145726.21765903448: 2 (0.05%)
+    • 2074618.405211708: 2 (0.05%)
+    • 2025 - op (BDG): 1 (0.02%)
+    • 3282414.314069694: 1 (0.02%)
+    • 43600271.646925166: 1 (0.02%)
+    • BGT 2025: 1 (0.02%)
+    • 1301621.8873207304: 1 (0.02%)
+    • 9608366.039923232: 1 (0.02%)
+    • 208426.39954435703: 1 (0.02%)
+
+Colonna 'Unnamed: 164':
+  - Valori unici: 161
+  - Top 10 valori più frequenti:
+    • 0: 67 (1.60%)
+    • BGT 2025 - feb25: 1 (0.02%)
+    • 44599950.22012939: 1 (0.02%)
+    • 2025 - op (new BDG): 1 (0.02%)
+    • BGT FEB 25: 1 (0.02%)
+    • 2412961.651691503: 1 (0.02%)
+    • 1288948.4326229522: 1 (0.02%)
+    • 9985993.960881097: 1 (0.02%)
+    • 3546427.3326405436: 1 (0.02%)
+    • 1463153.7595374216: 1 (0.02%)
+
+Colonna 'Unnamed: 165':
+  - Valori unici: 164
+  - Top 10 valori più frequenti:
+    • 0: 42 (1.00%)
+    • 44599509.19503363: 1 (0.02%)
+    • 2025 - op (LE): 1 (0.02%)
+    • LE I: 1 (0.02%)
+    • 3217718.5753797283: 1 (0.02%)
+    • 3070458.5481996397: 1 (0.02%)
+    • 9971584.662065532: 1 (0.02%)
+    • 959892.4065158962: 1 (0.02%)
+    • 1653718.351460571: 1 (0.02%)
+    • 122380.06570485799: 1 (0.02%)
+
+Colonna 'Unnamed: 166':
+  - Valori unici: 121
+  - Top 10 valori più frequenti:
+    • 0: 45 (1.07%)
+    • 1: 2 (0.05%)
+    • 39799531.640283294: 1 (0.02%)
+    • 2397438.341951896: 1 (0.02%)
+    • 5Y 2023: 1 (0.02%)
+    • 1569883.413030023: 1 (0.02%)
+    • 2118620.390181365: 1 (0.02%)
+    • 8029592.086741965: 1 (0.02%)
+    • 5Y23 - 2025 - op: 1 (0.02%)
+    • -223713.59673253619: 1 (0.02%)
+
+Colonna 'Unnamed: 167':
+  - Valori unici: 122
+  - Top 10 valori più frequenti:
+    • 0: 44 (1.05%)
+    • 1: 2 (0.05%)
+    • 5Y 2023: 1 (0.02%)
+    • 5Y23 - 2026 - op: 1 (0.02%)
+    • 1468672.8094122198: 1 (0.02%)
+    • 2549123.196112717: 1 (0.02%)
+    • 2136447.5788732367: 1 (0.02%)
+    • 8933577.082539897: 1 (0.02%)
+    • 958835.5980499818: 1 (0.02%)
+    • 43499670.365865864: 1 (0.02%)
+
+Colonna 'Unnamed: 168':
+  - Valori unici: 121
+  - Top 10 valori più frequenti:
+    • 0: 44 (1.05%)
+    • 1.05: 2 (0.05%)
+    • 46600462.7149779: 1 (0.02%)
+    • 2840646.3894643355: 1 (0.02%)
+    • 5Y 2023: 1 (0.02%)
+    • 1519411.2048126159: 1 (0.02%)
+    • 2275852.9150256813: 1 (0.02%)
+    • 9660342.526362719: 1 (0.02%)
+    • 5Y23 - 2027 - op: 1 (0.02%)
+    • 393745.03423665045: 1 (0.02%)
+
+Colonna 'Unnamed: 169':
+  - Valori unici: 99
+  - Top 10 valori più frequenti:
+    • 0: 114 (2.72%)
+    • 5Y 2024: 1 (0.02%)
+    • 42350427.32578112: 1 (0.02%)
+    • 5Y24 - 2025 - op: 1 (0.02%)
+    • 2137257.9860536726: 1 (0.02%)
+    • 2167517.3457421213: 1 (0.02%)
+    • 1925253.7877279145: 1 (0.02%)
+    • 10405267.382138707: 1 (0.02%)
+    • 1603330.5603619558: 1 (0.02%)
+    • 217932.22390544772: 1 (0.02%)
+
+Colonna 'Unnamed: 170':
+  - Valori unici: 104
+  - Top 10 valori più frequenti:
+    • 0: 109 (2.60%)
+    • 43000154.07983244: 1 (0.02%)
+    • 5Y24 - 2026 - op: 1 (0.02%)
+    • 5Y 2024: 1 (0.02%)
+    • 2075366.2418385185: 1 (0.02%)
+    • 1913554.0797864988: 1 (0.02%)
+    • 2354130.256925472: 1 (0.02%)
+    • 11425388.79216896: 1 (0.02%)
+    • -502702.4544461428: 1 (0.02%)
+    • 2441553.256763911: 1 (0.02%)
+
+Colonna 'Unnamed: 171':
+  - Valori unici: 104
+  - Top 10 valori più frequenti:
+    • 0: 109 (2.60%)
+    • 46599904.36205478: 1 (0.02%)
+    • 5Y24 - 2027 - op: 1 (0.02%)
+    • 5Y 2024: 1 (0.02%)
+    • 2197417.882010184: 1 (0.02%)
+    • 1911711.6597629744: 1 (0.02%)
+    • 2701760.1583224423: 1 (0.02%)
+    • 11379053.82636309: 1 (0.02%)
+    • 11280.37116817286: 1 (0.02%)
+    • 2444419.0210227286: 1 (0.02%)
+
+Colonna 'Unnamed: 172':
+  - Valori unici: 102
+  - Top 10 valori più frequenti:
+    • 0: 111 (2.65%)
+    • 48650082.702536: 1 (0.02%)
+    • 5Y24 - 2028 - op: 1 (0.02%)
+    • 2342557.075493492: 1 (0.02%)
+    • 1927762.0886647562: 1 (0.02%)
+    • 5Y 2024: 1 (0.02%)
+    • 3068757.2108419044: 1 (0.02%)
+    • 11909602.893187482: 1 (0.02%)
+    • 403219.26739930024: 1 (0.02%)
+    • 1165296.4848718303: 1 (0.02%)
+
+Colonna 'Unnamed: 173':
+  - Valori unici: 102
+  - Top 10 valori più frequenti:
+    • 0: 126 (3.00%)
+    • 43450050.87329979: 1 (0.02%)
+    • 5Y25 - 2026 - op: 1 (0.02%)
+    • 3609936.2425354626: 1 (0.02%)
+    • 2395589.904705059: 1 (0.02%)
+    • 5Y 2025: 1 (0.02%)
+    • 1701332.431519881: 1 (0.02%)
+    • 10753081.716489363: 1 (0.02%)
+    • 143199.42588296317: 1 (0.02%)
+    • -243116.53760435342: 1 (0.02%)
+
+Colonna 'Unnamed: 174':
+  - Valori unici: 97
+  - Top 10 valori più frequenti:
+    • 0: 131 (3.12%)
+    • 46100304.937082075: 1 (0.02%)
+    • 5Y 2025: 1 (0.02%)
+    • 3573357.659973667: 1 (0.02%)
+    • 5Y25 - 2027 - op: 1 (0.02%)
+    • 2427592.1741999397: 1 (0.02%)
+    • 2037670.8451716565: 1 (0.02%)
+    • 11610998.097196627: 1 (0.02%)
+    • 145139.61052633298: 1 (0.02%)
+    • 169319.1113478535: 1 (0.02%)
+
+Colonna 'Unnamed: 175':
+  - Valori unici: 97
+  - Top 10 valori più frequenti:
+    • 0: 131 (3.12%)
+    • 49350163.119248: 1 (0.02%)
+    • 5Y 2025: 1 (0.02%)
+    • 3702219.41169497: 1 (0.02%)
+    • 5Y25 - 2028 - op: 1 (0.02%)
+    • 2356574.1160178324: 1 (0.02%)
+    • 2087560.6848632814: 1 (0.02%)
+    • 11861579.199173491: 1 (0.02%)
+    • 530814.7098700828: 1 (0.02%)
+    • -209873.39923170698: 1 (0.02%)
+
+Colonna ' Net Sales 2024':
+  - Valori unici: 6
+  - Top 10 valori più frequenti:
+    • Italy: 2 (0.05%)
+    • France: 2 (0.05%)
+    • International: 2 (0.05%)
+    • Net Sales 2025: 1 (0.02%)
+    •  NS BGT 2024: 1 (0.02%)
+    • NS ACT 2024: 1 (0.02%)
+
+Colonna 'OP 2024':
+  - Valori unici: 6
+  - Top 10 valori più frequenti:
+    • Italy: 2 (0.05%)
+    • France: 2 (0.05%)
+    • International: 2 (0.05%)
+    • OP 2025: 1 (0.02%)
+    • OP BGT 2024: 1 (0.02%)
+    • OP ACT 2024: 1 (0.02%)
+
+Colonna 'SI SELEZIONA DA FOGLIO SIMULAZIONE':
+  - Valori unici: 36
+  - Top 10 valori più frequenti:
+    • SUBCATEGORY: 4 (0.10%)
+    • DOMESTIC: 2 (0.05%)
+    • CHILLY: 2 (0.05%)
+    • NS - DOMESTIC: 1 (0.02%)
+    • ACQUA ALLE ROSE: 1 (0.02%)
+    • BRAND: 1 (0.02%)
+    • BOROTALCO: 1 (0.02%)
+    • BILBA: 1 (0.02%)
+    • BRIOSCHI: 1 (0.02%)
+    • CITROSIL: 1 (0.02%)
+
+
+
+--- SUGGERIMENTI AUTOMATICI ---
+1. ⚠️  Alcune colonne hanno molti valori mancanti (>20%): Unnamed: 0, Unnamed: 1, Unnamed: 2, Unnamed: 3, Unnamed: 4, Unnamed: 5, Unnamed: 6, Unnamed: 7, Unnamed: 8, Unnamed: 9, Unnamed: 10, Unnamed: 11, Unnamed: 12, Unnamed: 13, Unnamed: 14, Unnamed: 15, Company, Home Care, Unnamed: 16, Unnamed: 17, Unnamed: 18, Unnamed: 19, Unnamed: 20, Unnamed: 21, Unnamed: 22, Unnamed: 23, Unnamed: 24, Unnamed: 25, Unnamed: 26, Unnamed: 27, Unnamed: 28, Unnamed: 29, Unnamed: 30, Unnamed: 31, Unnamed: 32, Unnamed: 33, Unnamed: 34, Unnamed: 35, Unnamed: 36, Unnamed: 37, Unnamed: 38, Unnamed: 39, Unnamed: 40, Unnamed: 41, Unnamed: 42, Unnamed: 43, Unnamed: 44, Unnamed: 45, Unnamed: 46, Unnamed: 47, Unnamed: 48, Unnamed: 49, Unnamed: 50, Unnamed: 51, Unnamed: 52, Unnamed: 53, Unnamed: 54, Unnamed: 55, Unnamed: 56, Unnamed: 57, Unnamed: 58, Unnamed: 59, Unnamed: 60, Unnamed: 61, Unnamed: 62, Unnamed: 63, Unnamed: 64, Unnamed: 65, Unnamed: 66, Unnamed: 67, Unnamed: 68, Unnamed: 69, Unnamed: 70, Unnamed: 71, Unnamed: 72, Unnamed: 73, Unnamed: 74, Unnamed: 75, Unnamed: 76, Unnamed: 77, Unnamed: 78, Unnamed: 79, Unnamed: 80, Unnamed: 81, Unnamed: 82, Unnamed: 83, Unnamed: 84, Unnamed: 85, Unnamed: 86, Unnamed: 87, Unnamed: 88, Unnamed: 89, Unnamed: 90, Unnamed: 91, Unnamed: 92, Unnamed: 93, Unnamed: 94, Unnamed: 95, Unnamed: 96, Unnamed: 97, Unnamed: 98, Unnamed: 99, Unnamed: 100, Unnamed: 101, Unnamed: 102, Unnamed: 103, Unnamed: 104, Unnamed: 105, Unnamed: 106, Unnamed: 107, Unnamed: 108, Unnamed: 109, Unnamed: 110, Unnamed: 111, Unnamed: 112, 300.5, 0, 298, Modifiche 24/06, old, new, Unnamed: 113, Unnamed: 114, Unnamed: 115, Unnamed: 116, Unnamed: 117, Unnamed: 118, Unnamed: 119, Unnamed: 120, Unnamed: 121, Unnamed: 122, Unnamed: 123, Unnamed: 124, Unnamed: 125, Unnamed: 126, Unnamed: 127, Unnamed: 128, Unnamed: 129, Unnamed: 130, Unnamed: 131, Unnamed: 132, Unnamed: 133, Unnamed: 134, Unnamed: 135, Unnamed: 136, Unnamed: 137, Unnamed: 138, Unnamed: 139, Unnamed: 140, Unnamed: 141, Unnamed: 142, Unnamed: 143, Unnamed: 144, Unnamed: 145, Unnamed: 146, Unnamed: 147, Unnamed: 148, Unnamed: 149, Unnamed: 150, Unnamed: 151, Unnamed: 152, Unnamed: 153, Unnamed: 154, Unnamed: 155, Unnamed: 156, Unnamed: 157, Unnamed: 158, Unnamed: 159, Unnamed: 160, Unnamed: 161, Unnamed: 162, Unnamed: 163, Unnamed: 164, Unnamed: 165, Unnamed: 166, Unnamed: 167, Unnamed: 168, Unnamed: 169, Unnamed: 170, Unnamed: 171, Unnamed: 172, Unnamed: 173, Unnamed: 174, Unnamed: 175, Unnamed: 176,  Net Sales 2024, 278097798.9916569, OP 2024, 54101178.53598538, SI SELEZIONA DA FOGLIO SIMULAZIONE. Considera di rimuoverle o imputare i valori.
+2. ⚠️  Il dataset contiene 1565 righe duplicate (37.3%). Verifica se sono duplicati reali o dati legittimi.
+
+================================================================================
+ANALISI COMPLETATA CON SUCCESSO
+================================================================================
+";s:21:"full_messages_history";a:4:{i:0;a:2:{s:4:"role";s:4:"user";s:7:"content";s:27:"quanti fogli vedi nel file?";}i:1;a:2:{s:4:"role";s:9:"assistant";s:7:"content";s:33:"Nel file Excel vedo **47 fogli**.";}i:2;a:2:{s:4:"role";s:4:"user";s:7:"content";s:66:"mi sai dire come sta andando la crescita in realazione alle spese?";}i:3;a:2:{s:4:"role";s:9:"assistant";s:7:"content";s:2067:"Dal file che hai caricato ho a disposizione un “mega‑database” con moltissimi pezzi di P&L, 5Y plan, ADV/Marketing, COS, ecc., ma non c’è una tabella unica già pronta che dica in modo diretto: “crescita vs spese = X%”. Bisogna quindi chiarire:
+
+1. **Che crescita ti interessa?**
+   - Net Sales totali gruppo?
+   - Una specifica area (Italy, France, International)?
+   - Un brand (es. Borotalco, Chilly, ecc.)?
+   - Un orizzonte: 2023→2024, 2024→2025 (BGT), 2023→2028 (5Y)?
+
+2. **Quali spese vuoi confrontare con la crescita?**
+   - Solo **Advertising**?
+   - Advertising + **Marketing**?
+   - Tutte le spese operative (GO + ADV + Mktg)?
+   - Solo **Cost of Sales**?
+
+3. **Orizzonte temporale:**
+   - **Storico** (ACT 2020–2024)?
+   - **Budget 2024/2025**?
+   - **Piano 5 anni (2024–2028)**?
+
+Con queste informazioni posso:
+- estrarre dal file i Net Sales per gli anni/anni‑target che ti interessano,
+- estrarre le spese corrispondenti (ADV, Mktg, COS, GO),
+- calcolare:
+  - CAGR / % growth dei ricavi,
+  - CAGR / % growth delle spese,
+  - l’evoluzione di **spese/Net Sales** (incidenza %),
+  - e dirti se la crescita di fatturato è “più veloce” o “più lenta” della crescita delle spese.
+
+Per esempio, potremmo fare una cosa di questo tipo (ti faccio vedere il tipo di output che posso produrre, poi lo applico ai dati reali appena mi specifichi il perimetro):
+
+- **Italy – Net Sales** 2023→2028: CAGR +X%
+- **Italy – ADV+Mktg** 2023→2028: CAGR +Y%
+- **ADV+Mktg / Net Sales**:
+  - 2023: A%
+  - 2028: B%  
+  → se B% < A% = stai crescendo “più efficiente” (ricavi crescono più delle spese); se B% > A% = la crescita è trainata da più investimento.
+
+Fammi sapere:
+- area/brand/perimetro (es. “Totale gruppo”, o “Italy Beauty”, o “Borotalco Italia”),  
+- orizzonte (es. “ACT 2023 vs BGT 2025”, o “2023–2028 5Y”),  
+- tipo di spese (solo ADV, ADV+Mktg, tutte le OPEX),
+
+e ti restituisco numeri e commento sintetico su **come sta andando la crescita in relazione alle spese** per quel perimetro.";}}s:11:"ui_messages";a:4:{i:0;a:2:{s:4:"role";s:4:"user";s:7:"content";s:27:"quanti fogli vedi nel file?";}i:1;a:2:{s:4:"role";s:9:"assistant";s:7:"content";s:33:"Nel file Excel vedo **47 fogli**.";}i:2;a:2:{s:4:"role";s:4:"user";s:7:"content";s:66:"mi sai dire come sta andando la crescita in realazione alle spese?";}i:3;a:2:{s:4:"role";s:9:"assistant";s:7:"content";s:2067:"Dal file che hai caricato ho a disposizione un “mega‑database” con moltissimi pezzi di P&L, 5Y plan, ADV/Marketing, COS, ecc., ma non c’è una tabella unica già pronta che dica in modo diretto: “crescita vs spese = X%”. Bisogna quindi chiarire:
+
+1. **Che crescita ti interessa?**
+   - Net Sales totali gruppo?
+   - Una specifica area (Italy, France, International)?
+   - Un brand (es. Borotalco, Chilly, ecc.)?
+   - Un orizzonte: 2023→2024, 2024→2025 (BGT), 2023→2028 (5Y)?
+
+2. **Quali spese vuoi confrontare con la crescita?**
+   - Solo **Advertising**?
+   - Advertising + **Marketing**?
+   - Tutte le spese operative (GO + ADV + Mktg)?
+   - Solo **Cost of Sales**?
+
+3. **Orizzonte temporale:**
+   - **Storico** (ACT 2020–2024)?
+   - **Budget 2024/2025**?
+   - **Piano 5 anni (2024–2028)**?
+
+Con queste informazioni posso:
+- estrarre dal file i Net Sales per gli anni/anni‑target che ti interessano,
+- estrarre le spese corrispondenti (ADV, Mktg, COS, GO),
+- calcolare:
+  - CAGR / % growth dei ricavi,
+  - CAGR / % growth delle spese,
+  - l’evoluzione di **spese/Net Sales** (incidenza %),
+  - e dirti se la crescita di fatturato è “più veloce” o “più lenta” della crescita delle spese.
+
+Per esempio, potremmo fare una cosa di questo tipo (ti faccio vedere il tipo di output che posso produrre, poi lo applico ai dati reali appena mi specifichi il perimetro):
+
+- **Italy – Net Sales** 2023→2028: CAGR +X%
+- **Italy – ADV+Mktg** 2023→2028: CAGR +Y%
+- **ADV+Mktg / Net Sales**:
+  - 2023: A%
+  - 2028: B%  
+  → se B% < A% = stai crescendo “più efficiente” (ricavi crescono più delle spese); se B% > A% = la crescita è trainata da più investimento.
+
+Fammi sapere:
+- area/brand/perimetro (es. “Totale gruppo”, o “Italy Beauty”, o “Borotalco Italia”),  
+- orizzonte (es. “ACT 2023 vs BGT 2025”, o “2023–2028 5Y”),  
+- tipo di spese (solo ADV, ADV+Mktg, tutte le OPEX),
+
+e ti restituisco numeri e commento sintetico su **come sta andando la crescita in relazione alle spese** per quel perimetro.";}}}
