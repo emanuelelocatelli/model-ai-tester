@@ -18,7 +18,7 @@ class GeminiTester extends Component
     use WithFileUploads;
 
     // Proprietà pubbliche per il binding con la vista
-    public string $selectedModel = 'gemini-1.5-pro';
+    public string $selectedModel = 'gemini-3-pro-preview';
     public string $currentPrompt = '';
     
     #[Validate('nullable|file|mimes:xlsx,xls,pdf|max:51200')]
@@ -30,11 +30,13 @@ class GeminiTester extends Component
     // Salvato in sessione e recuperato on-demand
     protected array $messagesCache = [];
     
-    // Modelli disponibili (verificati con API v1)
+    // Modelli disponibili
     public array $availableModels = [
+        'gemini-3-pro-preview' => 'Gemini 3 Pro Preview (Beta)',
+        'gemini-2.0-pro-exp' => 'Gemini 2.0 Pro (Experimental)',
+        'gemini-2.0-flash-exp' => 'Gemini 2.0 Flash (Experimental)',
         'gemini-1.5-pro' => 'Gemini 1.5 Pro',
         'gemini-1.5-flash' => 'Gemini 1.5 Flash',
-        'gemini-2.0-flash-exp' => 'Gemini 2.0 Flash (Experimental)',
         'gemini-pro' => 'Gemini Pro',
     ];
     
@@ -483,6 +485,15 @@ class GeminiTester extends Component
             
             // Inizializza client Gemini
             $client = new GeminiClient($apiKey);
+            
+            // Usa versione beta per modelli preview/experimental
+            $useBeta = str_contains($this->selectedModel, 'preview') || 
+                       str_contains($this->selectedModel, 'exp');
+            
+            if ($useBeta) {
+                $client = $client->withV1BetaVersion();
+                Log::info('[GEMINI] Usando API v1beta per modello: ' . $this->selectedModel);
+            }
             
             // Chiamata API Gemini con generativeModel
             $response = $client
