@@ -1,8 +1,8 @@
-# Guida all'utilizzo della Traduzione PDF con DeepL
+# Guida all'utilizzo della Traduzione Documenti con DeepL
 
 ## Panoramica
 
-È stata implementata una nuova funzionalità per tradurre file PDF utilizzando l'API di DeepL. La funzionalità è accessibile tramite un'interfaccia web dedicata.
+È stata implementata una funzionalità per tradurre documenti (PDF, Word, PowerPoint) utilizzando l'API di DeepL. La funzionalità è accessibile tramite un'interfaccia web dedicata.
 
 ## Accesso alla Funzionalità
 
@@ -26,10 +26,11 @@
 
 ### 3. **Componente Livewire**
 - `app/Livewire/PdfTranslator.php` - Logica dell'interfaccia
-- Upload file PDF (max 10MB)
-- Selezione lingua destinazione
-- Elaborazione sincrona con timeout esteso
-- Download file tradotto
+- Upload documenti: PDF (.pdf), Word (.docx), PowerPoint (.pptx)
+- Dimensione massima: 10MB per file
+- Selezione lingua destinazione e sorgente
+- Elaborazione sincrona con timeout esteso (300 secondi)
+- Download file tradotto mantenendo il formato originale
 
 ### 4. **Interfaccia Grafica**
 - `resources/views/livewire/pdf-translator.blade.php`
@@ -57,10 +58,11 @@
 1. **Accedere alla pagina**
    - Aprire il browser e navigare a: `http://model-ai-tester.local/translate-pdf`
 
-2. **Caricare il PDF**
-   - Cliccare sull'area di upload o trascinare un file PDF
-   - Dimensione massima: 10 MB
-   - Solo file PDF sono supportati
+2. **Caricare il Documento**
+   - Cliccare sull'area di upload o trascinare un documento
+   - Formati supportati: PDF (.pdf), Word (.docx), PowerPoint (.pptx)
+   - Dimensione massima: 10 MB per file
+   - Il sistema identifica automaticamente il tipo di documento
 
 3. **Selezionare la lingua**
    - Scegliere la lingua di destinazione dal menu a tendina
@@ -73,7 +75,8 @@
 
 5. **Scaricare il risultato**
    - Una volta completata, apparirà una card verde con il pulsante di download
-   - Cliccare "Scarica PDF Tradotto" per ottenere il file
+   - Cliccare "Scarica Documento Tradotto" per ottenere il file
+   - Il file manterrà il formato originale (PDF, DOCX o PPTX)
 
 ## Lingue Supportate
 
@@ -116,8 +119,9 @@ Se la traduzione supera questo tempo, verrà generato un errore di timeout.
 
 ### Problema: "Errore durante l'upload del documento"
 **Soluzione:**
-- Verificare che il file sia un PDF valido
+- Verificare che il file sia in uno dei formati supportati (PDF, DOCX, PPTX)
 - Controllare che le dimensioni siano inferiori a 10 MB
+- Verificare che il file non sia corrotto
 - Verificare la connessione API DeepL
 
 ### Problema: Pagina non accessibile (errore 302)
@@ -139,10 +143,10 @@ Dovrebbe mostrare la route registrata.
 2. Navigare a `http://model-ai-tester.local/translate-pdf`
 3. Dovrebbe apparire l'interfaccia di traduzione
 
-### Test 3: Traduzione PDF
-1. Procurarsi un PDF di test (anche di poche pagine)
+### Test 3: Traduzione Documenti
+1. Procurarsi un documento di test (PDF, DOCX o PPTX - anche di poche pagine)
 2. Seguire la procedura sopra descritta
-3. Verificare il download del file tradotto
+3. Verificare il download del file tradotto nel formato originale
 
 ## Struttura dei File
 
@@ -175,17 +179,20 @@ Dovrebbe mostrare la route registrata.
 - Implementazione diretta delle REST API DeepL v2
 
 ### Flusso di Traduzione
-1. Upload del file PDF a DeepL (`POST /v2/document`)
-2. Ricezione `document_id`
-3. Polling dello stato (`POST /v2/document/{document_id}`)
-4. Stati: `queued` → `translating` → `done`
-5. Download del documento tradotto (`POST /v2/document/{document_id}/result`)
+1. Upload del documento (PDF/DOCX/PPTX) a DeepL (`POST /v2/document`)
+2. Ricezione `document_id` e `document_key`
+3. Polling dello stato (`POST /v2/document/{document_id}` con `document_key`)
+4. Stati possibili: `queued` → `translating` → `done` / `error`
+5. Download del documento tradotto (`POST /v2/document/{document_id}/result` con `document_key`)
+6. Il documento mantiene il formato originale e la formattazione
 
 ### Sicurezza
 - File temporanei vengono eliminati dopo l'elaborazione
-- I file tradotti sono salvati in `storage/app/translations/`
-- Solo file PDF accettati
+- I file tradotti sono salvati temporaneamente in `storage/app/translations/`
+- Formati accettati: PDF (.pdf), Word (.docx), PowerPoint (.pptx)
+- Validazione MIME type e estensione file
 - Validazione dimensione file (max 10MB)
+- Il `document_key` viene gestito per garantire la sicurezza delle richieste
 
 ## Supporto
 
@@ -198,9 +205,11 @@ storage/logs/laravel.log
 ---
 
 **Implementazione completata il:** 17 Novembre 2025  
+**Ultimo aggiornamento:** 19 Novembre 2025 (Aggiunto supporto Word e PowerPoint)  
 **Versione Laravel:** 12.x  
 **Versione Livewire:** 3.6  
-**API DeepL:** v2
+**API DeepL:** v2  
+**Formati supportati:** PDF, DOCX, PPTX
 
 
 

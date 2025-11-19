@@ -14,8 +14,8 @@ class PdfTranslator extends Component
     use WithFileUploads;
 
     // Proprietà pubbliche per il binding con la vista
-    #[Validate('required|file|mimes:pdf|max:10240')]
-    public $pdfFile;
+    #[Validate('required|file|mimes:pdf,docx,pptx|max:10240')]
+    public $documentFile;
 
     public string $targetLanguage = 'EN-US';
     public ?string $sourceLanguage = null;
@@ -29,6 +29,9 @@ class PdfTranslator extends Component
 
     // Lingue disponibili
     public array $availableLanguages = [];
+    
+    // Formati supportati
+    public array $supportedFormats = [];
 
     /**
      * Inizializza il componente
@@ -36,6 +39,7 @@ class PdfTranslator extends Component
     public function mount(): void
     {
         $this->availableLanguages = $this->getDeeplService()->getSupportedLanguages();
+        $this->supportedFormats = config('deepl.supported_formats', []);
     }
 
     /**
@@ -47,9 +51,9 @@ class PdfTranslator extends Component
     }
 
     /**
-     * Metodo principale per tradurre il PDF
+     * Metodo principale per tradurre il documento
      */
-    public function translatePdf(): void
+    public function translateDocument(): void
     {
         // Reset stati precedenti
         $this->resetState();
@@ -57,8 +61,8 @@ class PdfTranslator extends Component
         // Validazione
         $this->validate();
 
-        if (!$this->pdfFile) {
-            $this->errorMessage = 'Carica un file PDF da tradurre';
+        if (!$this->documentFile) {
+            $this->errorMessage = 'Carica un documento da tradurre (PDF, Word o PowerPoint)';
             return;
         }
 
@@ -74,18 +78,18 @@ class PdfTranslator extends Component
 
         $this->isTranslating = true;
 
-        Log::info('PdfTranslator: Inizio traduzione', [
-            'fileName' => $this->pdfFile->getClientOriginalName(),
+        Log::info('DocumentTranslator: Inizio traduzione', [
+            'fileName' => $this->documentFile->getClientOriginalName(),
             'targetLanguage' => $this->targetLanguage,
             'sourceLanguage' => $this->sourceLanguage ?? 'auto-detect',
         ]);
 
         try {
             // Salva il file temporaneamente
-            $tempPath = $this->pdfFile->store('temp', 'local');
+            $tempPath = $this->documentFile->store('temp', 'local');
             $fullPath = Storage::disk('local')->path($tempPath);
 
-            Log::info('PdfTranslator: File salvato temporaneamente', ['path' => $fullPath]);
+            Log::info('DocumentTranslator: File salvato temporaneamente', ['path' => $fullPath]);
 
             // Chiama il servizio DeepL per la traduzione
             $result = $this->getDeeplService()->translateDocument(
@@ -104,20 +108,20 @@ class PdfTranslator extends Component
                 $this->translatedFileName = basename($this->translatedFilePath);
                 $this->successMessage = 'Traduzione completata con successo! Clicca sul pulsante per scaricare il file tradotto.';
 
-                Log::info('PdfTranslator: Traduzione completata con successo', [
+                Log::info('DocumentTranslator: Traduzione completata con successo', [
                     'translatedFile' => $this->translatedFileName
                 ]);
             } else {
                 // Errore durante la traduzione
                 $this->errorMessage = $result['message'] ?? 'Errore durante la traduzione del documento';
                 
-                Log::error('PdfTranslator: Errore traduzione', [
+                Log::error('DocumentTranslator: Errore traduzione', [
                     'message' => $this->errorMessage
                 ]);
             }
 
         } catch (\Exception $e) {
-            Log::error('PdfTranslator: Eccezione durante la traduzione', [
+            Log::error('DocumentTranslator: Eccezione durante la traduzione', [
                 'message' => $e->getMessage(),
                 'file' => $e->getFile(),
                 'line' => $e->getLine(),
@@ -144,10 +148,11 @@ class PdfTranslator extends Component
             return;
         }
 
-        // Genera un nome file più leggibile
-        $originalName = $this->pdfFile ? $this->pdfFile->getClientOriginalName() : 'document.pdf';
+        // Genera un nome file più leggibile mantenendo l'estensione originale
+        $originalName = $this->documentFile ? $this->documentFile->getClientOriginalName() : 'document.pdf';
         $nameWithoutExt = pathinfo($originalName, PATHINFO_FILENAME);
-        $downloadName = "{$nameWithoutExt}_translated_{$this->targetLanguage}.pdf";
+        $originalExtension = pathinfo($originalName, PATHINFO_EXTENSION);
+        $downloadName = "{$nameWithoutExt}_translated_{$this->targetLanguage}.{$originalExtension}";
 
         return response()->download($this->translatedFilePath, $downloadName)->deleteFileAfterSend(false);
     }
@@ -170,7 +175,7 @@ class PdfTranslator extends Component
     public function resetForm(): void
     {
         $this->resetState();
-        $this->pdfFile = null;
+        $this->documentFile = null;
         $this->targetLanguage = 'EN-US';
         $this->sourceLanguage = null;
 
@@ -183,7 +188,7 @@ class PdfTranslator extends Component
     /**
      * Aggiorna il file quando viene caricato
      */
-    public function updatedPdfFile(): void
+    public function updatedDocumentFile(): void
     {
         $this->resetState();
         $this->validate();
@@ -195,7 +200,7 @@ class PdfTranslator extends Component
     public function render()
     {
         return view('livewire.pdf-translator')
-            ->layout('layouts.app', ['title' => 'Traduzione PDF - DeepL']);
+            ->layout('layouts.app', ['title' => 'Traduzione Documenti - DeepL']);
     }
 }
 

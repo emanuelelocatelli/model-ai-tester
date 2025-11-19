@@ -84,6 +84,52 @@ return [
         'ZH' => 'Chinese (simplified)',
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Supported Document Formats
+    |--------------------------------------------------------------------------
+    |
+    | List of document formats supported by DeepL for translation.
+    | Each format includes mime types, extension, and maximum file size.
+    |
+    */
+
+    'supported_formats' => [
+        'pdf' => [
+            'name' => 'PDF',
+            'mime_types' => ['application/pdf'],
+            'extension' => 'pdf',
+            'max_size_mb' => 10,
+        ],
+        'docx' => [
+            'name' => 'Microsoft Word',
+            'mime_types' => [
+                'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+            ],
+            'extension' => 'docx',
+            'max_size_mb' => 10,
+        ],
+        'pptx' => [
+            'name' => 'Microsoft PowerPoint',
+            'mime_types' => [
+                'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+            ],
+            'extension' => 'pptx',
+            'max_size_mb' => 10,
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Maximum File Size
+    |--------------------------------------------------------------------------
+    |
+    | Maximum file size in kilobytes for document uploads (default: 10MB)
+    |
+    */
+
+    'max_file_size' => env('DEEPL_MAX_FILE_SIZE', 10240),
+
 ];
 
 

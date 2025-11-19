@@ -476,8 +476,14 @@ class GeminiTester extends Component
                 systemPromptLength: strlen($systemPrompt)
             );
             
+            // Verifica che la chiave API sia configurata
+            $apiKey = config('gemini.api_key');
+            if (empty($apiKey)) {
+                throw new \Exception("GEMINI_API_KEY non configurata nel file .env");
+            }
+            
             // Inizializza client Gemini
-            $client = new GeminiClient(config('gemini.api_key'));
+            $client = new GeminiClient($apiKey);
             
             // Chiamata API Gemini
             $response = $client

@@ -4,8 +4,8 @@
         <div class="max-w-6xl mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <div>
-                    <h1 class="text-xl font-bold text-gray-900">Traduzione PDF - DeepL</h1>
-                    <p class="text-sm text-gray-500 mt-1">Carica un file PDF e traducilo nella lingua desiderata</p>
+                    <h1 class="text-xl font-bold text-gray-900">Traduzione Documenti - DeepL</h1>
+                    <p class="text-sm text-gray-500 mt-1">Carica un documento (PDF, Word, PowerPoint) e traducilo nella lingua desiderata</p>
                 </div>
                 
                 <div class="flex items-center space-x-4">
@@ -21,7 +21,7 @@
                     </a>
                     
                     {{-- Pulsante Reset --}}
-                    @if($pdfFile || $translationCompleted)
+                    @if($documentFile || $translationCompleted)
                         <button 
                             wire:click="resetForm" 
                             class="px-4 py-2 text-sm font-medium text-blue-700 bg-blue-50 rounded-lg hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
@@ -81,29 +81,47 @@
                 {{-- Body Card --}}
                 <div class="p-6 space-y-6">
                     
-                    {{-- Upload PDF --}}
+                    {{-- Upload Documento --}}
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">
-                            File PDF da Tradurre
+                            Documento da Tradurre
                         </label>
                         
-                        @if($pdfFile)
+                        @if($documentFile)
                             {{-- File Caricato --}}
                             <div class="flex items-center justify-between px-4 py-3 bg-blue-50 border border-blue-200 rounded-lg">
                                 <div class="flex items-center space-x-3">
                                     <div class="flex-shrink-0">
-                                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                                        </svg>
+                                        @php
+                                            $extension = strtolower(pathinfo($documentFile->getClientOriginalName(), PATHINFO_EXTENSION));
+                                        @endphp
+                                        
+                                        @if($extension === 'pdf')
+                                            <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                            </svg>
+                                        @elseif($extension === 'docx')
+                                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                            </svg>
+                                        @elseif($extension === 'pptx')
+                                            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                            </svg>
+                                        @else
+                                            <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                            </svg>
+                                        @endif
                                     </div>
                                     <div>
-                                        <p class="text-sm font-medium text-blue-900">{{ $pdfFile->getClientOriginalName() }}</p>
-                                        <p class="text-xs text-blue-600">{{ number_format($pdfFile->getSize() / 1024, 2) }} KB</p>
+                                        <p class="text-sm font-medium text-blue-900">{{ $documentFile->getClientOriginalName() }}</p>
+                                        <p class="text-xs text-blue-600">{{ number_format($documentFile->getSize() / 1024, 2) }} KB</p>
                                     </div>
                                 </div>
                                 <button 
                                     type="button" 
-                                    wire:click="$set('pdfFile', null)" 
+                                    wire:click="$set('documentFile', null)" 
                                     class="text-blue-600 hover:text-blue-800 transition-colors"
                                     title="Rimuovi file"
                                 >
@@ -114,7 +132,7 @@
                             </div>
                         @else
                             {{-- Area Upload --}}
-                            <label class="flex flex-col items-center justify-center w-full h-40 border-2 border-gray-300 border-dashed rounded-xl cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors">
+                            <label class="flex flex-col items-center justify-center w-full h-48 border-2 border-gray-300 border-dashed rounded-xl cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors">
                                 <div class="flex flex-col items-center justify-center pt-5 pb-6">
                                     <svg class="w-12 h-12 mb-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
@@ -122,26 +140,48 @@
                                     <p class="mb-2 text-sm text-gray-700">
                                         <span class="font-semibold">Clicca per caricare</span> o trascina qui
                                     </p>
-                                    <p class="text-xs text-gray-500">Solo file PDF (max 10MB)</p>
+                                    <p class="text-xs text-gray-500 mb-3">PDF, Word (DOCX) o PowerPoint (PPTX) - Max 10MB</p>
+                                    
+                                    {{-- Icone formati supportati --}}
+                                    <div class="flex items-center justify-center space-x-4 mt-2">
+                                        <div class="text-center">
+                                            <svg class="w-6 h-6 mx-auto text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                            </svg>
+                                            <span class="text-xs text-gray-500">PDF</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <svg class="w-6 h-6 mx-auto text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                            </svg>
+                                            <span class="text-xs text-gray-500">DOCX</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <svg class="w-6 h-6 mx-auto text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                            </svg>
+                                            <span class="text-xs text-gray-500">PPTX</span>
+                                        </div>
+                                    </div>
                                 </div>
                                 <input 
                                     type="file" 
-                                    wire:model="pdfFile" 
-                                    accept=".pdf" 
+                                    wire:model="documentFile" 
+                                    accept=".pdf,.docx,.pptx" 
                                     class="hidden"
                                     :disabled="$wire.isTranslating"
                                 >
                             </label>
                         @endif
 
-                        {{-- Errore Validazione PDF --}}
-                        @error('pdfFile')
+                        {{-- Errore Validazione --}}
+                        @error('documentFile')
                             <p class="mt-2 text-sm text-red-600">{{ $message }}</p>
                         @enderror
 
                         {{-- Loading Upload --}}
-                        @if($pdfFile)
-                            <div wire:loading wire:target="pdfFile" class="mt-2 text-sm text-blue-600 flex items-center space-x-2">
+                        @if($documentFile)
+                            <div wire:loading wire:target="documentFile" class="mt-2 text-sm text-blue-600 flex items-center space-x-2">
                                 <svg class="animate-spin h-4 w-4 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
@@ -195,10 +235,10 @@
                     {{-- Pulsante Traduci --}}
                     <div class="pt-4">
                         <button 
-                            wire:click="translatePdf" 
+                            wire:click="translateDocument" 
                             type="button"
                             class="w-full inline-flex items-center justify-center px-6 py-4 border border-transparent rounded-xl shadow-lg text-base font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all transform hover:scale-105"
-                            :disabled="!$wire.pdfFile || $wire.isTranslating"
+                            :disabled="!$wire.documentFile || $wire.isTranslating"
                             wire:loading.attr="disabled"
                         >
                             @if($isTranslating)
@@ -257,12 +297,12 @@
                             
                             <button 
                                 wire:click="downloadTranslatedFile" 
-                                class="w-full inline-flex items-center justify-center px-6 py-4 border border-transparent rounded-xl shadow-lg text-base font-semibold text-white bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-all transform hover:scale-105"
+                                class="w-full inline-flex items-center justify-center px-6 py-4 border border-transparent rounded-xl shadow-lg text-base font-semibold text-black bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-all transform hover:scale-105"
                             >
                                 <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
                                 </svg>
-                                Scarica PDF Tradotto
+                                Scarica Documento Tradotto
                             </button>
                         </div>
                     </div>
@@ -279,7 +319,7 @@
                         <p class="font-medium">Informazioni sulla Traduzione</p>
                         <ul class="mt-2 space-y-1 list-disc list-inside">
                             <li>Dimensione massima file: 10 MB</li>
-                            <li>Formati supportati: PDF</li>
+                            <li>Formati supportati: PDF (.pdf), Word (.docx), PowerPoint (.pptx)</li>
                             <li>La traduzione preserva la formattazione originale del documento</li>
                             <li>Servizio di traduzione fornito da DeepL API</li>
                         </ul>

@@ -472,8 +472,14 @@ class ClaudeTester extends Component
                 systemPromptLength: strlen($systemPrompt)
             );
             
+            // Verifica che la chiave API sia configurata
+            $apiKey = config('anthropic.api_key');
+            if (empty($apiKey)) {
+                throw new \Exception("ANTHROPIC_API_KEY non configurata nel file .env");
+            }
+            
             // Inizializza client Anthropic
-            $client = new Client(apiKey: config('anthropic.api_key'));
+            $client = new Client(apiKey: $apiKey);
             
             // Prepara il messaggio usando MessageParam
             $messages = [
