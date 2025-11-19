@@ -18,7 +18,7 @@ class GeminiTester extends Component
     use WithFileUploads;
 
     // Proprietà pubbliche per il binding con la vista
-    public string $selectedModel = 'gemini-3-pro-preview';
+    public string $selectedModel = 'gemini-1.5-pro';
     public string $currentPrompt = '';
     
     #[Validate('nullable|file|mimes:xlsx,xls,pdf|max:51200')]
@@ -30,12 +30,12 @@ class GeminiTester extends Component
     // Salvato in sessione e recuperato on-demand
     protected array $messagesCache = [];
     
-    // Modelli disponibili
+    // Modelli disponibili (verificati con API v1)
     public array $availableModels = [
-        'gemini-3-pro-preview' => 'Gemini 3 Pro Preview',
-        'gemini-2.0-flash-exp' => 'Gemini 2.0 Flash',
         'gemini-1.5-pro' => 'Gemini 1.5 Pro',
         'gemini-1.5-flash' => 'Gemini 1.5 Flash',
+        'gemini-2.0-flash-exp' => 'Gemini 2.0 Flash (Experimental)',
+        'gemini-pro' => 'Gemini Pro',
     ];
     
     // Getter per messages (recupera da sessione - chiave separata per Gemini)

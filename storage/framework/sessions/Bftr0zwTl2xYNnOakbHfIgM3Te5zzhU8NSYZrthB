@@ -1,4 +1,4 @@
-a:7:{s:6:"_token";s:40:"8xw1A909EhCeGTWMIbFQWSKUnIVyaqWNZgF4HpJI";s:9:"_previous";a:2:{s:3:"url";s:36:"https://model-ai-tester.local/gemini";s:5:"route";s:6:"gemini";}s:6:"_flash";a:2:{s:3:"old";a:0:{}s:3:"new";a:0:{}}s:28:"claude_file_analysis_context";s:172238:"--- FILE CARICATO: DB_F&A_5YP_new.xlsx ---
+a:8:{s:6:"_token";s:40:"8xw1A909EhCeGTWMIbFQWSKUnIVyaqWNZgF4HpJI";s:9:"_previous";a:2:{s:3:"url";s:36:"https://model-ai-tester.local/gemini";s:5:"route";s:6:"gemini";}s:6:"_flash";a:2:{s:3:"old";a:0:{}s:3:"new";a:0:{}}s:28:"claude_file_analysis_context";s:172238:"--- FILE CARICATO: DB_F&A_5YP_new.xlsx ---
 
 ================================================================================
 ANALISI FILE EXCEL: 8qQJg4l9iXo7JhhwGEJO3aLR51AjyJYea05Rudmk.xlsx
@@ -3081,11 +3081,11 @@ Il **brand BOROTALCO nel segmento deodoranti** sta avendo la crescita più signi
 La strategia di espansione geografica in mercati meno saturi sta portando risultati eccellenti, con alcuni mercati che mostrano crescite a tripla cifra in termini di valore assoluto.";}}s:28:"gemini_file_analysis_context";s:172238:"--- FILE CARICATO: DB_F&A_5YP_new.xlsx ---
 
 ================================================================================
-ANALISI FILE EXCEL: gTFtdyIoP9RUfDeWpPusHdAvKjVmfXe72hHHvLGw.xlsx
+ANALISI FILE EXCEL: nTokGVv2NZ60MW2yfTHrS5SPHNNQIkQuwvAkJMYa.xlsx
 ================================================================================
 
 --- INFORMAZIONI GENERALI ---
-File: gTFtdyIoP9RUfDeWpPusHdAvKjVmfXe72hHHvLGw.xlsx
+File: nTokGVv2NZ60MW2yfTHrS5SPHNNQIkQuwvAkJMYa.xlsx
 Fogli: 47 fogli concatenati: Bubble, grafici, P&L - HPC, Pivot Global, Foglio1, HPC - Database, 5y_Base case, Product Margin (M), Product Margin, PC_P&L_PCUM, PC_P&L, BEAUTY_P&L, P&L FY24_NEW BGT25, 5Y -->, Input, SIMULAZIONE, NS 2028, NS BRAND ITA, P&L PERIMETRO, P&L BRAND, P&L CATEGORY 2, P&L CATEGORY, P&L SUBCATEGORY, P&L BRAND_CATEGORY 2, P&L BRAND_CH POLONIA, P&L BRAND_CATEGORY, P&L BRAND_SUBCATEGORY, NS COUNTRY, NS BRAND, OP BRAND ITA, NS CONTRY_BRAND, 5Y-Istogrammi CAGR, 5Y-Istogrammi CAGR BT, 5Y-Istogrammi CAGR CH, NS CATEGORIA, COS% COUNTRY, COS% BRAND, COS% CATEGORIA, Altro -->, NS COUNTRY (fabio), BRAND EVO, PC PLAN 28, PC BRAND, PC country brand, CHART PRES 5Y, Deep Dive OMIA, CHART PRES BGT 25
 Numero di righe: 4195
 Numero di colonne: 190
@@ -5960,4 +5960,11 @@ Colonna 'SI SELEZIONA DA FOGLIO SIMULAZIONE':
 ================================================================================
 ANALISI COMPLETATA CON SUCCESSO
 ================================================================================
-";}
+";s:18:"gemini_ui_messages";a:1:{i:0;a:2:{s:4:"role";s:9:"assistant";s:7:"content";s:407:"❌ Errore: Errore API Gemini: Gemini API operation failed: operation=models/gemini-3-pro-preview:generateContent, status_code=404,  response={
+  "error": {
+    "code": 404,
+    "message": "models/gemini-3-pro-preview is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+";}}}
