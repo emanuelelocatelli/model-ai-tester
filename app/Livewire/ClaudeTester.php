@@ -5,7 +5,8 @@ namespace App\Livewire;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use Livewire\Attributes\Validate;
-use Anthropic\Anthropic;
+use Anthropic\Client;
+use Anthropic\Messages\MessageParam;
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Smalot\PdfParser\Parser as PdfParser;
@@ -472,21 +473,24 @@ class ClaudeTester extends Component
             );
             
             // Inizializza client Anthropic
-            $client = Anthropic::client(config('anthropic.api_key'));
+            $client = new Client(apiKey: config('anthropic.api_key'));
             
-            // Chiamata API Claude
-            $response = $client->messages()->create([
-                'model' => $this->selectedModel,
-                'max_tokens' => 8192,
-                'system' => $systemPrompt ?: null,
-                'messages' => [
-                    [
-                        'role' => $lastMessage['role'],
-                        'content' => $lastMessage['content']
-                    ]
-                ],
-                'temperature' => 0.7,
-            ]);
+            // Prepara il messaggio usando MessageParam
+            $messages = [
+                MessageParam::with(
+                    role: $lastMessage['role'],
+                    content: $lastMessage['content']
+                )
+            ];
+            
+            // Chiamata API Claude con named parameters
+            $response = $client->messages->create(
+                model: $this->selectedModel,
+                maxTokens: 8192,
+                system: !empty($systemPrompt) ? $systemPrompt : null,
+                messages: $messages,
+                temperature: 0.7,
+            );
             
             $content = $response->content[0]->text ?? 'Nessuna risposta ricevuta.';
             
