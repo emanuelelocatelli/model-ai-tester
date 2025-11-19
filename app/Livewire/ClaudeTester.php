@@ -5,19 +5,19 @@ namespace App\Livewire;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use Livewire\Attributes\Validate;
-use OpenAI\Laravel\Facades\OpenAI;
+use Anthropic\Anthropic;
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Smalot\PdfParser\Parser as PdfParser;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Log;
 
-class ChatTester extends Component
+class ClaudeTester extends Component
 {
     use WithFileUploads;
 
     // Proprietà pubbliche per il binding con la vista
-    public string $selectedModel = 'gpt-4.1';
+    public string $selectedModel = 'claude-sonnet-4-20250514';
     public string $currentPrompt = '';
     
     #[Validate('nullable|file|mimes:xlsx,xls,pdf|max:51200')]
@@ -31,18 +31,16 @@ class ChatTester extends Component
     
     // Modelli disponibili
     public array $availableModels = [
-        'gpt-4o' => 'GPT-4o',
-        'gpt-4.1' => 'GPT-4.1',
-        'gpt-5.1' => 'GPT-5.1',
-        'gpt-4o-mini' => 'GPT-4o Mini',
-        'o1-preview' => 'O1 Preview',
-        'o1-mini' => 'O1 Mini',
+        'claude-opus-4-20250514' => 'Claude 4.5 Opus',
+        'claude-sonnet-4-20250514' => 'Claude 4.5 Sonnet',
+        'claude-3-5-sonnet-20241022' => 'Claude 3.5 Sonnet',
+        'claude-3-5-haiku-20241022' => 'Claude 3.5 Haiku',
     ];
     
-    // Getter per messages (recupera da sessione)
+    // Getter per messages (recupera da sessione - chiave separata per Claude)
     public function getMessagesProperty()
     {
-        return session('ui_messages', []);
+        return session('claude_ui_messages', []);
     }
 
     /**
@@ -72,7 +70,7 @@ class ChatTester extends Component
 
         $this->isLoading = true;
         
-        Log::info('sendMessage START', [
+        Log::info('[CLAUDE] sendMessage START', [
             'hasPrompt' => !empty($this->currentPrompt),
             'hasFile' => !empty($uploadedFileLocal),
             'promptLength' => strlen($this->currentPrompt ?? ''),
@@ -86,26 +84,26 @@ class ChatTester extends Component
             // Se c'è un file caricato, gestiscilo
             $fileAnalysis = '';
             if ($uploadedFileLocal) {
-                Log::info('handleFileUpload START');
+                Log::info('[CLAUDE] handleFileUpload START');
                 $fileAnalysis = $this->handleFileUpload($uploadedFileLocal);
                 
-                Log::info('handleFileUpload END', ['analysisLength' => strlen($fileAnalysis ?? '')]);
+                Log::info('[CLAUDE] handleFileUpload END', ['analysisLength' => strlen($fileAnalysis ?? '')]);
                 
                 if ($fileAnalysis) {
                     // Sanitize UTF-8 per evitare problemi di encoding
                     $fileAnalysis = mb_convert_encoding($fileAnalysis, 'UTF-8', 'UTF-8');
                     
                     // Salva l'analisi del file in SESSIONE (troppo grande per proprietà Livewire)
-                    session(['file_analysis_context' => $fileAnalysis]);
+                    session(['claude_file_analysis_context' => $fileAnalysis]);
                     
                     $userMessageContent .= "\n\n" . $fileAnalysis;
                     
-                    Log::info('File context salvato in sessione per conversazioni successive');
+                    Log::info('[CLAUDE] File context salvato in sessione per conversazioni successive');
                 }
             }
             
             // Aggiungi il messaggio dell'utente alla cronologia UI (in sessione)
-            $uiMessages = session('ui_messages', []);
+            $uiMessages = session('claude_ui_messages', []);
             $uiMessages[] = [
                 'role' => 'user',
                 'content' => $this->currentPrompt ?: '📎 File caricato',
@@ -118,13 +116,13 @@ class ChatTester extends Component
                 $messagesForAI[count($messagesForAI) - 1]['content'] = $userMessageContent;
             }
             
-            // Chiama l'API OpenAI
-            Log::info('callOpenAI START');
-            $assistantResponse = $this->callOpenAI($messagesForAI);
-            Log::info('callOpenAI END', ['responseLength' => strlen($assistantResponse)]);
+            // Chiama l'API Claude
+            Log::info('[CLAUDE] callClaude START');
+            $assistantResponse = $this->callClaude($messagesForAI);
+            Log::info('[CLAUDE] callClaude END', ['responseLength' => strlen($assistantResponse)]);
             
             // Salva messaggio completo in sessione per system prompt
-            $fullMessages = session('full_messages_history', []);
+            $fullMessages = session('claude_full_messages_history', []);
             $fullMessages[] = [
                 'role' => 'user',
                 'content' => $this->currentPrompt ?: '📎 File caricato'
@@ -137,13 +135,13 @@ class ChatTester extends Component
             if (count($fullMessages) > 20) {
                 $fullMessages = array_slice($fullMessages, -20);
             }
-            session(['full_messages_history' => $fullMessages]);
+            session(['claude_full_messages_history' => $fullMessages]);
             
             // Aggiungi la risposta alla cronologia UI (versione troncata se necessario)
             $displayContent = $assistantResponse;
             if (strlen($assistantResponse) > 10000) {
                 $displayContent = substr($assistantResponse, 0, 10000) . "\n\n... [Risposta troncata per visualizzazione]";
-                Log::info('Risposta AI troncata per UI', [
+                Log::info('[CLAUDE] Risposta AI troncata per UI', [
                     'originalLength' => strlen($assistantResponse),
                     'displayLength' => strlen($displayContent)
                 ]);
@@ -157,11 +155,11 @@ class ChatTester extends Component
             // Limita numero messaggi UI
             if (count($uiMessages) > 10) {
                 $uiMessages = array_slice($uiMessages, -10);
-                Log::info('UI messages limitati a 10');
+                Log::info('[CLAUDE] UI messages limitati a 10');
             }
             
             // Salva in sessione
-            session(['ui_messages' => $uiMessages]);
+            session(['claude_ui_messages' => $uiMessages]);
             
             // IMPORTANTE: Forza Livewire a ricaricare dalla sessione
             $this->dispatch('$refresh');
@@ -169,10 +167,10 @@ class ChatTester extends Component
             // Reset del campo di input
             $this->currentPrompt = '';
             
-            Log::info('sendMessage SUCCESS');
+            Log::info('[CLAUDE] sendMessage SUCCESS');
             
         } catch (\Exception $e) {
-            Log::error('Errore in sendMessage', [
+            Log::error('[CLAUDE] Errore in sendMessage', [
                 'message' => $e->getMessage(),
                 'file' => $e->getFile(),
                 'line' => $e->getLine(),
@@ -180,15 +178,15 @@ class ChatTester extends Component
             ]);
             
             // Aggiungi messaggio di errore alla chat
-            $uiMessages = session('ui_messages', []);
+            $uiMessages = session('claude_ui_messages', []);
             $uiMessages[] = [
                 'role' => 'assistant',
                 'content' => '❌ Errore: ' . $e->getMessage(),
             ];
-            session(['ui_messages' => $uiMessages]);
+            session(['claude_ui_messages' => $uiMessages]);
         } finally {
             $this->isLoading = false;
-            Log::info('sendMessage END (finally block)');
+            Log::info('[CLAUDE] sendMessage END (finally block)');
         }
     }
 
@@ -216,7 +214,7 @@ class ChatTester extends Component
                 throw new \Exception("File troppo grande ({$sizeMB} MB). Dimensione massima: 50 MB. Per file molto grandi, considera di ridurre le dimensioni o contattare l'amministratore.");
             }
             
-            Log::info('File caricato', [
+            Log::info('[CLAUDE] File caricato', [
                 'fileName' => $fileName,
                 'extension' => $extension,
                 'size' => $fileSize,
@@ -253,7 +251,7 @@ class ChatTester extends Component
             return $analysisResult;
             
         } catch (\Exception $e) {
-            Log::error('Errore in handleFileUpload: ' . $e->getMessage(), [
+            Log::error('[CLAUDE] Errore in handleFileUpload: ' . $e->getMessage(), [
                 'file' => $fileName ?? 'unknown',
                 'extension' => $extension ?? 'unknown',
                 'trace' => $e->getTraceAsString()
@@ -304,7 +302,7 @@ class ChatTester extends Component
         foreach ($pythonCommands as $pyCmd) {
             $command = sprintf('%s "%s" "%s" 2>&1', $pyCmd, $scriptPath, $filePath);
             
-            Log::info('=== TENTATIVO PYTHON ===', [
+            Log::info('[CLAUDE] === TENTATIVO PYTHON ===', [
                 'pythonCmd' => $pyCmd,
                 'pythonExists' => file_exists($pyCmd),
                 'command' => $command,
@@ -316,7 +314,7 @@ class ChatTester extends Component
             
             $result = shell_exec($command);
             
-            Log::info('=== RISULTATO PYTHON ===', [
+            Log::info('[CLAUDE] === RISULTATO PYTHON ===', [
                 'pythonCmd' => $pyCmd,
                 'resultLength' => $result ? strlen($result) : 0,
                 'hasSuccess' => $result && strpos($result, 'ANALISI COMPLETATA') !== false,
@@ -325,7 +323,7 @@ class ChatTester extends Component
             
             if ($result && strpos($result, 'ANALISI COMPLETATA') !== false) {
                 $output = $result;
-                Log::info('✓✓✓ Python eseguito con successo!', [
+                Log::info('[CLAUDE] ✓✓✓ Python eseguito con successo!', [
                     'pythonCommand' => $pyCmd,
                     'outputLength' => strlen($output)
                 ]);
@@ -349,7 +347,7 @@ class ChatTester extends Component
             $errorMsg .= "4. Riavviare MAMP dopo l'installazione di Python\n\n";
             $errorMsg .= "Dettagli tecnici: " . ($lastError ?: 'Nessun output da Python');
             
-            Log::error('Fallimento completo Python', [
+            Log::error('[CLAUDE] Fallimento completo Python', [
                 'lastError' => $lastError,
                 'scriptPath' => $scriptPath,
                 'filePath' => $filePath,
@@ -362,13 +360,13 @@ class ChatTester extends Component
         if (strpos($output, 'ANALISI COMPLETATA') === false) {
             // C'è un output ma non contiene il marker di successo
             if (strpos($output, 'Error') !== false || strpos($output, 'Traceback') !== false) {
-                Log::error('Errore Python', ['output' => $output]);
+                Log::error('[CLAUDE] Errore Python', ['output' => $output]);
                 throw new \Exception("Errore Python: " . substr($output, 0, 500));
             }
-            Log::warning('Output Python incompleto', ['output' => substr($output, 0, 200)]);
+            Log::warning('[CLAUDE] Output Python incompleto', ['output' => substr($output, 0, 200)]);
         }
         
-        Log::info('Analisi Excel completata con successo!', ['outputLength' => strlen($output)]);
+        Log::info('[CLAUDE] Analisi Excel completata con successo!', ['outputLength' => strlen($output)]);
         
         return "--- FILE CARICATO: {$fileName} ---\n\n" . $output;
     }
@@ -408,104 +406,102 @@ class ChatTester extends Component
                    $pdfText;
                    
         } catch (\Exception $e) {
-            Log::error('Errore in analyzePdfFile: ' . $e->getMessage());
+            Log::error('[CLAUDE] Errore in analyzePdfFile: ' . $e->getMessage());
             throw new \Exception("Errore nell'estrazione del testo dal PDF: " . $e->getMessage());
         }
     }
 
     /**
-     * Chiama l'API OpenAI con la cronologia completa
+     * Chiama l'API Claude con la cronologia completa
      */
-    private function callOpenAI(array $messages): string
+    private function callClaude(array $messages): string
     {
         try {
             // Costruisci system prompt se c'è contesto (file o storico)
             $apiMessages = $messages;
-            $fileAnalysisContext = session('file_analysis_context');
-            $fullHistory = session('full_messages_history', []);
+            $fileAnalysisContext = session('claude_file_analysis_context');
+            $fullHistory = session('claude_full_messages_history', []);
+            
+            $systemPrompt = '';
             
             if ($fileAnalysisContext || count($fullHistory) > 0) {
-                $systemContent = '';
-                
                 // Aggiungi analisi del file se presente
                 if ($fileAnalysisContext) {
                     // Sanitize UTF-8 per evitare errori "Malformed UTF-8 characters"
                     $fileAnalysisContext = mb_convert_encoding($fileAnalysisContext, 'UTF-8', 'UTF-8');
                     
-                    $systemContent .= "FILE ANALYSIS:\n";
-                    $systemContent .= "=".str_repeat('=', 79)."\n";
-                    $systemContent .= $fileAnalysisContext;
-                    $systemContent .= "\n".str_repeat('=', 80)."\n\n";
+                    $systemPrompt .= "FILE ANALYSIS:\n";
+                    $systemPrompt .= "=".str_repeat('=', 79)."\n";
+                    $systemPrompt .= $fileAnalysisContext;
+                    $systemPrompt .= "\n".str_repeat('=', 80)."\n\n";
                 }
                 
                 // Aggiungi storico conversazione completo
                 if (count($fullHistory) > 0) {
-                    $systemContent .= "CONVERSATION HISTORY:\n";
-                    $systemContent .= str_repeat('-', 80)."\n";
+                    $systemPrompt .= "CONVERSATION HISTORY:\n";
+                    $systemPrompt .= str_repeat('-', 80)."\n";
                     
                     foreach ($fullHistory as $msg) {
                         $label = $msg['role'] === 'user' ? 'User' : 'Assistant';
                         // Sanitize UTF-8 anche per i messaggi storici
                         $content = mb_convert_encoding($msg['content'], 'UTF-8', 'UTF-8');
-                        $systemContent .= "{$label}: {$content}\n\n";
+                        $systemPrompt .= "{$label}: {$content}\n\n";
                     }
                     
-                    $systemContent .= str_repeat('-', 80)."\n";
+                    $systemPrompt .= str_repeat('-', 80)."\n";
                 }
                 
-                // Costruisci array per API: [system, nuovo_user_message]
-                $lastMessage = end($messages);
-                
-                // Sanitize UTF-8 anche per il messaggio corrente
-                $lastMessage['content'] = mb_convert_encoding($lastMessage['content'], 'UTF-8', 'UTF-8');
-                
-                $apiMessages = [
-                    [
-                        'role' => 'system',
-                        'content' => $systemContent
-                    ],
-                    $lastMessage
-                ];
-                
-                Log::info('System prompt costruito', [
-                    'systemContentLength' => strlen($systemContent),
+                Log::info('[CLAUDE] System prompt costruito', [
+                    'systemPromptLength' => strlen($systemPrompt),
                     'hasFileContext' => !empty($fileAnalysisContext),
                     'historyMessagesCount' => count($fullHistory)
                 ]);
             }
             
+            // Prepara ultimo messaggio (sanitize UTF-8)
+            $lastMessage = end($messages);
+            $lastMessage['content'] = mb_convert_encoding($lastMessage['content'], 'UTF-8', 'UTF-8');
+            
             // Prepara payload per logging in console browser
             $this->dispatch('log-api-request', 
                 model: $this->selectedModel,
-                messagesCount: count($apiMessages),
+                messagesCount: 1,
                 temperature: 0.7,
-                hasSystemPrompt: count($apiMessages) > 1 && isset($apiMessages[0]['role']) && $apiMessages[0]['role'] === 'system',
-                systemPromptLength: (count($apiMessages) > 1 && isset($apiMessages[0]['content'])) ? strlen($apiMessages[0]['content']) : 0
+                hasSystemPrompt: !empty($systemPrompt),
+                systemPromptLength: strlen($systemPrompt)
             );
             
-            // Chiamata API OpenAI (senza limiti token - usa tutto lo spazio disponibile)
-            $response = OpenAI::chat()->create([
+            // Inizializza client Anthropic
+            $client = Anthropic::client(config('anthropic.api_key'));
+            
+            // Chiamata API Claude
+            $response = $client->messages()->create([
                 'model' => $this->selectedModel,
-                'messages' => $apiMessages,
+                'max_tokens' => 8192,
+                'system' => $systemPrompt ?: null,
+                'messages' => [
+                    [
+                        'role' => $lastMessage['role'],
+                        'content' => $lastMessage['content']
+                    ]
+                ],
                 'temperature' => 0.7,
-                // NON specificare max_tokens o max_completion_tokens
-                // Il modello userà automaticamente tutto lo spazio disponibile nel context window
             ]);
             
-            $content = $response->choices[0]->message->content ?? 'Nessuna risposta ricevuta.';
+            $content = $response->content[0]->text ?? 'Nessuna risposta ricevuta.';
             
             // Log risposta in console browser
             $this->dispatch('log-api-response',
                 contentLength: strlen($content),
-                finishReason: $response->choices[0]->finish_reason ?? 'unknown',
+                finishReason: $response->stopReason ?? 'unknown',
                 model: $this->selectedModel
             );
             
             return $content;
             
         } catch (\Exception $e) {
-            Log::error('Errore in callOpenAI: ' . $e->getMessage());
-            throw new \Exception("Errore API OpenAI: " . $e->getMessage());
+            Log::error('[CLAUDE] Errore in callClaude: ' . $e->getMessage());
+            throw new \Exception("Errore API Claude: " . $e->getMessage());
         }
     }
 
@@ -516,9 +512,9 @@ class ChatTester extends Component
     {
         $this->currentPrompt = '';
         $this->uploadedFile = null;
-        session()->forget('ui_messages');
-        session()->forget('file_analysis_context');
-        session()->forget('full_messages_history');
+        session()->forget('claude_ui_messages');
+        session()->forget('claude_file_analysis_context');
+        session()->forget('claude_full_messages_history');
     }
 
     /**
@@ -526,8 +522,10 @@ class ChatTester extends Component
      */
     public function render()
     {
-        return view('livewire.chat-tester', [
+        return view('livewire.claude-tester', [
             'messages' => $this->messages  // Usa il getter
-        ])->layout('layouts.app', ['title' => 'AI Model Tester']);
+        ])->layout('layouts.app', ['title' => 'Claude AI Tester']);
     }
 }
+
+

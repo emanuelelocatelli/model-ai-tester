@@ -57,7 +57,7 @@
                         {{-- Message Content --}}
                         <div class="flex flex-col">
                             <span class="text-xs font-medium text-gray-500 mb-1 {{ $message['role'] === 'user' ? 'text-right' : 'text-left' }}">
-                                {{ $message['role'] === 'user' ? 'Tu' : 'AI Assistant' }}
+                                {{ $message['role'] === 'user' ? 'Tu' : 'Claude' }}
                             </span>
                             <div class="px-4 py-3 rounded-2xl {{ $message['role'] === 'user' ? 'bg-gradient-to-br from-blue-500 to-blue-600 text-white' : 'bg-white text-gray-800 shadow-sm border border-gray-200' }}">
                                 <div class="prose prose-sm max-w-none {{ $message['role'] === 'user' ? 'prose-invert' : '' }}">
@@ -74,9 +74,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-medium text-gray-900 mb-2">Benvenuto nell'AI Model Tester</h3>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Benvenuto in Claude AI Tester</h3>
                     <p class="text-gray-500 max-w-md mx-auto">
-                        Inizia una conversazione o carica un file Excel/PDF per analizzarlo con l'AI.
+                        Inizia una conversazione o carica un file Excel/PDF per analizzarlo con Claude.
                     </p>
                 </div>
             @endforelse
@@ -99,7 +99,7 @@
                                     <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
                                     <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
                                 </div>
-                                <span class="text-sm text-gray-500">AI sta pensando...</span>
+                                <span class="text-sm text-gray-500">Claude sta pensando...</span>
                             </div>
                         </div>
                     </div>
@@ -206,9 +206,9 @@
 
 @push('scripts')
 <script>
-    // Logging OpenAI API Request in console browser
+    // Logging Claude API Request in console browser
     window.addEventListener('log-api-request', event => {
-        console.group('🚀 OPENAI API REQUEST');
+        console.group('🚀 CLAUDE API REQUEST');
         console.log('Model:', event.detail.model);
         console.log('Messages Count:', event.detail.messagesCount);
         console.log('Temperature:', event.detail.temperature);
@@ -220,9 +220,9 @@
         console.groupEnd();
     });
 
-    // Logging OpenAI API Response in console browser
+    // Logging Claude API Response in console browser
     window.addEventListener('log-api-response', event => {
-        console.group('✅ OPENAI API RESPONSE');
+        console.group('✅ CLAUDE API RESPONSE');
         console.log('Model:', event.detail.model);
         console.log('Content Length:', event.detail.contentLength, 'chars');
         console.log('Finish Reason:', event.detail.finishReason);
@@ -231,3 +231,5 @@
     });
 </script>
 @endpush
+
+

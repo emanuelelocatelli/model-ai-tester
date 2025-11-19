@@ -202,3 +202,5 @@ storage/logs/laravel.log
 **Versione Livewire:** 3.6  
 **API DeepL:** v2
 
+
+
