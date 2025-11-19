@@ -5,9 +5,8 @@ namespace App\Livewire;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use Livewire\Attributes\Validate;
-use Gemini\Client as GeminiClient;
-use Gemini\Data\GenerationConfig;
-use Gemini\Enums\ModelType;
+use GeminiAPI\Client as GeminiClient;
+use GeminiAPI\Resources\Parts\TextPart;
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Smalot\PdfParser\Parser as PdfParser;
@@ -485,13 +484,12 @@ class GeminiTester extends Component
             // Inizializza client Gemini
             $client = new GeminiClient($apiKey);
             
-            // Chiamata API Gemini
+            // Chiamata API Gemini con generativeModel
             $response = $client
-                ->geminiPro()
-                ->withHttpClientOptions([
-                    'timeout' => config('gemini.request_timeout', 240)
-                ])
-                ->generateContent($finalContent);
+                ->generativeModel($this->selectedModel)
+                ->generateContent(
+                    new TextPart($finalContent)
+                );
             
             $content = $response->text() ?? 'Nessuna risposta ricevuta.';
             

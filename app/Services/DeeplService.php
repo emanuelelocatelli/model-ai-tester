@@ -85,7 +85,7 @@ class DeeplService
             Log::info('DeepL: Traduzione completata, download in corso...');
 
             // Step 3: Download del documento tradotto
-            $translatedFilePath = $this->downloadTranslatedDocument($documentId, $documentKey);
+            $translatedFilePath = $this->downloadTranslatedDocument($documentId, $documentKey, $filePath);
 
             if (!$translatedFilePath) {
                 throw new \Exception("Errore durante il download del documento tradotto");
@@ -211,7 +211,16 @@ class DeeplService
                 }
 
                 if ($status === 'error') {
-                    throw new \Exception("Errore durante la traduzione del documento");
+                    // Cattura il messaggio di errore dettagliato da DeepL
+                    $errorMessage = $responseData['message'] ?? 'Errore sconosciuto durante la traduzione';
+                    
+                    Log::error('DeepL: Errore durante la traduzione', [
+                        'document_id' => $documentId,
+                        'error_message' => $errorMessage,
+                        'full_response' => $responseData,
+                    ]);
+                    
+                    throw new \Exception("DeepL API Error: " . $errorMessage);
                 }
 
                 // Attendi prima del prossimo tentativo
@@ -232,7 +241,7 @@ class DeeplService
     /**
      * Download del documento tradotto
      */
-    protected function downloadTranslatedDocument(string $documentId, string $documentKey): ?string
+    protected function downloadTranslatedDocument(string $documentId, string $documentKey, string $originalFilePath): ?string
     {
         try {
             $response = $this->httpClient->post("{$this->apiUrl}/document/{$documentId}/result", [
@@ -245,9 +254,23 @@ class DeeplService
                 ],
             ]);
 
-            // Salva il file tradotto in storage/app/translations
+            // Salva il file tradotto determinando l'estensione dal Content-Type
             $translatedContent = $response->getBody()->getContents();
-            $fileName = 'translated_' . uniqid() . '.pdf';
+            
+            // Ottieni il Content-Type dalla risposta per determinare il formato reale
+            $contentType = $response->getHeader('Content-Type')[0] ?? '';
+            
+            // Mappa Content-Type a estensioni
+            $extensionMap = [
+                'application/pdf' => 'pdf',
+                'application/vnd.openxmlformats-officedocument.wordprocessingml.document' => 'docx',
+                'application/vnd.openxmlformats-officedocument.presentationml.presentation' => 'pptx',
+            ];
+            
+            // Determina l'estensione corretta dal Content-Type o usa l'originale come fallback
+            $extension = $extensionMap[$contentType] ?? pathinfo($originalFilePath, PATHINFO_EXTENSION);
+            
+            $fileName = 'translated_' . uniqid() . '.' . $extension;
             $storagePath = 'translations/' . $fileName;
 
             Storage::disk('local')->put($storagePath, $translatedContent);
@@ -258,6 +281,8 @@ class DeeplService
                 'document_id' => $documentId,
                 'path' => $fullPath,
                 'size' => strlen($translatedContent),
+                'content_type' => $contentType,
+                'extension' => $extension,
             ]);
 
             return $fullPath;

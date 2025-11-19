@@ -297,7 +297,8 @@
                             
                             <button 
                                 wire:click="downloadTranslatedFile" 
-                                class="w-full inline-flex items-center justify-center px-6 py-4 border border-transparent rounded-xl shadow-lg text-base font-semibold text-black bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-all transform hover:scale-105"
+                                class="w-full inline-flex items-center justify-center px-6 py-4 border-2 border-green-700 rounded-xl shadow-lg text-base font-bold text-gray-900 bg-white hover:bg-green-50 focus:outline-none focus:ring-4 focus:ring-green-300 transition-all transform hover:scale-105"
+                                style="color: #000000 !important;"
                             >
                                 <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>

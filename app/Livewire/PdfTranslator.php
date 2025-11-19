@@ -148,11 +148,13 @@ class PdfTranslator extends Component
             return;
         }
 
-        // Genera un nome file più leggibile mantenendo l'estensione originale
-        $originalName = $this->documentFile ? $this->documentFile->getClientOriginalName() : 'document.pdf';
+        // Genera un nome file più leggibile usando l'estensione del file tradotto effettivo
+        $originalName = $this->documentFile ? $this->documentFile->getClientOriginalName() : 'document';
         $nameWithoutExt = pathinfo($originalName, PATHINFO_FILENAME);
-        $originalExtension = pathinfo($originalName, PATHINFO_EXTENSION);
-        $downloadName = "{$nameWithoutExt}_translated_{$this->targetLanguage}.{$originalExtension}";
+        
+        // Usa l'estensione del file tradotto (DeepL potrebbe convertire il formato)
+        $translatedExtension = pathinfo($this->translatedFilePath, PATHINFO_EXTENSION);
+        $downloadName = "{$nameWithoutExt}_translated_{$this->targetLanguage}.{$translatedExtension}";
 
         return response()->download($this->translatedFilePath, $downloadName)->deleteFileAfterSend(false);
     }
